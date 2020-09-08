@@ -1,11 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './style_home.css';
 import Nav from './Components/Nav'
+import Resume from './Components/Resume'
 
 function App() {
   return (
-    <Nav />
+    <div>
+      <Nav />
+      <Resume />
+    </div>
   );
 }
 
