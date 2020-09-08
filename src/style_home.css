@@ -1,0 +1,264 @@
+@font-face
+{
+	font-family: "TeX";
+	src: url("./fonts/texgyreheros-bold-webfont.woff");
+	font-weight: bold;
+}
+
+@font-face
+{
+	font-family: "TeX";
+	src: url("./fonts/texgyreheros-regular-webfont.woff");
+}
+
+@font-face
+{
+	font-family: "Albertus";
+	src: url("./fonts/A028-Med.ttf");
+}
+
+@font-face
+{
+	font-family: "Albertus";
+	src: url("./fonts/A028-Ext.ttf");
+	font-weight: bold;
+}
+
+@font-face
+{
+	font-family: "HK";
+	src: url("./fonts/HKGrotesk-Medium.otf");
+}
+
+@font-face
+{
+	font-family: "HK";
+	src: url("./fonts/HKGrotesk-Bold.otf");
+	font-weight: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+html {
+	overflow-y: scroll;
+	height: 100%;
+}
+body
+{
+	height: 100%;
+	margin: 0;
+}
+p
+{
+	font-family: "HK", sans-serif;
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+.wrapper
+{
+	height:auto;
+	position:static;
+}
+
+nav
+{
+	position: fixed;
+	width: 100%;
+	height: 130px;
+	font-family: "Albertus", sans-serif;
+	line-height: 100px;
+	color: purple;
+	z-index: 1;
+	background-color: #fff;
+}
+
+#title
+{
+	position: relative;
+	width: 38%;
+	margin-left: 2%;
+	top: 20px;
+	height: auto;
+	font-size: 100px;
+	float: left;
+	font-weight: bold;
+	font-family: "Albertus", sans-serif;
+	color: #000;
+	overflow-wrap: break-word;
+}
+
+#navbar
+{
+	height: 100%;
+	position: relative;
+	padding-left: 6%;
+	float: left;
+	width: 50%;
+	word-spacing: 80px;
+	margin-left: 1%;
+	font-size: 70px;
+	top: 20px;
+}
+
+img
+{
+	max-width: 40%;
+	height: auto;
+	box-shadow: 0px 0px 10px #CFCFCF;
+}
+
+#homeImage
+{
+	position: relative;
+	float: left;
+	top: 20px;
+	width: 40%;
+	height: auto;
+	display: inline-block;
+}
+
+#home
+{
+	margin-left: 5%;
+	display: inline-block;
+	width: 40%;
+	height: auto;
+	text-align: left;
+	float: left;
+}
+
+.content
+{
+	top: 150px;
+	position: relative;
+	width: 98%;
+	overflow: hidden;
+	text-align: center;
+	font-family: "HK", sans-serif;
+	background-color: white;
+	padding-bottom: 50px;
+	margin-left: 1%;
+}
+
+#download
+{
+	position: absolute;
+	top: 1em;
+	margin-left: 1em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	font-size: 1.5em;
+	float: left;
+	border: 2px solid black;
+	background-color: white;
+	z-index: 0;
+}
+
+#download:hover
+{
+	background-color: #cf1364;
+	color: white;
+}
+
+#resume
+{
+	position: relative;
+	width: 55%;
+	top: 20px;
+	padding-bottom: 50px;
+	height: auto;
+	display: inline-block;
+	text-align: left;
+}
+
+#projects
+{
+	display: inline-block;
+	padding-bottom: 30px;
+	text-align: left;
+	width: 80%;
+}
+h2
+{
+	font-size: 40px;
+}
+
+h3
+{
+	font-size: 28px;
+}
+
+h4
+{
+	font-size: 20px;
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+
+ul
+{
+	font-size: 18px;
+}
+.center
+{
+	text-align: center;
+}
+
+.date
+{
+	float: right;
+	display: inline-block;
+	position: relative;
+}
+.info
+{
+	margin-left: 40px;
+}
+
+.org
+{
+	display: inline-block;
+}
+
+.job
+{
+	margin-left: 20px;
+}
+body
+{
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFFF;
+	height:auto;
+}
+
+
+
+a.homeLink:link
+{
+	color: black;
+}
+a.homeLink:visited
+{
+	color: black;
+}
+a.homeLink:hover
+{
+	color: grey;
+}
+a:link
+{
+	text-decoration: none;
+	color: hotpink;
+}
+
+a:visited
+{
+	color: hotpink;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: purple;
+	text-decoration: none;
+}
