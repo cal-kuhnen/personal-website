@@ -27,13 +27,13 @@
 @font-face
 {
 	font-family: "HK";
-	src: url("./fonts/HKGrotesk-Medium.otf");
+	src: url("./fonts/UniversLTStd-Light.otf");
 }
 
 @font-face
 {
 	font-family: "HK";
-	src: url("./fonts/HKGrotesk-Bold.otf");
+	src: url("./fonts/UniversLTStd.otf");
 	font-weight: bold;
 }
 
@@ -45,14 +45,17 @@ html {
 }
 body
 {
-	height: 100%;
 	margin: 0;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFFFFF;
+	height:auto;
 }
+
 p
 {
 	font-family: "HK", sans-serif;
 	font-size: 1.2em;
-	line-height: 1.4em;
 }
 .wrapper
 {
@@ -60,6 +63,7 @@ p
 	position:static;
 }
 
+/* --- Nav --- */
 nav
 {
 	position: fixed;
@@ -67,9 +71,11 @@ nav
 	height: 130px;
 	font-family: "Albertus", sans-serif;
 	line-height: 100px;
-	color: purple;
+	color: black;
 	z-index: 1;
 	background-color: #fff;
+	border-bottom-style: solid;
+	border-width: 5px;
 }
 
 #title
@@ -159,6 +165,7 @@ img
 	color: white;
 }
 
+/* --- Resume --- */
 #resume
 {
 	position: relative;
@@ -170,45 +177,6 @@ img
 	text-align: left;
 }
 
-#projects
-{
-	display: inline-block;
-	padding-bottom: 30px;
-	text-align: left;
-	width: 80%;
-}
-h2
-{
-	font-size: 40px;
-}
-
-h3
-{
-	font-size: 28px;
-}
-
-h4
-{
-	font-size: 20px;
-	margin-left: 20px;
-	margin-bottom: 5px;
-}
-
-ul
-{
-	font-size: 18px;
-}
-.center
-{
-	text-align: center;
-}
-
-.date
-{
-	float: right;
-	display: inline-block;
-	position: relative;
-}
 .info
 {
 	margin-left: 40px;
@@ -223,15 +191,59 @@ ul
 {
 	margin-left: 20px;
 }
-body
+
+/* --- Projects --- */
+#projects
 {
-	margin-left:auto;
-	margin-right:auto;
-	background-color:#FFFFFF;
-	height:auto;
+	display: inline-block;
+	padding-bottom: 30px;
+	text-align: left;
+	width: 80%;
 }
 
+/* --- Headers --- */
+h2
+{
+	font-size: 40px;
+	font-weight: bold;
+}
 
+h3
+{
+	font-size: 28px;
+	font-weight: bold;
+}
+
+h4
+{
+	font-size: 20px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+/* --- Lists --- */
+ul
+{
+	font-size: 18px;
+	margin-left: 60px;
+}
+
+li
+{
+	list-style: disc;
+}
+
+.center
+{
+	text-align: center;
+}
+
+.date
+{
+	float: right;
+	display: inline-block;
+	position: relative;
+}
 
 a.homeLink:link
 {

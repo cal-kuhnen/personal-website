@@ -13,13 +13,17 @@ const Resume = () => {
   			<h3 className="center">Chicago IL | calvinkuhnen@gmail.com</h3>
   			<section>
   				<h3>Education</h3>
-  					<h4 className="org">Illinois Institute of Technology</h4><h4 className="date">December 2020</h4>
+  					<h4 className="org">Illinois Institute of Technology</h4><h4 className="date">August 2018 to December 2020</h4>
   					<h4>Chicago, Illinois</h4>
-  						<p className="info">Bachelor of Science in Computer Science</p>
-  							<ul>
-  								<li>Dean's List (3x)</li>
-  								<li>GPA: 3.6/4.0</li>
-  							</ul>
+  					<p className="info">Bachelor of Science in Computer Science</p>
+  					<ul>
+  						<li>Relevant Courses: Calculus | Discrete Structures | Systems Programming |
+Database Organization | Intro to Algorithms | Operating Systems | Software Engineering | Intro to Artificial Intelligence | Mobile App Design | Intro to Information Security</li>
+  						<li>GPA: 3.7/4.0</li>
+  					</ul>
+            <h4 className="org">Oakton Community College</h4><h4 className="date">June 2017 to July 2018</h4>
+  					<h4>Des Plaines, Illinois</h4>
+  					<p className="info">Computer Science</p>
   					<h4 className="org">The Cooper Union</h4><h4 className="date">August 2015 to December 2016</h4>
   					<h4>New York, New York</h4>
   						<p className="info">Mechanical Engineering</p>
