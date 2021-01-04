@@ -74,32 +74,35 @@ nav
 	color: black;
 	z-index: 1;
 	background-color: #fff;
-	border-bottom-style: solid;
-	border-width: 5px;
+  box-shadow: 0px 5px 10px grey;
+	display: flex;
+	justify-content: left;
 }
 
 #title
 {
 	position: relative;
 	width: 38%;
-	margin-left: 2%;
-	top: 20px;
-	height: auto;
+	height: 130px;
 	font-size: 100px;
 	float: left;
+	padding-left: 1%;
 	font-weight: bold;
 	font-family: "Albertus", sans-serif;
-	color: #000;
+	color: #FFF;
 	overflow-wrap: break-word;
+	background-color: black;
+	display: flex;
+	align-items: center;
 }
 
-#navbar
+.navButton
 {
 	height: 100%;
 	position: relative;
 	padding-left: 6%;
 	float: left;
-	width: 50%;
+	width: 10%;
 	word-spacing: 80px;
 	margin-left: 1%;
 	font-size: 70px;
@@ -247,11 +250,11 @@ li
 
 a.homeLink:link
 {
-	color: black;
+	color: #FFF;
 }
 a.homeLink:visited
 {
-	color: black;
+	color: #FFF;
 }
 a.homeLink:hover
 {
