@@ -1,0 +1,40 @@
+/* --- Resume --- */
+#resume
+{
+	position: relative;
+	width: 55%;
+	top: 20px;
+	padding-bottom: 50px;
+	height: auto;
+	display: inline-block;
+	text-align: left;
+}
+
+.info
+{
+	margin-left: 40px;
+
+	position: relative;
+}
+
+.org
+{
+	display: inline-block;
+}
+
+.job
+{
+	margin-left: 20px;
+}
+
+.right-align
+{
+	float: right;
+	position: relative;
+}
+
+.field-time
+{
+	display: flex;
+	justify-content: space-between;
+}

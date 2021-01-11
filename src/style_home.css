@@ -27,13 +27,13 @@
 @font-face
 {
 	font-family: "HK";
-	src: url("./fonts/UniversLTStd-Light.otf");
+	src: url("./fonts/Akzidenz Grotesk Pro Regular Regular.otf");
 }
 
 @font-face
 {
 	font-family: "HK";
-	src: url("./fonts/UniversLTStd.otf");
+	src: url("./fonts/Akzidenz Grotesk Pro Med Regular.otf");
 	font-weight: bold;
 }
 
@@ -43,6 +43,7 @@ html {
 	overflow-y: scroll;
 	height: 100%;
 }
+
 body
 {
 	margin: 0;
@@ -55,7 +56,8 @@ body
 p
 {
 	font-family: "HK", sans-serif;
-	font-size: 1.2em;
+	font-size: 1.4em;
+	margin-bottom: 10px;
 }
 .wrapper
 {
@@ -68,22 +70,21 @@ nav
 {
 	position: fixed;
 	width: 100%;
-	height: 130px;
+	height: auto;
 	font-family: "Albertus", sans-serif;
 	line-height: 100px;
 	color: black;
 	z-index: 1;
-	background-color: #fff;
-  box-shadow: 0px 5px 10px grey;
+  /*box-shadow: 0px 5px 10px grey;*/
 	display: flex;
 	justify-content: left;
+	top: 10px;
 }
 
 #title
 {
 	position: relative;
 	width: 38%;
-	height: 130px;
 	font-size: 100px;
 	float: left;
 	padding-left: 1%;
@@ -92,21 +93,49 @@ nav
 	color: #FFF;
 	overflow-wrap: break-word;
 	background-color: black;
+	border-radius: 40px;
 	display: flex;
 	align-items: center;
+	margin-left: 10px;
+
+}
+
+#title:hover
+{
+	background-color: #fff;
+
+	box-shadow:inset 0px 0px 0px 3px #000;
+}
+
+#title:active
+{
+	background-color: #000;
 }
 
 .navButton
 {
 	height: 100%;
 	position: relative;
-	padding-left: 6%;
+	margin-left: 6%;
+	padding-left: 1%;
+	padding-right: 1%;
 	float: left;
-	width: 10%;
-	word-spacing: 80px;
-	margin-left: 1%;
 	font-size: 70px;
-	top: 20px;
+	display: flex;
+	align-items: flex-end;
+	background-color: purple;
+	border-radius: 40px;
+}
+
+.navButton:hover
+{
+	background-color: hotpink;
+	box-shadow: 5px 5px 10px purple;
+}
+
+.navButton:active
+{
+	box-shadow: 0px 0px 0px purple;
 }
 
 img
@@ -160,39 +189,13 @@ img
 	border: 2px solid black;
 	background-color: white;
 	z-index: 0;
+	border-radius: 10px;
 }
 
 #download:hover
 {
 	background-color: #cf1364;
 	color: white;
-}
-
-/* --- Resume --- */
-#resume
-{
-	position: relative;
-	width: 55%;
-	top: 20px;
-	padding-bottom: 50px;
-	height: auto;
-	display: inline-block;
-	text-align: left;
-}
-
-.info
-{
-	margin-left: 40px;
-}
-
-.org
-{
-	display: inline-block;
-}
-
-.job
-{
-	margin-left: 20px;
 }
 
 /* --- Projects --- */
@@ -207,28 +210,33 @@ img
 /* --- Headers --- */
 h2
 {
-	font-size: 40px;
+	font-size: 2.4em;
 	font-weight: bold;
+	margin-top: 10px;
 }
 
 h3
 {
-	font-size: 28px;
+	font-size: 2em;
 	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 h4
 {
-	font-size: 20px;
+	font-size: 1.6em;
 	margin-left: 20px;
 	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 /* --- Lists --- */
 ul
 {
-	font-size: 18px;
+	font-size: 1.4em;
 	margin-left: 60px;
+	margin-bottom: 10px;
 }
 
 li
@@ -241,13 +249,6 @@ li
 	text-align: center;
 }
 
-.date
-{
-	float: right;
-	display: inline-block;
-	position: relative;
-}
-
 a.homeLink:link
 {
 	color: #FFF;
@@ -258,7 +259,7 @@ a.homeLink:visited
 }
 a.homeLink:hover
 {
-	color: grey;
+	color: black;
 }
 a:link
 {

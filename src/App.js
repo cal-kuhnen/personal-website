@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './reset.css';
 import './style_home.css';
+import './resume.css';
 import Nav from './Components/Nav'
 import Home from './Components/Home'
 import Resume from './Components/Resume'
