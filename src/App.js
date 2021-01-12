@@ -3,9 +3,12 @@ import logo from './logo.svg';
 import './reset.css';
 import './style_home.css';
 import './resume.css';
-import Nav from './Components/Nav'
-import Home from './Components/Home'
-import Resume from './Components/Resume'
+import './projects.css';
+import Nav from './Components/Nav';
+import Home from './Components/Home';
+import Resume from './Components/Resume';
+import Projects from './Components/Projects';
+import Digital from './Components/Digital';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,10 +23,16 @@ function App() {
         <Nav />
       </div>
       <Switch>
+        <Route exact path='/projects'>
+          <Projects />
+        </Route>
+        <Route exact path='/projects/digital'>
+          <Digital />
+        </Route>
         <Route path='/resume'>
           <Resume />
         </Route>
-        <Route path='/'>
+        <Route exact path='/'>
           <Home />
         </Route>
       </Switch>
