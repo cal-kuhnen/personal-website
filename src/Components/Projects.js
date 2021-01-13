@@ -1,12 +1,10 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route,
-  Switch,
   Link,
   useRouteMatch
 } from "react-router-dom";
-import Digital from './Digital';
+import '../css/projects.css';
 
 const Projects = () => {
 
@@ -15,19 +13,28 @@ const Projects = () => {
   return (
     <div className='container'>
       <div className='row'>
-        <Link className='project' to={`${url}/cinepod`}>CinePod</Link>
-        <Link className='project' to={`${url}/sock`}>SOCK Radio</Link>
-        <Link className='project' to={`${url}/apps`}>Apps</Link>
+        <Link className='project' to={`${url}/cinepod`}>
+          <div className='title'>CinePod</div>
+          <img src='./pics/cinepod/pod01.JPG' alt='person sitting in unfinished covid pod'></img>
+        </Link>
+        <Link className='project' to={`${url}/sock`}>
+          <div className='title'>SOCK Radio</div>
+        </Link>
+        <Link className='project' to={`${url}/apps`}>
+          <div className='title'>Apps</div>
+        </Link>
       </div>
       <div className='row'>
-        <Link className='project' to={`${url}/ipro`}>IPRO 2020</Link>
-        <Link className='project' to={`${url}/calculator`}>MIPS Calculator</Link>
-        <Link className='project' to={`${url}/digital`}>20 Hour 2014</Link>
+        <Link className='project' to={`${url}/ipro`}>
+          <div className='title'>IPRO 2020</div>
+        </Link>
+        <Link className='project' to={`${url}/calculator`}>
+          <div className='title'>MIPS Calculator</div>
+        </Link>
+        <Link className='project' to={`${url}/digital`}>
+          <div className='title'>20 Hour 2014</div>
+        </Link>
       </div>
-
-      <Route path='/projects/digital'>
-        <Digital />
-      </Route>
     </div>
 
   )

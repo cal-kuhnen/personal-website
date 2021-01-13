@@ -1,0 +1,11 @@
+.movie
+{
+  display: flex;
+  justify-content: center;
+}
+
+video
+{
+  border: solid 3px black;
+  border-radius: 20px;
+}
