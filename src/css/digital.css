@@ -2,10 +2,11 @@
 {
   display: flex;
   justify-content: center;
+  margin-top: 3vh;
 }
 
 video
 {
-  border: solid 3px black;
+  border: solid 4px black;
   border-radius: 20px;
 }

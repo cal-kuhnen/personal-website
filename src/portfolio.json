@@ -1,0 +1,13 @@
+[
+    {
+      "id": "cinepod",
+      "title" : "CinePod",
+      "portPic" : "./pics/cinepod/pod01.JPG"
+    },
+
+    {
+      "id": "sock-radio",
+      "title" : "SOCK Radio",
+      "portPic" : "./pics/sockButton.png"
+    }
+]

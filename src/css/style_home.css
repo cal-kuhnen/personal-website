@@ -83,10 +83,11 @@ nav
 #title
 {
 	position: relative;
-	width: 38%;
+	width: auto;
 	font-size: 100px;
 	float: left;
 	padding-left: 1%;
+	padding-right: 1%;
 	font-weight: bold;
 	font-family: "Albertus", sans-serif;
 	color: #FFF;
