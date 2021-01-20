@@ -20,7 +20,7 @@
   height: 350px;
   width: 350px;
   border: solid 4px #fff;
-  border-radius: 30px;
+  border-radius: 120px;
   background-color: #bbb;
   transition: box-shadow 0.1s linear, font-size 0.1s, border 0.1s;
   display: flex;
@@ -96,11 +96,9 @@ h1
 }
 
 @media only screen and (max-width: 600px) {
-  .row {
-    display: block;
-  }
   .project
   {
+    border-radius: 30px;
     height: 70vw;
     width: 70vw;
   }

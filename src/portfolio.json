@@ -2,12 +2,42 @@
     {
       "id": "cinepod",
       "title" : "CinePod",
-      "portPic" : "./pics/cinepod/pod01.JPG"
+      "portPic" : "./pics/cinepod/pod01.JPG",
+      "alt": "person sitting in unfinished covid pod"
     },
 
     {
       "id": "sock-radio",
       "title" : "SOCK Radio",
-      "portPic" : "./pics/sockButton.png"
+      "portPic" : "./pics/sockButton.png",
+      "alt": "screenshot of SOCK website"
+    },
+
+    {
+      "id": "apps",
+      "title" : "Apps",
+      "portPic" : "./pics/apps/apps.png",
+      "alt": "screenshot of government info app"
+    },
+
+    {
+      "id": "ipro",
+      "title" : "Campus Bike Lock",
+      "portPic" : "./pics/ipro/ipro01.jpg",
+      "alt": "interior of bike lock prototype"
+    },
+
+    {
+      "id": "calculator",
+      "title" : "MIPS Calculator",
+      "portPic" : "",
+      "alt": "screenshot of MIPS calculator running"
+    },
+
+    {
+      "id": "digital",
+      "title" : "Digital Imaging",
+      "portPic" : "./pics/digital/digital01.png",
+      "alt": "screencap of 3d music video"
     }
 ]
