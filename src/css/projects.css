@@ -20,7 +20,7 @@
   height: 350px;
   width: 350px;
   border: solid 4px #fff;
-  border-radius: 120px;
+  border-radius: 175px;
   background-color: #bbb;
   transition: box-shadow 0.1s linear, font-size 0.1s, border 0.1s;
   display: flex;
@@ -78,9 +78,9 @@ a.project
   text-shadow: 2px 2px #000;
 }
 
-img
+img.button
 {
-  filter: blur(4px);
+  filter: blur(5px);
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;

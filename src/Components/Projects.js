@@ -9,7 +9,9 @@ import {
 import portfolio from '../portfolio.json';
 import '../css/projects.css';
 import Detail from './Detail';
+import Digital from './Digital';
 
+// Renders project buttons and the resulting detail pages with nested switch
 const Projects = () => {
 
   let { path, url } = useRouteMatch();
@@ -19,6 +21,9 @@ const Projects = () => {
         <Route exact path={path}>
           <Squares />
         </Route>
+        <Route exact path='/projects/digital'>
+          <Digital />
+        </Route>
         <Route path={`${path}/:project`}>
           <Detail />
         </Route>
@@ -26,6 +31,7 @@ const Projects = () => {
   )
 }
 
+// Creates the project buttons based on portfolio file
 const Squares = () => {
 
   let { path, url } = useRouteMatch();
@@ -33,7 +39,7 @@ const Squares = () => {
     return (
       <Link className='project' to={`${url}/${project.id}`}>
         <div className='title'>{project.title}</div>
-        <img src={project.portPic} alt={project.alt}></img>
+        <img className='button' src={project.portPic} alt={project.alt}></img>
       </Link>
     )
   })
@@ -44,7 +50,7 @@ const Squares = () => {
         {projectButtons}
       </div>
     </div>
-  )
+  );
 }
 
 export default Projects
