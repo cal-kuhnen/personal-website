@@ -17,6 +17,11 @@ const Detail = () => {
       <DualColumn proj={choice} />
     )
   }
+  else {
+    return (
+      <SingleColumn proj={choice} />
+    )
+  }
   return (
     <div className='container'>
       <h1>{choice.title}</h1>
@@ -36,7 +41,7 @@ const DualColumn = (item) => {
             {project.caption}
           </div>
           <div className='left-right'>
-            <img className='dual-image' src={project.image} alt='piece o piss'></img>
+            <img className='dual-image' src={project.image} alt={project.alt}></img>
           </div>
         </div>
       )
@@ -45,10 +50,22 @@ const DualColumn = (item) => {
       return (
         <div className='horizontal-container'>
           <div className='left-right'>
-            <img className='dual-image' src={project.image} alt='piece o piss'></img>
+            <img className='dual-image' src={project.image} alt={project.alt}></img>
           </div>
           <div className='left-right'>
             {project.caption}
+          </div>
+        </div>
+      )
+    }
+    else if (project.align == 'center') {
+      return (
+        <div className='offset-container'>
+          <div className='left'>
+            <img className='left-image' src={project.image} alt={project.alt}></img>
+          </div>
+          <div className='right'>
+            <img className='right-image' src={project.image} alt={project.alt}></img>
           </div>
         </div>
       )
@@ -57,7 +74,31 @@ const DualColumn = (item) => {
 
   return (
     <div className='dual-container'>
+      <h1 className='top'>{item.proj.title}</h1>
       {dualStyle}
+    </div>
+  )
+}
+
+const SingleColumn = (item) => {
+
+  let singleStyle = item.proj.detail.map((project) => {
+    return (
+      <div className='vertical-container'>
+        <div className='center'>
+          <img className='single-image' src={project.image} alt={project.alt}></img>
+        </div>
+        <div className='text'>
+          {project.caption}
+        </div>
+      </div>
+    )
+  })
+
+  return (
+    <div className='single-container'>
+      <h1 className='top'>{item.proj.title}</h1>
+      {singleStyle}
     </div>
   )
 }

@@ -11,6 +11,17 @@
 
 .horizontal-container
 {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-left: auto;
+  align-items: center;
+}
+
+.offset-container
+{
   width: 100%;
   height: auto;
   display: flex;
@@ -31,5 +42,55 @@
 {
   border: solid 4px black;
   border-radius: 20px;
-  max-width: 500px;
+  max-width: 400px;
+}
+
+h1.top
+{
+  margin-bottom: 20px;
+}
+
+/* --- Single-Column Stylings --- */
+.single-container
+{
+  width: 70%;
+  top: 150px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "HK";
+  padding-bottom: 50px;
+}
+
+.vertical-container
+{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.center
+{
+  font-size: 2em;
+  width: auto;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.text
+{
+  font-size: 2em;
+  width: auto;
+  margin: auto;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.single-image
+{
+  border: solid 4px black;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: auto;
 }

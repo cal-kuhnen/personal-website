@@ -9,7 +9,7 @@ nav
 	color: black;
 	z-index: 2;
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	top: 10px;
 }
 
@@ -29,7 +29,7 @@ nav
 	border-radius: 40px;
 	display: flex;
 	align-items: center;
-	margin-left: 10px;
+  transition: background-color 0.1s, color 0.1s, box-shadow 0.1s linear;
 }
 
 #title:hover
@@ -56,44 +56,23 @@ nav
 	display: flex;
 	align-items: flex-end;
 	border-radius: 40px;
-	transition: background-color 0.1s, color 0.1s, box-shadow 0.05s linear;
+	transition: background-color 0.1s, color 0.1s, box-shadow 0.1s linear;
+  background-color: hotpink;
 }
 
-.projects-button
+.navButton:hover
 {
-  background-color: #3333ff;
+	background-color: #fff;
+  color: hotpink;
+	box-shadow: inset 0px 0px 0px 4px hotpink;
 }
 
-.resume-button
+a.navButton
 {
-  background-color: none;
-}
-
-a.projects-button
-{
-    color: #00cc00;
-}
-
-a.resume-button
-{
-    color: hotpink;
-}
-
-.projects-button:hover
-{
-	background-color: #00cc00;
-  color: #3333ff;
-	box-shadow: 5px 5px 10px #3333ff;
-}
-
-.resume-button:hover
-{
-	background-color: hotpink;
-  color: purple;
-	box-shadow: 5px 5px 10px hotpink;
+  color: #fff;
 }
 
 .navButton:active
 {
-	box-shadow: 0px 0px 0px purple;
+	background-color: hotpink;
 }
