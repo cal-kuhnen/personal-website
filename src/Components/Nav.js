@@ -8,8 +8,8 @@ const Nav = () => {
   return (
       <nav>
         <Link id='title' to='/' className='homeLink'>Calvin Kuhnen</Link>
-        <Link className='navButton' to="/projects">Projects</Link>
-        <Link className='navButton' to="/resume">Resume</Link>
+        <Link className='navButton resume-button' to="/projects">Projects</Link>
+        <Link className='navButton resume-button' to="/resume">Resume</Link>
       </nav>
   )
 }

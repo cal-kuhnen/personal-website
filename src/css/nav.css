@@ -55,15 +55,42 @@ nav
 	font-size: 70px;
 	display: flex;
 	align-items: flex-end;
-	background-color: purple;
 	border-radius: 40px;
 	transition: background-color 0.1s, color 0.1s, box-shadow 0.05s linear;
 }
 
-.navButton:hover
+.projects-button
+{
+  background-color: #3333ff;
+}
+
+.resume-button
+{
+  background-color: none;
+}
+
+a.projects-button
+{
+    color: #00cc00;
+}
+
+a.resume-button
+{
+    color: hotpink;
+}
+
+.projects-button:hover
+{
+	background-color: #00cc00;
+  color: #3333ff;
+	box-shadow: 5px 5px 10px #3333ff;
+}
+
+.resume-button:hover
 {
 	background-color: hotpink;
-	box-shadow: 5px 5px 10px purple;
+  color: purple;
+	box-shadow: 5px 5px 10px hotpink;
 }
 
 .navButton:active

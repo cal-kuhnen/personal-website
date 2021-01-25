@@ -5,12 +5,18 @@
       "portPic": "./pics/cinepod/pod01.JPG",
       "alt": "person sitting in unfinished covid pod",
       "style": "dual",
-      "images": {
-        "img01": "./pics/cinepod/pod01.jpg"
-      },
-      "detail": {
-        "caption01": "This is a placeholder caption, decsribing all the cool stuff i did"
-      }
+      "detail": [
+        {
+          "align": "left",
+          "caption": "The CinePod began as an idea from a discussion with my friends about watching movies in the winter. I am lucky enough to have an old projector and garage that we were able to watch movies on outside the past summer, while staying distanced and masked for safety. We wanted to continue watching into the winter, and thus the idea of some sort of pod was conceived. This project is the result of actually following through on building a wooden pod.",
+          "image": "../pics/cinepod/img01.PNG"
+        },
+        {
+          "align": "right",
+          "caption": "oi what's all this then",
+          "image": "../pics/cinepod/cad-frame.png"
+        }
+      ]
     },
 
     {

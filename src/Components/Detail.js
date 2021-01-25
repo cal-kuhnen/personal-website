@@ -4,6 +4,7 @@ import {
   useParams
 } from "react-router-dom";
 import portfolio from '../portfolio.json';
+import '../css/detail.css';
 
 const Detail = () => {
 
@@ -27,16 +28,36 @@ const Detail = () => {
 // Function to render page in 2-column style
 const DualColumn = (item) => {
 
+  let dualStyle = item.proj.detail.map((project) => {
+    if (project.align == 'left') {
+      return (
+        <div className='horizontal-container'>
+          <div className='left-right'>
+            {project.caption}
+          </div>
+          <div className='left-right'>
+            <img className='dual-image' src={project.image} alt='piece o piss'></img>
+          </div>
+        </div>
+      )
+    }
+    else if (project.align == 'right') {
+      return (
+        <div className='horizontal-container'>
+          <div className='left-right'>
+            <img className='dual-image' src={project.image} alt='piece o piss'></img>
+          </div>
+          <div className='left-right'>
+            {project.caption}
+          </div>
+        </div>
+      )
+    }
+    })
+
   return (
     <div className='dual-container'>
-      <div className='horizontal-container'>
-        <div className='content'>
-          {item.proj.detail.caption01}
-        </div>
-        <div className='content'>
-          <img className='dual-image' src={item.proj.images.img01} alt='piece o piss'></img>
-        </div>
-      </div>
+      {dualStyle}
     </div>
   )
 }

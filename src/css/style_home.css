@@ -65,13 +65,6 @@ p
 	position:static;
 }
 
-img
-{
-	max-width: 40%;
-	height: auto;
-	box-shadow: 0px 0px 10px #CFCFCF;
-}
-
 #homeImage
 {
 	position: relative;
