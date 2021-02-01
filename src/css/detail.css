@@ -1,12 +1,16 @@
 /* --- Dual-Column Stylings --- */
 .dual-container
 {
-  width: 85%;
-  top: 150px;
+  width: 75%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
   font-family: "HK";
+  box-shadow: inset 0px 0px 0px 4px #000;
+  border-radius: 60px;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .horizontal-container
@@ -15,46 +19,56 @@
   height: auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   margin-left: auto;
-  align-items: center;
+  margin-right: auto;
+  align-items: flex-start;
 }
 
 .offset-container
 {
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .left-right
 {
   font-size: 2em;
-  width: 95%;
-  height: 95%;
+  width: auto;
   display: flex;
-  justify-content: center;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.left
+{
+  justify-content: flex-start;
+}
+
+.right
+{
+  justify-content: flex-end;
 }
 
 .dual-image
 {
-  border: solid 4px black;
+  border: solid 4px #000;
   border-radius: 20px;
-  max-width: 400px;
+  max-width: 28vw;
+  max-height: 34vw;
 }
 
 h1.top
 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* --- Single-Column Stylings --- */
 .single-container
 {
   width: 70%;
-  top: 150px;
+  top: 8vw;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -68,29 +82,27 @@ h1.top
   height: auto;
   display: block;
   margin: auto;
+  margin-bottom: 40px;
 }
 
 .center
 {
   font-size: 2em;
-  width: auto;
+  width: 86%;
   margin: auto;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .text
 {
-  font-size: 2em;
-  width: auto;
-  margin: auto;
   text-align: justify;
-  margin-bottom: 20px;
 }
 
 .single-image
 {
   border: solid 4px black;
   border-radius: 20px;
-  max-width: 800px;
+  max-width: 55vw;
   margin: auto;
 }

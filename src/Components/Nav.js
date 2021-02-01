@@ -1,15 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   BrowserRouter as Router,
-  Link
+  Link,
+  NavLink
 } from "react-router-dom";
 
 const Nav = () => {
+
+  const handleScroll = () => {
+    if (window.scrollY > 40) {
+      document.querySelector("nav").className = "nav-scroll";
+    } else {
+      document.querySelector("nav").className = "";
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return function cleanup() {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  })
+
   return (
       <nav>
-        <Link id='title' to='/' className='homeLink'>Calvin Kuhnen</Link>
-        <Link className='navButton' to="/projects">Projects</Link>
-        <Link className='navButton' to="/resume">Resume</Link>
+        <NavLink id='title' to='/' className='homeLink' activeClassName='home-select' exact={true}>Calvin Kuhnen</NavLink>
+        <NavLink className='navButton' activeClassName='selected' to="/projects">Projects</NavLink>
+        <NavLink className='navButton' activeClassName='selected' to="/resume">Resume</NavLink>
       </nav>
   )
 }

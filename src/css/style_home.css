@@ -27,23 +27,20 @@
 @font-face
 {
 	font-family: "HK";
-	src: url("../fonts/Akzidenz Grotesk Pro Regular Regular.otf");
+	src: url("../fonts/HKGrotesk-Medium.otf");
+
 }
 
 @font-face
 {
 	font-family: "HK";
-	src: url("../fonts/Akzidenz Grotesk Pro Med Regular.otf");
+	src: url("../fonts/HKGrotesk-Bold.otf");
 	font-weight: bold;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
-html {
-	overflow-y: scroll;
-	height: 100%;
-}
-
+/* ---Highlighting --- */
 ::selection {
   background: #ffccdd;
 }
@@ -51,13 +48,43 @@ html {
   background: #ffccdd;
 }
 
+/* --- Scrollbar ---
+   width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+	border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+	overflow-y: scroll;
+	height: 100%;
+	background-color:#fff0df;
+	font-feature-settings: "salt";
+	line-height: normal;
+}
+
 body
 {
 	margin: 0;
 	margin-left:auto;
 	margin-right:auto;
-	background-color:#ffffff;
-	height:auto;
+	height: 100%;
 }
 
 p
@@ -90,19 +117,6 @@ p
 	height: auto;
 	text-align: left;
 	float: left;
-}
-
-.content
-{
-	top: 150px;
-	position: relative;
-	width: 98%;
-	overflow: hidden;
-	text-align: center;
-	font-family: "HK", sans-serif;
-	background-color: white;
-	padding-bottom: 50px;
-	margin-left: 1%;
 }
 
 #download
@@ -174,18 +188,6 @@ a.homeLink:link
 a.homeLink:visited
 {
 	color: #FFF;
-}
-
-a:link
-{
-	text-decoration: none;
-	color: hotpink;
-}
-
-a:visited
-{
-	color: hotpink;
-	text-decoration: none;
 }
 
 a:hover

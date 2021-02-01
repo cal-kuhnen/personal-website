@@ -1,19 +1,38 @@
 /* --- Resume --- */
+.content
+{
+	top: 8vw;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	font-family: "HK", sans-serif;
+	padding-bottom: 40px;
+}
+
 #resume
 {
 	position: relative;
-	width: 70%;
-	top: 20px;
-	padding-bottom: 50px;
+	width: 75%;
+	padding-bottom: 40px;
+	padding-top: 20px;
 	height: auto;
 	display: inline-block;
 	text-align: left;
+	border: solid 4px black;
+	border-radius: 60px;
+	background-color: #fff;
+}
+
+.res-container
+{
+	width: 96%;
+	margin: auto;
 }
 
 .info
 {
 	margin-left: 40px;
-
 	position: relative;
 }
 
@@ -25,6 +44,11 @@
 .job
 {
 	margin-left: 20px;
+}
+
+.centered
+{
+	text-align: center;
 }
 
 .right-align

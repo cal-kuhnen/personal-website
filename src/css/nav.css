@@ -2,22 +2,80 @@
 nav
 {
 	position: fixed;
-	width: 100%;
-	height: auto;
+	width: 75%;
+	height: 5.4vw;
 	font-family: "Albertus", sans-serif;
-	line-height: 100px;
 	color: black;
 	z-index: 2;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	top: 10px;
+  margin-left: 12.5%;
+}
+
+nav.nav-scroll
+{
+	top: -2.7vw;
+	transition: top 0.2s;
+}
+
+.nav-scroll .selected
+{
+	color: #fff!important;
+}
+
+.nav-scroll .navButton
+{
+	color: #ff9933;
+	box-shadow: 0px 0px 10px #000, inset 0px 0px 0px 4px #ff9933;
+}
+
+.nav-scroll #title
+{
+	box-shadow: 0px 0px 10px #000;
+}
+
+	.nav-scroll:hover
+	{
+		top: 10px;
+	}
+
+	.nav-scroll:hover #title
+	{
+		color: #fff;
+	}
+
+	.nav-scroll:hover #title:hover
+	{
+		color: #000;
+		box-shadow: 0px 0px 15px #000, inset 0px 0px 0px 4px #000;
+	}
+
+	.nav-scroll:hover .selected
+	{
+		color: #ff9933!important;
+	}
+
+	.nav-scroll:hover .navButton
+	{
+		color: #fff;
+	}
+
+	.nav-scroll:hover .navButton:hover
+	{
+		color: #ff9933;
+		box-shadow: 0px 0px 15px #000, inset 0px 0px 0px 4px #ff9933
+	}
+
+.nav-scroll #title
+{
+	color: #000;
 }
 
 #title
 {
 	position: relative;
-	width: auto;
-	font-size: 100px;
+	font-size: 5vw;
 	float: left;
 	padding-left: 1%;
 	padding-right: 1%;
@@ -26,10 +84,10 @@ nav
 	color: #FFF;
 	overflow-wrap: break-word;
 	background-color: black;
-	border-radius: 40px;
+	border-radius: 2vw;
 	display: flex;
 	align-items: center;
-  transition: background-color 0.1s, color 0.1s, box-shadow 0.1s linear;
+  transition: background-color 0.1s, color 0.1s, box-shadow 0.1s;
 }
 
 #title:hover
@@ -39,40 +97,65 @@ nav
 	box-shadow:inset 0px 0px 0px 4px #000;
 }
 
-#title:active
-{
-	background-color: #000;
-}
-
 .navButton
 {
 	height: 100%;
 	position: relative;
-	margin-left: 2%;
+	margin-left: 1%;
 	padding-left: 1%;
 	padding-right: 1%;
 	float: left;
-	font-size: 70px;
+	font-size: 4vw;
 	display: flex;
-	align-items: flex-end;
-	border-radius: 40px;
-	transition: background-color 0.1s, color 0.1s, box-shadow 0.1s linear;
-  background-color: hotpink;
+	align-items: center;
+	border-radius: 2vw;
+	transition: background-color 0.1s, color 0.1s, box-shadow 0.1s linear, width 0.2s;
+  background-color: #ff9933;
 }
 
 .navButton:hover
 {
 	background-color: #fff;
-  color: hotpink;
-	box-shadow: inset 0px 0px 0px 4px hotpink;
+  color: #ff9933;
+	box-shadow: inset 0px 0px 0px 4px #ff9933;
+}
+
+.selected
+{
+  background-color: #fff;
+  color: #ff9933!important;
+	box-shadow: inset 0px 0px 0px 4px #ff9933;
+}
+
+.home-select
+{
+  background-color: #fff!important;
+  color: #000!important;
+  box-shadow: inset 0px 0px 0px 4px #000;
 }
 
 a.navButton
 {
+	text-decoration: none;
   color: #fff;
+}
+
+a:link
+{
+  text-decoration: none;
+}
+
+a:visited
+{
+	text-decoration: none;
 }
 
 .navButton:active
 {
-	background-color: hotpink;
+	background-color: #ff9933;
+}
+
+#title:active
+{
+  background-color: #000;
 }

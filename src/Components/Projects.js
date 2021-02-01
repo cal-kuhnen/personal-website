@@ -37,7 +37,7 @@ const Squares = () => {
   let { path, url } = useRouteMatch();
   let projectButtons = portfolio.map((project) => {
     return (
-      <Link className='project' to={`${url}/${project.id}`}>
+      <Link key={project.id} className='project' to={`${url}/${project.id}`}>
         <div className='title'>{project.title}</div>
         <img className='button' src={project.portPic} alt={project.alt}></img>
       </Link>

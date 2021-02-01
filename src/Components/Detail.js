@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  Link,
-  useParams
-} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import portfolio from '../portfolio.json';
 import '../css/detail.css';
 
@@ -10,11 +7,13 @@ const Detail = () => {
 
   let { project } = useParams();
 
-  var choice = portfolio.find(item => item.id == project);
+  var choice = portfolio.find(item => item.id === project);
 
-  if (choice.style == 'dual') {
+  if (choice.style === 'dual') {
     return (
-      <DualColumn proj={choice} />
+      <div className='container'>
+        <DualColumn proj={choice} />
+      </div>
     )
   }
   else {
@@ -22,34 +21,28 @@ const Detail = () => {
       <SingleColumn proj={choice} />
     )
   }
-  return (
-    <div className='container'>
-      <h1>{choice.title}</h1>
-      <div>{choice.title}</div>
-    </div>
-  );
 }
 
 // Function to render page in 2-column style
 const DualColumn = (item) => {
 
   let dualStyle = item.proj.detail.map((project) => {
-    if (project.align == 'left') {
+    if (project.align === 'left') {
       return (
-        <div className='horizontal-container'>
-          <div className='left-right'>
+        <div key={project.id} className='horizontal-container'>
+          <div className='left left-right'>
             {project.caption}
           </div>
-          <div className='left-right'>
+          <div className='right left-right'>
             <img className='dual-image' src={project.image} alt={project.alt}></img>
           </div>
         </div>
       )
     }
-    else if (project.align == 'right') {
+    else if (project.align === 'right') {
       return (
-        <div className='horizontal-container'>
-          <div className='left-right'>
+        <div key={project.id} className='horizontal-container'>
+          <div className='left left-right'>
             <img className='dual-image' src={project.image} alt={project.alt}></img>
           </div>
           <div className='left-right'>
@@ -58,18 +51,43 @@ const DualColumn = (item) => {
         </div>
       )
     }
-    else if (project.align == 'center') {
+    else if (project.align === 'doubleImg') {
       return (
-        <div className='offset-container'>
-          <div className='left'>
-            <img className='left-image' src={project.image} alt={project.alt}></img>
+        <div key={project.id} className='offset-container'>
+          <div className='horizontal-container'>
+            <div className='left-right'>
+              <img className='dual-image' src={project.left} alt={project.leftAlt}></img>
+            </div>
+            <div className='left-right'>
+              <img className='dual-image' src={project.right} alt={project.rightAlt}></img>
+            </div>
           </div>
-          <div className='right'>
-            <img className='right-image' src={project.image} alt={project.alt}></img>
+          <div className='center'>
+            {project.caption}
           </div>
         </div>
       )
     }
+    else if (project.align === 'singleImg') {
+      return (
+        <div key={project.id} className='offset-container'>
+          <div className='vertical-container'>
+            <div className='left-right'>
+              <img className='single-image' src={project.image} alt={project.alt}></img>
+            </div>
+          </div>
+          <div className='center'>
+            {project.caption}
+          </div>
+        </div>
+      )
+    }
+
+    return (
+      <div>
+       Bad object.
+      </div>
+    )
     })
 
   return (

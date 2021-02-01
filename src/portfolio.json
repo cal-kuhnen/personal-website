@@ -2,29 +2,35 @@
     {
       "id": "cinepod",
       "title": "CinePod",
-      "portPic": "./pics/cinepod/pod01.JPG",
+      "portPic": "./pics/cinepod/snow.JPG",
       "alt": "person sitting in unfinished covid pod",
       "style": "dual",
       "detail": [
         {
+          "id": "intro",
           "align": "left",
           "caption": "The CinePod began as an idea from a discussion with my friends about watching movies in the winter. I am lucky enough to have an old projector and garage that we were able to watch movies on outside the past summer, while staying distanced and masked for safety. We wanted to continue watching into the winter, and thus the idea of some sort of pod was conceived. This project is the result of actually following through on building a wooden pod.",
-          "image": "../pics/cinepod/img01.PNG",
+          "image": "../pics/cinepod/pod-done.jpg",
           "alt": "guy sitting in pod frame"
         },
         {
-          "align": "right",
+          "id": "cad",
+          "align": "doubleImg",
           "caption": "On the left is a screenshot of the 2x4 frame in CAD, used as an initial mockup. This design was chosen for simplicity and cost, as previous designs for a disassemblable pod were far outside the budget I set myself.",
-          "image": "../pics/cinepod/cad-frame.png",
-          "alt": "cad model of pod frame"
+          "left": "../pics/cinepod/cad-frame.png",
+          "right": "../pics/cinepod/img01.png",
+          "leftAlt": "cad model of pod frame",
+          "rightAlt": "cad model of finished pod"
         },
         {
-          "align": "left",
+          "id": "base",
+          "align": "right",
           "caption": "Here is a photo of the actual pod base, built to the specifications set in the model above. Also picutred here is my friend who assisted me in building the pod. The joints of the frame were kept as simple as possible, using corner butt joints and #10 wood screws to connect them. The upper horizontal members also used brackets to hold them in the plank position.",
-          "image": "../pics/cinepod/pod-base.jpg",
+          "image": "../pics/cinepod/img01.png",
           "alt": "pod frame completed in real life"
         },
         {
+          "id": "frame",
           "align": "left",
           "caption": "Here is a photo of the actual pod base, built to the specifications set in the model above. Also picutred here is my friend who assisted me in building the pod. The joints of the frame were kept as simple as possible, using corner butt joints and #10 wood screws to connect them. The upper horizontal members also used brackets to hold them in the plank position.",
           "image": "../pics/cinepod/pod-frame.jpg",
@@ -36,8 +42,39 @@
     {
       "id": "sock-radio",
       "title": "SOCK Radio",
-      "portPic": "./pics/sockButton.png",
-      "alt": "screenshot of SOCK website"
+      "portPic": "./pics/sock/sockButton.png",
+      "alt": "screenshot of SOCK website",
+      "style": "dual",
+      "detail": [
+        {
+          "id": "intro",
+          "align": "left",
+          "caption": "SOCK Radio is a quarantine project started by myself and a close friend. After launching the website, we grew to have weekly shows from six different people throughout the summer of 2020. The channel has recently returned, and has been a great source of learning for me in terms of website design, React, and other web-dev areas, considering that I am in charge of the website and its functionality.",
+          "image": "../pics/sock/sockLogo01.png",
+          "alt": "SOCK radio logo"
+        },
+        {
+          "id": "cad",
+          "align": "singleImg",
+          "caption": "On the left is a screenshot of the 2x4 frame in CAD, used as an initial mockup. This design was chosen for simplicity and cost, as previous designs for a disassemblable pod were far outside the budget I set myself.",
+          "image": "../pics/sock/sockButton.png",
+          "alt": "screenshot of SOCK radio home"
+        },
+        {
+          "id": "base",
+          "align": "right",
+          "caption": "Here is a photo of the actual pod base, built to the specifications set in the model above. Also picutred here is my friend who assisted me in building the pod. The joints of the frame were kept as simple as possible, using corner butt joints and #10 wood screws to connect them. The upper horizontal members also used brackets to hold them in the plank position.",
+          "image": "../pics/cinepod/img01.png",
+          "alt": "pod frame completed in real life"
+        },
+        {
+          "id": "frame",
+          "align": "left",
+          "caption": "Here is a photo of the actual pod base, built to the specifications set in the model above. Also picutred here is my friend who assisted me in building the pod. The joints of the frame were kept as simple as possible, using corner butt joints and #10 wood screws to connect them. The upper horizontal members also used brackets to hold them in the plank position.",
+          "image": "../pics/cinepod/pod-frame.jpg",
+          "alt": "pod frame completed in real life"
+        }
+      ]
     },
 
     {
