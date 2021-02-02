@@ -9,7 +9,6 @@ import {
 import portfolio from '../portfolio.json';
 import '../css/projects.css';
 import Detail from './Detail';
-import Digital from './Digital';
 
 // Renders project buttons and the resulting detail pages with nested switch
 const Projects = () => {

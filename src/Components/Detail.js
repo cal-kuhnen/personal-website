@@ -29,7 +29,7 @@ const DualColumn = (item) => {
   let dualStyle = item.proj.detail.map((project) => {
     if (project.align === 'left') {
       return (
-        <div key={project.id} className='horizontal-container'>
+        <div key={project.id} className='horizontal-container justify-between'>
           <div className='left left-right'>
             {project.caption}
           </div>
@@ -39,9 +39,14 @@ const DualColumn = (item) => {
         </div>
       )
     }
+    else if (project.align === 'title') {
+      return (
+        <h2 className='subtitle'>{project.title}</h2>
+      )
+    }
     else if (project.align === 'right') {
       return (
-        <div key={project.id} className='horizontal-container'>
+        <div key={project.id} className='horizontal-container justify-between'>
           <div className='left left-right'>
             <img className='dual-image' src={project.image} alt={project.alt}></img>
           </div>
@@ -54,12 +59,12 @@ const DualColumn = (item) => {
     else if (project.align === 'doubleImg') {
       return (
         <div key={project.id} className='offset-container'>
-          <div className='horizontal-container'>
+          <div className='horizontal-container justify-around'>
             <div className='left-right'>
-              <img className='dual-image' src={project.left} alt={project.leftAlt}></img>
+              <img className='double' src={project.left} alt={project.leftAlt}></img>
             </div>
             <div className='left-right'>
-              <img className='dual-image' src={project.right} alt={project.rightAlt}></img>
+              <img className='double' src={project.right} alt={project.rightAlt}></img>
             </div>
           </div>
           <div className='center'>
@@ -87,7 +92,7 @@ const DualColumn = (item) => {
         <div key={project.id} className='offset-container'>
           <div className='vertical-container'>
             <div className='left-right'>
-              <video src={project.video} alt={project.alt} controls={project.controls} autoplay={project.autoplay}></video>
+              <video src={project.video} alt={project.alt} controls={project.controls} autoplay={project.autoplay} loop={project.loop}></video>
             </div>
           </div>
           <div className='center'>
