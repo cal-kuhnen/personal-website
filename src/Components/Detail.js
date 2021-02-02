@@ -27,7 +27,7 @@ const Detail = () => {
 const DualColumn = (item) => {
 
   let dualStyle = item.proj.detail.map((project) => {
-    if (project.align === 'left') {
+    if (project.type === 'left') {
       return (
         <div key={project.id} className='horizontal-container justify-between'>
           <div className='left left-right'>
@@ -39,12 +39,12 @@ const DualColumn = (item) => {
         </div>
       )
     }
-    else if (project.align === 'title') {
+    else if (project.type === 'title') {
       return (
         <h2 className='subtitle'>{project.title}</h2>
       )
     }
-    else if (project.align === 'right') {
+    else if (project.type === 'right') {
       return (
         <div key={project.id} className='horizontal-container justify-between'>
           <div className='left left-right'>
@@ -56,7 +56,7 @@ const DualColumn = (item) => {
         </div>
       )
     }
-    else if (project.align === 'doubleImg') {
+    else if (project.type === 'doubleImg') {
       return (
         <div key={project.id} className='offset-container'>
           <div className='horizontal-container justify-around'>
@@ -73,7 +73,25 @@ const DualColumn = (item) => {
         </div>
       )
     }
-    else if (project.align === 'singleImg') {
+    else if (project.type === 'overlap') {
+      return (
+        <div className='overlap'>
+          <div className='gridImage1'>
+            <img className='gridImg' src={project.image1}></img>
+          </div>
+          <div className='gridCaption1'>
+            {project.caption1}
+          </div>
+          <div className='gridImage2'>
+            <img className='gridImg' src={project.image2}></img>
+          </div>
+          <div className='gridCaption2'>
+            {project.caption2}
+          </div>
+        </div>
+      )
+    }
+    else if (project.type === 'singleImg') {
       return (
         <div key={project.id} className='offset-container'>
           <div className='vertical-container'>
@@ -87,7 +105,7 @@ const DualColumn = (item) => {
         </div>
       )
     }
-    else if (project.align === 'video') {
+    else if (project.type === 'video') {
       return (
         <div key={project.id} className='offset-container'>
           <div className='vertical-container'>
