@@ -59,6 +59,12 @@
   max-height: 34vw;
 }
 
+video
+{
+  margin: auto;
+  max-width: 55vw;
+}
+
 h1.top
 {
   margin-bottom: 40px;

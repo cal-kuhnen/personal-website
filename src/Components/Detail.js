@@ -82,6 +82,20 @@ const DualColumn = (item) => {
         </div>
       )
     }
+    else if (project.align === 'video') {
+      return (
+        <div key={project.id} className='offset-container'>
+          <div className='vertical-container'>
+            <div className='left-right'>
+              <video src={project.video} alt={project.alt} controls={project.controls} autoplay={project.autoplay}></video>
+            </div>
+          </div>
+          <div className='center'>
+            {project.caption}
+          </div>
+        </div>
+      )
+    }
 
     return (
       <div>

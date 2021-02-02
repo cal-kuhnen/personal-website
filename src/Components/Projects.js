@@ -21,9 +21,6 @@ const Projects = () => {
         <Route exact path={path}>
           <Squares />
         </Route>
-        <Route exact path='/projects/digital'>
-          <Digital />
-        </Route>
         <Route path={`${path}/:project`}>
           <Detail />
         </Route>

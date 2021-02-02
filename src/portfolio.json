@@ -102,6 +102,18 @@
       "id": "digital",
       "title": "Digital Imaging",
       "portPic": "./pics/digital/digital01.png",
-      "alt": "screencap of 3d music video"
+      "alt": "screencap of 3d music video",
+      "style": "dual",
+      "detail": [
+        {
+          "id": "intro",
+          "align": "video",
+          "caption": "For my digital imaging class, my end-of-semester project was a music video for a song I had created. I had never worked in any 3D modelling software, so I wanted to attempt to learn the basics and create fitting visuals for my house-styled track.",
+          "video": "../pics/digital/digital-video.mp4",
+          "controls": true,
+          "autoplay": false,
+          "alt": "music video for 2014 20 hour"
+        }
+      ]
     }
 ]
