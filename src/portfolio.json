@@ -52,7 +52,7 @@
         {
           "id": "details",
           "type": "doubleImg",
-          "caption": "On the left is a screenshot of the 2x4 frame in CAD, used as an initial mockup. This design was chosen for simplicity and cost, as previous designs for a disassemblable pod were far outside the budget I set myself.",
+          "caption": "Above are some close-ups of the door and window. The door is held shut via magnet cabinet latches, and the window is simply bolted to the wall. All the windows were then sealed with silicone for better wind protection, which made a noticeable difference.",
           "left": "../pics/cinepod/door-detail.jpg",
           "right": "../pics/cinepod/window-detail.jpg",
           "leftAlt": "close-up of pod door",
@@ -76,28 +76,44 @@
           "alt": "SOCK radio logo"
         },
         {
+          "id": "old-site",
+          "type": "title",
+          "title": "Original Website"
+        },
+        {
           "id": "slideshow",
           "type": "video",
           "caption": "Above are the pages for the original SOCK Radio website, which was very simple and built with the classic HTML-CSS-JS combo. Very shortly we recognized many drawbacks of this system, especially in terms of the stream player and listener experience.",
           "video": "../pics/sock/sockSlideshow.mp4",
           "controls": false,
-          "autoplay": "true",
+          "autoplay": true,
           "loop": true,
           "alt": "screenshot of SOCK radio home"
         },
         {
-          "id": "base",
-          "type": "right",
-          "caption": "Here is a photo of the actual pod base, built to the specifications set in the model above. Also picutred here is my friend who assisted me in building the pod. The joints of the frame were kept as simple as possible, using corner butt joints and #10 wood screws to connect them. The upper horizontal members also used brackets to hold them in the plank position.",
-          "image": "../pics/cinepod/img01.png",
-          "alt": "pod frame completed in real life"
+          "id": "redesign",
+          "type": "title",
+          "title": "Redesign"
         },
         {
-          "id": "frame",
-          "type": "left",
-          "caption": "Here is a photo of the actual pod base, built to the specifications set in the model above. Also picutred here is my friend who assisted me in building the pod. The joints of the frame were kept as simple as possible, using corner butt joints and #10 wood screws to connect them. The upper horizontal members also used brackets to hold them in the plank position.",
-          "image": "../pics/cinepod/pod-frame.jpg",
-          "alt": "pod frame completed in real life"
+          "id": "new-slideshow",
+          "type": "video",
+          "caption": "Here are the same pages, with the redesign (this can also be seen by visiting the website). Ultimately, I found the previous design too dark and uninviting, and wanted something a little more interesting and user friendly. We added a live chat for listeners, which has turned out to be an excellent addition, and the stream player is much more functional now - it notifies the user when the stream is live, seen below. The site will continue to be updated throughout the year as we return to more of our programming.",
+          "video": "../pics/sock/newSlideshow.mp4",
+          "controls": false,
+          "autoplay": true,
+          "loop": true,
+          "alt": "video showing 3 main pages of sock radio redesign"
+        },
+        {
+          "id": "live-functionality",
+          "type": "video",
+          "caption": "This video demonstrates the newer player functionality, a small but important change that means the site notifies people when the stream has gone online. When the play button is pressed, the player calls load() to ensure the listener joins live rather than on a delay. The end of the video also shows the button switching back to offline when the stream has ended.",
+          "video": "../pics/sock/sockExample.mp4",
+          "controls": false,
+          "autoplay": true,
+          "loop": true,
+          "alt": "video of stream button going live"
         }
       ]
     },
@@ -106,7 +122,47 @@
       "id": "apps",
       "title": "Apps",
       "portPic": "./pics/apps/apps.png",
-      "alt": "screenshot of government info app"
+      "alt": "screenshot of government info app",
+      "style": "dual",
+      "detail": [
+        {
+          "id": "intro",
+          "type": "left",
+          "caption": "I built these two apps for a Mobile App Design course, and I was pleased with how they turned out. More importantly, it gave me a solid understanding of building an app in the Android architecture, as well as shoring up my knowledge of Java. Both shown used a variety of data structures and methods for running API calls to display data to the user.",
+          "image": "../pics/apps/apps.png",
+          "alt": "The two apps side-by-side"
+        },
+        {
+          "id": "knowyourgovernment",
+          "type": "title",
+          "title": "Know Your Government"
+        },
+        {
+          "id": "gov-overview",
+          "type": "overlap",
+          "caption1": "This app takes note of the user's location, then displays a list of the government officials who represent them, using Google's Civic Information API. In this image, the location is Chicago, and the list is ordered by the scope of the position with highest first (hence president at the top).",
+          "caption2": "Here is an example of the detail provided when the user clicks on a representative. In this case, it is senator Dick Durbin, and the app displays his photo along with a corresponding party image, and beneath the photo is his contact information. Social media links are only displayed if they exist in the API.",
+          "image1": "../pics/apps/gov01.png",
+          "image2": "../pics/apps/gov02.png",
+          "alt1": "list of government officials in app once location entered",
+          "alt2": "detail view of dick durbin in app"
+        },
+        {
+          "id": "newsgateway",
+          "type": "title",
+          "title": "News Gateway"
+        },
+        {
+          "id": "news-overview",
+          "type": "overlap",
+          "caption1": "This app takes note of the user's location, then displays a list of the government officials who represent them, using Google's Civin Information API. In this image, the location is Chicago, and the list is ordered by the scope of the position with highest first (hence president at the top).",
+          "caption2": "Here is an example of the detail provided when the user clicks on a representative. In this case, it is senator Dick Durbin, and the app displays his photo along with a corresponding party image, and beneath the photo is his contact information. Social media links are only displayed if they exist in the API.",
+          "image1": "../pics/apps/news01.png",
+          "image2": "../pics/apps/news02.png",
+          "alt1": "list of government officials in app once location entered",
+          "alt2": "detail view of dick durbin in app"
+        }
+      ]
     },
 
     {

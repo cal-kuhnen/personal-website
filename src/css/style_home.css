@@ -27,7 +27,7 @@
 @font-face
 {
 	font-family: "HK";
-	src: url("../fonts/HKGrotesk-Medium.otf");
+	src: url("../fonts/HKGrotesk-Regular.otf");
 
 }
 
@@ -51,30 +51,31 @@
 /* --- Scrollbar ---
    width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-	border-radius: 5px;
+  background: #fff0df;
+	border-radius: 6px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
-	border-radius: 5px;
+  background: #fff;
+	border: solid 2px black;
+	border-radius: 6px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #000;
 }
 
 html {
 	overflow-y: scroll;
 	height: 100%;
-	background-color:#fff0df;
+	background-color:#f0f6ff;
 	font-feature-settings: "salt";
 	line-height: normal;
 }

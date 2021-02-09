@@ -41,7 +41,7 @@ const DualColumn = (item) => {
     }
     else if (project.type === 'title') {
       return (
-        <h2 className='subtitle'>{project.title}</h2>
+        <h2 key={project.id} className='subtitle'>{project.title}</h2>
       )
     }
     else if (project.type === 'right') {
@@ -75,15 +75,15 @@ const DualColumn = (item) => {
     }
     else if (project.type === 'overlap') {
       return (
-        <div className='overlap'>
+        <div key={project.id} className='overlap'>
           <div className='gridImage1'>
-            <img className='gridImg' src={project.image1}></img>
+            <img className='gridImg' src={project.image1} alt={project.alt1}></img>
           </div>
           <div className='gridCaption1'>
             {project.caption1}
           </div>
           <div className='gridImage2'>
-            <img className='gridImg' src={project.image2}></img>
+            <img className='gridImg' src={project.image2} alt={project.alt2}></img>
           </div>
           <div className='gridCaption2'>
             {project.caption2}
@@ -110,7 +110,7 @@ const DualColumn = (item) => {
         <div key={project.id} className='offset-container'>
           <div className='vertical-container'>
             <div className='left-right'>
-              <video src={project.video} alt={project.alt} controls={project.controls} autoplay={project.autoplay} loop={project.loop}></video>
+              <video src={project.video} alt={project.alt} controls={project.controls} autoPlay={project.autoplay} loop={project.loop}></video>
             </div>
           </div>
           <div className='center'>

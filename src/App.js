@@ -7,16 +7,18 @@ import Nav from './Components/Nav';
 import Home from './Components/Home';
 import Resume from './Components/Resume';
 import Projects from './Components/Projects';
+import ScrollToTop from './Components/ScrollToTop';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
 
 function App() {
   return (
     <Router>
+    <ScrollToTop />
       <div>
         <Nav />
       </div>
