@@ -100,24 +100,34 @@ p
 	position:static;
 }
 
+#me
+{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
 #homeImage
 {
-	position: relative;
-	float: left;
-	top: 20px;
-	width: 40%;
+	max-width: 50%;
 	height: auto;
-	display: inline-block;
+	border: solid 4px black;
+  border-radius: 20px;
 }
 
 #home
 {
-	margin-left: 5%;
-	display: inline-block;
-	width: 40%;
+	width: 75%;
 	height: auto;
-	text-align: left;
-	float: left;
+	border: solid 4px black;
+  border-radius: 60px;
+	background-color: #fff;
+	padding-top: 3vw;
+}
+
+#about
+{
+	width: 50%;
 }
 
 #download
@@ -146,6 +156,7 @@ h2
 	font-size: 2.4em;
 	font-weight: bold;
 	margin-top: 10px;
+	font-family: "HK";
 }
 
 h3
