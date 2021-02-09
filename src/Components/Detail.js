@@ -127,12 +127,22 @@ const DualColumn = (item) => {
     )
     })
 
-  return (
-    <div className='dual-container'>
-      <h1 className='top'>{item.proj.title}</h1>
-      {dualStyle}
-    </div>
-  )
+  if (item.proj.hasOwnProperty('link')) {
+    return (
+      <div className='dual-container'>
+        <h1 className='top'><a href={item.proj.link}>{item.proj.title}</a></h1>
+        {dualStyle}
+      </div>
+    )
+  }
+  else {
+    return (
+      <div className='dual-container'>
+        <h1 className='top'>{item.proj.title}</h1>
+        {dualStyle}
+      </div>
+    )
+  }
 }
 
 const SingleColumn = (item) => {

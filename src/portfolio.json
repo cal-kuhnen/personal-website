@@ -67,6 +67,7 @@
       "portPic": "./pics/sock/sockLogo01.png",
       "alt": "screenshot of SOCK website",
       "style": "dual",
+      "link": "https://sock.rocks/",
       "detail": [
         {
           "id": "intro",
@@ -140,7 +141,7 @@
         {
           "id": "gov-overview",
           "type": "overlap",
-          "caption1": "This app takes note of the user's location, then displays a list of the government officials who represent them, using Google's Civic Information API. In this image, the location is Chicago, and the list is ordered by the scope of the position with highest first (hence president at the top).",
+          "caption1": "This app takes note of the user's location, then displays a list of the government officials who represent them, using Google's Civic Information API. In this image, the location is Chicago, and the list is ordered by the scope of the position with highest first (hence president at the top). The user can also input any location of their choosing via zipcode or city name, and you can see the representatives for that area.",
           "caption2": "Here is an example of the detail provided when the user clicks on a representative. In this case, it is senator Dick Durbin, and the app displays his photo along with a corresponding party image, and beneath the photo is his contact information. Social media links are only displayed if they exist in the API.",
           "image1": "../pics/apps/gov01.png",
           "image2": "../pics/apps/gov02.png",

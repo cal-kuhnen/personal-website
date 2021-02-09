@@ -48,7 +48,7 @@
   margin: auto;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  grid-auto-rows: auto;
+  grid-auto-rows: min-content;
   margin-bottom: 60px;
 }
 
