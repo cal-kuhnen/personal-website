@@ -200,6 +200,18 @@
           "alt": "cad of prototype"
         },
         {
+          "id": "me",
+          "type": "right",
+          "caption": "My involvement was primarily focused on the scanning functionality, security, and usability of the bike rack. I felt that I was able to bring a useful amount of knowledge to the team since I was the only one who actually commuted by bike, and thus I was able to streamline some of the design and build processes, like moving to the chain instead of a metal bar. In this photo, I'm on the left working on the Arduino code that handled the scanning system for the rack.",
+          "image": "../pics/ipro/me-working.png",
+          "alt": "me working on arduino at table"
+        },
+        {
+          "id": "build",
+          "type": "title",
+          "title": "Build"
+        },
+        {
           "id": "interior",
           "type": "doubleImg",
           "caption": "Above are images of the interior with the arduino and RFID scanner installed. This setup takes the signal from the scanner and controls a servo motor in the lower section, which operates the locking mechanism.",
@@ -221,9 +233,46 @@
         {
           "id": "intro",
           "type": "left",
-          "caption": "This project was a calculator built in the assembly language MIPS. It allowed for addition, subtraction, multiplication, division, and conversions between decimal, hex, and binary numbers. I personally enjoyed this project and had some fun doing the simple ASCII-art design for the interface, which made using it much better than a simple console line for me.",
-          "image": "../pics/mips/conversions.png",
+          "caption": "This project was a calculator built in the assembly language MIPS using QtSPIM. It allowed for addition, subtraction, multiplication, division, and conversions between decimal, hex, and binary numbers. I personally enjoyed this project and had some fun doing the simple ASCII-art design for the interface, which made using it much better than a simple console line for me.",
+          "image": "../pics/mips/home.png",
           "alt": "pic of conversions menu for calculator"
+        },
+        {
+          "id": "simple",
+          "type": "title",
+          "title": "Simple Functions"
+        },
+        {
+          "id": "add-sub",
+          "type": "doubleImg",
+          "caption": "Above are examples for addition and subtraction, with a bit of flair in the menu design.",
+          "left": "../pics/mips/addition.png",
+          "right": "../pics/mips/subtraction.png",
+          "leftAlt": "pic of addition example in calculator",
+          "rightAlt": "pic of subtraction example in calculator"
+        },
+        {
+          "id": "mult-div",
+          "type": "doubleImg",
+          "caption": "Here are multiplication and division. The division function is limited to whole numbers.",
+          "left": "../pics/mips/multi.png",
+          "right": "../pics/mips/division.png",
+          "leftAlt": "pic of multiplication example in calculator",
+          "rightAlt": "pic of division example in calculator"
+        },
+        {
+          "id": "conversions",
+          "type": "title",
+          "title": "Conversions"
+        },
+        {
+          "id": "conv-example",
+          "type": "doubleImg",
+          "caption": "This is the conversion menu, and an example of a binary-to-decimal conversion. This component of the calculator made up the meat of the project, and I was satisfied with my solution because the conversions handle negative numbers as well, which was not a requirement for this project. I also attempted to make the menu as clear as possible, as the choice to use a more graphical style in the console was purely functional.",
+          "left": "../pics/mips/conversions.png",
+          "right": "../pics/mips/bindec.png",
+          "leftAlt": "pic of conversion menu in calculator",
+          "rightAlt": "pic of binary-decimal conversion example in calculator"
         }
       ]
     },

@@ -41,6 +41,7 @@
   margin-bottom: 60px;
 }
 
+/* --- Overlap Element --- */
 .overlap
 {
   font-size: 1.8em;
@@ -104,6 +105,7 @@
   margin-right: 10%;
 }
 
+/* --- Horizontal Image + Caption --- */
 .left-right
 {
   font-size: 1.8em;
@@ -131,11 +133,13 @@
   max-height: 34vw;
 }
 
+/* --- Two Images Horizontally --- */
 img.double
 {
   border: solid 4px #000;
   border-radius: 20px;
-  height: 32vw;
+  max-width: 30vw;
+  max-height: 36vw;
 }
 
 img.gridImg

@@ -26,8 +26,8 @@ nav.nav-scroll
 
 .nav-scroll .navButton
 {
-	color: #6298bf;
-	box-shadow: 0px 0px 10px #000, inset 0px 0px 0px 4px #6298bf;
+	color: #fc036f;
+	box-shadow: 0px 0px 10px #000, inset 0px 0px 0px 4px #fc036f;
 }
 
 .nav-scroll #title
@@ -53,7 +53,7 @@ nav.nav-scroll
 
 	.nav-scroll:hover .selected
 	{
-		color: #6298bf!important;
+		color: #fc036f!important;
 	}
 
 	.nav-scroll:hover .navButton
@@ -63,8 +63,8 @@ nav.nav-scroll
 
 	.nav-scroll:hover .navButton:hover
 	{
-		color: #6298bf;
-		box-shadow: 0px 0px 15px #000, inset 0px 0px 0px 4px #6298bf
+		color: #fc036f;
+		box-shadow: 0px 0px 15px #000, inset 0px 0px 0px 4px #fc036f
 	}
 
 .nav-scroll #title
@@ -110,21 +110,21 @@ nav.nav-scroll
 	align-items: center;
 	border-radius: 2vw;
 	transition: background-color 0.1s, color 0.1s, box-shadow 0.1s linear, width 0.2s;
-  background-color: #6298bf;
+  background-color: #fc036f;
 }
 
 .navButton:hover
 {
 	background-color: #fff;
-  color: #6298bf;
-	box-shadow: inset 0px 0px 0px 4px #6298bf;
+  color: #fc036f;
+	box-shadow: inset 0px 0px 0px 4px #fc036f;
 }
 
 .selected
 {
   background-color: #fff;
-  color: #6298bf!important;
-	box-shadow: inset 0px 0px 0px 4px #6298bf;
+  color: #fc036f!important;
+	box-shadow: inset 0px 0px 0px 4px #fc036f;
 }
 
 .home-select
@@ -152,7 +152,7 @@ a:visited
 
 .navButton:active
 {
-	background-color: #6298bf;
+	background-color: #fc036f;
 }
 
 #title:active
