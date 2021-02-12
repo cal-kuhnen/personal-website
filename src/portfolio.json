@@ -52,7 +52,7 @@
         {
           "id": "details",
           "type": "doubleImg",
-          "caption": "Above are some close-ups of the door and window. The door is held shut via magnet cabinet latches, and the window is simply bolted to the wall. All the windows were then sealed with silicone for better wind protection, which made a noticeable difference.",
+          "caption": "Above are some close-ups of the door and window. The door is held shut via magnet cabinet latches, and the window is simply bolted to the wall. All the windows were then sealed with silicone for better wind protection, which made a noticeable difference. At the moment, the pod is able to reach an internal temperature of about 60 degrees fahrenheit while the exterior temperature is 30, which makes for a very comfortable viewing experience. Of course it doesn't help that it takes two people to move... but I think it was well worth it. If you are thinking of building one for yourself, I must add that this cost about $250, which is definitely more than I wanted to spend.",
           "left": "../pics/cinepod/door-detail.jpg",
           "right": "../pics/cinepod/window-detail.jpg",
           "leftAlt": "close-up of pod door",
@@ -147,6 +147,13 @@
           "image2": "../pics/apps/gov02.png",
           "alt1": "list of government officials in app once location entered",
           "alt2": "detail view of dick durbin in app"
+        },
+        {
+          "id": "gov-final",
+          "type": "right",
+          "caption": "Here is the contact information that is associated with the senator shown below. Also, tapping on the image will bring up a larger photo without the additional information underneath.",
+          "image": "../pics/apps/gov03.png",
+          "alt": "selected offical scrolled to show contact information"
         },
         {
           "id": "newsgateway",
