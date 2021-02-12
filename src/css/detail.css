@@ -157,6 +157,13 @@ video
   border-radius: 20px;
 }
 
+video.double
+{
+  border: solid 4px #000;
+  border-radius: 20px;
+  max-width: 24vw;
+}
+
 h1.top
 {
   margin-bottom: 40px;

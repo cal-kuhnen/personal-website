@@ -114,7 +114,24 @@ const DualColumn = (item) => {
         <div key={project.id} className='offset-container'>
           <div className='vertical-container'>
             <div className='left-right'>
-              <video src={project.video} alt={project.alt} controls={project.controls} autoPlay={project.autoplay} loop={project.loop}></video>
+              <video src={project.video} alt={project.alt} controls={project.controls} autoPlay={project.autoplay} loop={project.loop} muted={project.muted}></video>
+            </div>
+          </div>
+          <div className='center'>
+            {project.caption}
+          </div>
+        </div>
+      )
+    }
+    else if (project.type === 'doubleVid') {
+      return (
+        <div key={project.id} className='offset-container'>
+          <div className='horizontal-container justify-around'>
+            <div className='left-right'>
+              <video className='double' src={project.left} alt={project.leftAlt} controls={project.controls} autoPlay={project.autoplay} loop={project.loop} muted={project.muted}></video>
+            </div>
+            <div className='left-right'>
+              <video className='double' src={project.right} alt={project.rightAlt} controls={project.controls} autoPlay={project.autoplay} loop={project.loop} muted={project.muted}></video>
             </div>
           </div>
           <div className='center'>

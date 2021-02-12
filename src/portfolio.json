@@ -214,11 +214,24 @@
         {
           "id": "interior",
           "type": "doubleImg",
-          "caption": "Above are images of the interior with the arduino and RFID scanner installed. This setup takes the signal from the scanner and controls a servo motor in the lower section, which operates the locking mechanism.",
+          "caption": "Above are images of the prototype with the arduino and RFID scanner installed. This setup takes the signal from the scanner and controls a servo motor in the lower section, which operates the locking mechanism. This can be seen below in some videos of the mechanism.",
           "left": "../pics/ipro/interior.jpg",
-          "right": "../pics/ipro/interior-detail.jpg",
+          "right": "../pics/ipro/scanner.jpg",
           "leftAlt": "interior of prototype",
           "rightAlt": "closeup of prototype interior"
+        },
+        {
+          "id": "mechanism",
+          "type": "doubleVid",
+          "caption": "These videos demonstrate the mechanism functioning when the RFID card is scanned. Definitely very simple, but something like this is all that would be needed to secure the end of a chain, and could be made to be very strong. This central position was also chosen based on a scaled bike, but could be relocated for locking wheels. Ultimately, a semester was too short to see this project grow any more, which was very unfortunate because I was excited that there was a possibility we could have made something that would have actively benefitted the campus and student transportation.",
+          "left": "../pics/ipro/mechanism-int.mp4",
+          "right": "../pics/ipro/mechanism-ext.mp4",
+          "controls": false,
+          "autoplay": true,
+          "loop": true,
+          "muted": true,
+          "leftAlt": "video of internal mechanism",
+          "rightAlt": "video of mechanism as seen through lock hole"
         }
       ]
     },
@@ -268,7 +281,7 @@
         {
           "id": "conv-example",
           "type": "doubleImg",
-          "caption": "This is the conversion menu, and an example of a binary-to-decimal conversion. This component of the calculator made up the meat of the project, and I was satisfied with my solution because the conversions handle negative numbers as well, which was not a requirement for this project. I also attempted to make the menu as clear as possible, as the choice to use a more graphical style in the console was purely functional.",
+          "caption": "This is the conversion menu, and an example of a binary-to-decimal conversion. This component of the calculator made up the meat of the project, and I was satisfied with my solution because the conversions handle negative numbers as well, which was not a requirement. I also attempted to make the menu as clear as possible, as the choice to use a more graphical style in the console was purely functional.",
           "left": "../pics/mips/conversions.png",
           "right": "../pics/mips/bindec.png",
           "leftAlt": "pic of conversion menu in calculator",
