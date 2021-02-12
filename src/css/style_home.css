@@ -109,8 +109,7 @@ p
 
 #homeImage
 {
-	max-width: 50%;
-	height: auto;
+	max-height: 28vw;
 	border: solid 4px black;
   border-radius: 20px;
 }
@@ -203,8 +202,21 @@ a.homeLink:visited
 	color: #FFF;
 }
 
-a:hover
+a.contact-link
 {
-	color: purple;
-	text-decoration: none;
+	font-size: 1.6em;
+	color: #000;
+	display: block;
+	margin-top: 10px;
+}
+
+a.contact-link:visited
+{
+	color: #000;
+}
+
+a.contact-link:hover
+{
+	color: #000;
+	text-decoration: underline;
 }

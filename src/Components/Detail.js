@@ -151,7 +151,7 @@ const DualColumn = (item) => {
   if (item.proj.hasOwnProperty('link')) {
     return (
       <div className='dual-container'>
-        <h1 className='top'><a href={item.proj.link}>{item.proj.title}</a></h1>
+        <h1 className='top'><a className='project-link' rel="noopener noreferrer" target="_blank" href={item.proj.link}>{item.proj.title}</a></h1>
         {dualStyle}
       </div>
     )

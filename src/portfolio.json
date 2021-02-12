@@ -72,7 +72,7 @@
         {
           "id": "intro",
           "type": "left",
-          "caption": "SOCK Radio is a quarantine project started by myself and a close friend. After launching the website, we grew to have weekly shows from six different people throughout the summer of 2020. The channel has recently returned, and has been a great source of learning for me in terms of website design, React, and other web-dev areas, considering that I am in charge of the website and its functionality.",
+          "caption": "SOCK Radio is a quarantine project started by myself and a close friend. After launching the website, we grew to have weekly shows from six different people throughout the summer of 2020. The channel has recently returned, and has been a great source of learning for me in terms of website design, React, and other web-dev areas (click the title above to check it out!).",
           "image": "../pics/sock/sockLogo01.png",
           "alt": "SOCK radio logo"
         },
@@ -109,7 +109,7 @@
         {
           "id": "live-functionality",
           "type": "video",
-          "caption": "This video demonstrates the newer player functionality, a small but important change that means the site notifies people when the stream has gone online. When the play button is pressed, the player calls load() to ensure the listener joins live rather than on a delay. The end of the video also shows the button switching back to offline when the stream has ended.",
+          "caption": "This video demonstrates the newer player functionality, a small but important change that means the site notifies people when the stream has gone online. The end of the video also shows the button switching back to offline when the stream has ended.",
           "video": "../pics/sock/sockExample.mp4",
           "controls": false,
           "autoplay": true,
@@ -169,6 +169,13 @@
           "image2": "../pics/apps/news02.png",
           "alt1": "list of government officials in app once location entered",
           "alt2": "detail view of dick durbin in app"
+        },
+        {
+          "id": "news-final",
+          "type": "right",
+          "caption": "This is an image of the app once a source has been selected. It proceeds to show 10 articles with a ViewPager, allowing the user to swipe between the fragments that show each article with its title and summary. Clicking on any of the content displayed will then link the user to the original article in the phone's browser.",
+          "image": "../pics/apps/news03.png",
+          "alt": "selected offical scrolled to show contact information"
         }
       ]
     },
@@ -176,7 +183,7 @@
     {
       "id": "ipro",
       "title": "Campus Bike Lock",
-      "portPic": "./pics/ipro/prototype-bike.png",
+      "portPic": "./pics/ipro/prototype-bike.jpg",
       "alt": "pic of foam bike with prototype lock",
       "style": "dual",
       "detail": [
@@ -210,7 +217,7 @@
           "id": "me",
           "type": "right",
           "caption": "My involvement was primarily focused on the scanning functionality, security, and usability of the bike rack. I felt that I was able to bring a useful amount of knowledge to the team since I was the only one who actually commuted by bike, and thus I was able to streamline some of the design and build processes, like moving to the chain instead of a metal bar. In this photo, I'm on the left working on the Arduino code that handled the scanning system for the rack.",
-          "image": "../pics/ipro/me-working.png",
+          "image": "../pics/ipro/me-working.jpg",
           "alt": "me working on arduino at table"
         },
         {
@@ -246,7 +253,7 @@
     {
       "id": "calculator",
       "title": "MIPS Calculator",
-      "portPic": "../pics/mips/conversions.png",
+      "portPic": "../pics/mips/mips-button.png",
       "alt": "screenshot of MIPS calculator running",
       "style": "dual",
       "detail": [
@@ -307,7 +314,7 @@
         {
           "id": "intro",
           "type": "video",
-          "caption": "For my digital imaging class, my end-of-semester project was a music video for a song I had created. I had never worked in any 3D modelling software, so I wanted to attempt to learn the basics and create fitting visuals for my house-styled track.",
+          "caption": "For my digital imaging class, my end-of-semester project was a music video for a song I had created. I had never worked in any 3D modelling software, so I wanted to learn the basics and create fitting visuals for my house-styled track.",
           "video": "../pics/digital/digital-video.mp4",
           "controls": true,
           "autoplay": false,
