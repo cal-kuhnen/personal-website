@@ -26,8 +26,8 @@ nav.nav-scroll
 
 .nav-scroll .navButton
 {
-	color: #fc036f;
-	box-shadow: 0px 0px 10px #000, inset 0px 0px 0px 4px #fc036f;
+	color: #fcbd50;
+	box-shadow: 0px 0px 10px #000, inset 0px 0px 0px 4px #fcbd50;
 }
 
 .nav-scroll #title
@@ -53,7 +53,7 @@ nav.nav-scroll
 
 	.nav-scroll:hover .selected
 	{
-		color: #fc036f!important;
+		color: #fcbd50!important;
 	}
 
 	.nav-scroll:hover .navButton
@@ -63,8 +63,8 @@ nav.nav-scroll
 
 	.nav-scroll:hover .navButton:hover
 	{
-		color: #fc036f;
-		box-shadow: 0px 0px 15px #000, inset 0px 0px 0px 4px #fc036f
+		color: #fcbd50;
+		box-shadow: 0px 0px 15px #000, inset 0px 0px 0px 4px #fcbd50
 	}
 
 .nav-scroll #title
@@ -110,21 +110,21 @@ nav.nav-scroll
 	align-items: center;
 	border-radius: 2vw;
 	transition: background-color 0.1s, color 0.1s, box-shadow 0.1s linear, width 0.2s;
-  background-color: #fc036f;
+  background-color: #fcbd50;
 }
 
 .navButton:hover
 {
 	background-color: #fff;
-  color: #fc036f;
-	box-shadow: inset 0px 0px 0px 4px #fc036f;
+  color: #fcbd50;
+	box-shadow: inset 0px 0px 0px 4px #fcbd50;
 }
 
 .selected
 {
   background-color: #fff;
-  color: #fc036f!important;
-	box-shadow: inset 0px 0px 0px 4px #fc036f;
+  color: #fcbd50!important;
+	box-shadow: inset 0px 0px 0px 4px #fcbd50;
 }
 
 .home-select
@@ -152,10 +152,29 @@ a:visited
 
 .navButton:active
 {
-	background-color: #fc036f;
+	background-color: #fcbd50;
 }
 
 #title:active
 {
   background-color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+	nav {
+		height: 15vw;
+		width: 90%;
+		margin-left: 5%;
+		display: block;
+	}
+
+	.navButton {
+
+	}
+
+	#title {
+		width: 100%;
+		font-size: 11vw;
+		border-radius: 5vw;
+	}
 }

@@ -105,10 +105,17 @@ h1
 }
 
 @media only screen and (max-width: 600px) {
-  .project
-  {
-    border-radius: 30px;
-    height: 70vw;
-    width: 70vw;
+  .container {
+    top: 20vw;
+  }
+
+  .squares {
+    width: 90%;
+  }
+  .project {
+    border-radius: 60px;
+    height: 80vw;
+    width: 80vw;
+    font-size: 2.5em;
   }
 }

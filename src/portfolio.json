@@ -2,15 +2,15 @@
     {
       "id": "cinepod",
       "title": "CinePod",
-      "portPic": "./pics/cinepod/snow.JPG",
-      "alt": "person sitting in unfinished covid pod",
+      "portPic": "./pics/cinepod/snow.jpg",
+      "alt": "builders of pod celebrating its use outside",
       "style": "dual",
       "detail": [
         {
           "id": "intro",
           "type": "left",
-          "caption": "The CinePod began as an idea from a discussion with my friends about watching movies in the winter. I am lucky enough to have an old projector and garage that we were able to watch movies on outside the past summer, while staying distanced and masked for safety. We wanted to continue watching into the winter, and thus the idea of some sort of pod was conceived. This project is the result of actually following through on building a wooden pod.",
-          "image": "../pics/cinepod/pod-done.jpg",
+          "caption": "The CinePod began as an idea from a discussion with my friends about watching movies in the winter. I'm lucky enough to have an old projector and garage that we were able to watch movies on outside the past summer, while staying distanced and masked for safety. We wanted to continue watching into the winter, and thus the idea of some sort of pod was conceived. This project is the result of actually following through on building a wooden pod.",
+          "image": "../pics/cinepod/pod-done.JPG",
           "alt": "guy sitting in pod frame"
         },
         {
@@ -22,8 +22,8 @@
           "id": "cad",
           "type": "doubleImg",
           "caption": "On the left is a screenshot of the 2x4 frame in CAD, used as an initial mockup. This design was chosen for simplicity and cost, as previous designs for a disassemblable pod were far outside the budget I set myself.",
-          "left": "../pics/cinepod/cad-frame.png",
-          "right": "../pics/cinepod/img01.png",
+          "left": "../pics/cinepod/cad-frame.PNG",
+          "right": "../pics/cinepod/img01.PNG",
           "leftAlt": "cad model of pod frame",
           "rightAlt": "cad model of finished pod"
         },
@@ -37,8 +37,8 @@
           "type": "overlap",
           "caption1": "Building the pod base, making use of some scrap wood that was laying around for a central beam. Here some of the internal supports are being glued in place. These supports were primarily to keep me from breaking through the thin plywood floor during a viewing.",
           "caption2": "The floor was then cut to fit the 2x4 posts before the rest of the frame was assembled. The joints of the frame were kept as simple as possible, using corner butt joints and #10 wood screws to connect them. Also pictured here is my friend who assisted me during the build (great guy).",
-          "image1": "../pics/cinepod/pod-base.jpg",
-          "image2": "../pics/cinepod/pod-frame.jpg",
+          "image1": "../pics/cinepod/pod-base.JPG",
+          "image2": "../pics/cinepod/pod-frame.JPG",
           "alt1": "pod base being assembled",
           "alt2": "pod frame completed in real life"
         },
@@ -46,7 +46,7 @@
           "id": "wall",
           "type": "right",
           "caption": "First side wall attached. These were cut from 1/4'' OSB, and were important not only for warmth but also adding structural integrity. They definitely do not provide good insulation, but that's where the space heater comes in.",
-          "image": "../pics/cinepod/pod-wall.jpg",
+          "image": "../pics/cinepod/pod-wall.JPG",
           "alt": "pod frame completed in real life"
         },
         {
@@ -57,9 +57,9 @@
         {
           "id": "details",
           "type": "doubleImg",
-          "caption": "Above are some close-ups of the door and window. The door is held shut via magnet cabinet latches, and the window is simply bolted to the wall. All the windows were then sealed with silicone for better wind protection, which made a noticeable difference. At the moment, the pod is able to reach an internal temperature of about 60 degrees fahrenheit while the exterior temperature is 30, which makes for a very comfortable viewing experience. Of course it doesn't help that it takes two people to move... but I think it was well worth it. If you are thinking of building one for yourself, I must add that this cost about $250, which is definitely more than I wanted to spend.",
-          "left": "../pics/cinepod/door-detail.jpg",
-          "right": "../pics/cinepod/window-detail.jpg",
+          "caption": "Above are some close-ups of the door and window. The door is held shut via magnet cabinet latches, and the window is simply bolted to the wall. All the windows were then sealed with silicone for better wind protection, which made a noticeable difference. At the moment, the pod is able to reach an internal temperature of about 60 degrees fahrenheit while the exterior temperature is 30, which makes for a very comfortable viewing experience. Of course it doesn't help that it takes two people to move... but I think it was well worth it. If you're thinking of building one for yourself, it did cost about $250, which is definitely more than I wanted to spend.",
+          "left": "../pics/cinepod/door-detail.JPG",
+          "right": "../pics/cinepod/window-detail.JPG",
           "leftAlt": "close-up of pod door",
           "rightAlt": "close-up of left side window"
         }
@@ -89,7 +89,7 @@
         {
           "id": "slideshow",
           "type": "video",
-          "caption": "Above are the pages for the original SOCK Radio website, which was very simple and built with the classic HTML-CSS-JS combo. Very shortly we recognized many drawbacks of this system, especially in terms of the stream player and listener experience.",
+          "caption": "Above are the pages for the original SOCK Radio website, which was very simple and built with the classic HTML-CSS-JS combo. Early on we recognized many drawbacks of this system, especially in terms of the stream player and listener experience.",
           "video": "../pics/sock/sockSlideshow.mp4",
           "controls": false,
           "autoplay": true,
@@ -127,14 +127,14 @@
     {
       "id": "apps",
       "title": "Apps",
-      "portPic": "./pics/apps/apps.png",
+      "portPic": "../pics/apps/apps.png",
       "alt": "screenshot of government info app",
       "style": "dual",
       "detail": [
         {
           "id": "intro",
           "type": "left",
-          "caption": "I built these two apps for a Mobile App Design course, and I was pleased with how they turned out. More importantly, it gave me a solid understanding of building an app in the Android architecture, as well as shoring up my knowledge of Java. Both shown used a variety of data structures and methods for running API calls to display data to the user.",
+          "caption": "I built these two apps for a Mobile App Design course, and I was pleased with how they turned out. More importantly, it gave me a solid understanding of building an app in the Android architecture, as well as shoring up my knowledge of Java. Both apps used a variety of data structures and methods for running API calls to display data to the user.",
           "image": "../pics/apps/apps.png",
           "alt": "The two apps side-by-side"
         },
@@ -146,18 +146,18 @@
         {
           "id": "gov-overview",
           "type": "overlap",
-          "caption1": "This app takes note of the user's location, then displays a list of the government officials who represent them, using Google's Civic Information API. In this image, the location is Chicago, and the list is ordered by the scope of the position with highest first (hence president at the top). The user can also input any location of their choosing via zipcode or city name, and you can see the representatives for that area.",
+          "caption1": "This app takes note of the user's location, then displays a list of the government officials who represent them, using Google's Civic Information API. In this image, the location is Chicago, and the list is ordered by the scope of the position with highest first. The user can also input any location of their choosing via zipcode or city name, and you can see the representatives for that area.",
           "caption2": "Here is an example of the detail provided when the user clicks on a representative. In this case, it is senator Dick Durbin, and the app displays his photo along with a corresponding party image, and beneath the photo is his contact information. Social media links are only displayed if they exist in the API.",
-          "image1": "../pics/apps/gov01.png",
-          "image2": "../pics/apps/gov02.png",
+          "image1": "../pics/apps/gov01.PNG",
+          "image2": "../pics/apps/gov02.PNG",
           "alt1": "list of government officials in app once location entered",
           "alt2": "detail view of dick durbin in app"
         },
         {
           "id": "gov-final",
           "type": "right",
-          "caption": "Here is the contact information that is associated with the senator shown below. Also, tapping on the image will bring up a larger photo without the additional information underneath.",
-          "image": "../pics/apps/gov03.png",
+          "caption": "This is the contact information that is associated with the senator selected. Also, tapping on the image will bring up a larger photo without the additional information underneath.",
+          "image": "../pics/apps/gov03.PNG",
           "alt": "selected offical scrolled to show contact information"
         },
         {
@@ -170,8 +170,8 @@
           "type": "overlap",
           "caption1": "The News Gateway app uses NewsAPI to display snippets about articles from many different sources, along with the links to those articles. It can sort by genre of publisher and makes use of services and receivers.",
           "caption2": "On the right, the genre selection is shown which then shortens the drawer list to relevant sources of news. In this case, the selection has already been made for the Entertainment category.",
-          "image1": "../pics/apps/news01.png",
-          "image2": "../pics/apps/news02.png",
+          "image1": "../pics/apps/news01.PNG",
+          "image2": "../pics/apps/news02.PNG",
           "alt1": "list of government officials in app once location entered",
           "alt2": "detail view of dick durbin in app"
         },
@@ -179,7 +179,7 @@
           "id": "news-final",
           "type": "right",
           "caption": "This is an image of the app once a source has been selected. It proceeds to show 10 articles with a ViewPager, allowing the user to swipe between the fragments that show each article with its title and summary. Clicking on any of the content displayed will then link the user to the original article in the phone's browser.",
-          "image": "../pics/apps/news03.png",
+          "image": "../pics/apps/news03.PNG",
           "alt": "selected offical scrolled to show contact information"
         }
       ]
@@ -196,7 +196,7 @@
           "id": "intro",
           "type": "left",
           "caption": "This prototype bike lock was designed and built for an interprofessional project course, with the ultimate goal being a way to improve the bicycle facilities on campus. The lock used RFID scanning so students would be able to use their IIT ID cards to lock and unlock them, removing the need for them to carry a bike lock to campus. We also designed it to be as strong or stronger than a lock that could be carried with you, to ensure safety was not compromised.",
-          "image": "../pics/ipro/prototype-bike.png",
+          "image": "../pics/ipro/prototype-bike.jpg",
           "alt": "pic of foam bike with prototype lock"
         },
         {
@@ -215,7 +215,7 @@
           "id": "protoype-cad",
           "type": "left",
           "caption": "This is a simple CAD representation of the prototype that was to be laser cut from medium MDF. The additional extensions at the bottom were for adding wheel locking capability. Ideally, we wanted to be able to lock both wheels with one chain, but these bike locks would also mean people could secure their front wheel with their own cable lock, still removing the need to bring a heavy U-lock.",
-          "image": "../pics/ipro/prototype-model.jpg",
+          "image": "../pics/ipro/prototype-model.JPG",
           "alt": "cad of prototype"
         },
         {
@@ -234,15 +234,15 @@
           "id": "interior",
           "type": "doubleImg",
           "caption": "Above are images of the prototype with the arduino and RFID scanner installed. This setup takes the signal from the scanner and controls a servo motor in the lower section, which operates the locking mechanism. This can be seen below in some videos of the mechanism.",
-          "left": "../pics/ipro/interior.jpg",
-          "right": "../pics/ipro/scanner.jpg",
+          "left": "../pics/ipro/interior.JPG",
+          "right": "../pics/ipro/scanner.JPG",
           "leftAlt": "interior of prototype",
           "rightAlt": "closeup of prototype interior"
         },
         {
           "id": "mechanism",
           "type": "doubleVid",
-          "caption": "These videos demonstrate the mechanism functioning when the RFID card is scanned. Definitely very simple, but something like this is all that would be needed to secure the end of a chain, and could be made to be very strong. This central position was also chosen based on a scaled bike, but could be relocated for locking wheels. Ultimately, a semester was too short to see this project grow any more, which was very unfortunate because I was excited that there was a possibility we could have made something that would have actively benefitted the campus and student transportation.",
+          "caption": "These videos demonstrate the mechanism functioning when the RFID card is scanned. Definitely very simple, but something like this is all that would be needed to secure the end of a chain, and could be made to be very strong. This central position was also chosen based on a scaled bike, but could be relocated for locking wheels. Ultimately, a semester was too short to see this project grow any more, which was very unfortunate because I was excited that there was a possibility this could have actively benefitted the campus and student transportation.",
           "left": "../pics/ipro/mechanism-int.mp4",
           "right": "../pics/ipro/mechanism-ext.mp4",
           "controls": false,
@@ -265,8 +265,8 @@
         {
           "id": "intro",
           "type": "left",
-          "caption": "This project was a calculator built in the assembly language MIPS using QtSPIM. It allowed for addition, subtraction, multiplication, division, and conversions between decimal, hex, and binary numbers. I personally enjoyed this project and had some fun doing the simple ASCII-art design for the interface, which made using it much better than a simple console line for me.",
-          "image": "../pics/mips/home.png",
+          "caption": "This project was a calculator built in the assembly language MIPS using QtSPIM. It allowed for addition, subtraction, multiplication, division, and conversions between decimal, hex, and binary numbers. I personally enjoyed this project and had some fun doing the simple ASCII-art design for the interface, which I felt improved the user experience by far over a console line.",
+          "image": "../pics/mips/home.PNG",
           "alt": "pic of conversions menu for calculator"
         },
         {
@@ -278,8 +278,8 @@
           "id": "add-sub",
           "type": "doubleImg",
           "caption": "Above are examples for addition and subtraction, with a bit of flair in the menu design.",
-          "left": "../pics/mips/addition.png",
-          "right": "../pics/mips/subtraction.png",
+          "left": "../pics/mips/addition.PNG",
+          "right": "../pics/mips/subtraction.PNG",
           "leftAlt": "pic of addition example in calculator",
           "rightAlt": "pic of subtraction example in calculator"
         },
@@ -287,8 +287,8 @@
           "id": "mult-div",
           "type": "doubleImg",
           "caption": "Here are multiplication and division. The division function is limited to whole numbers.",
-          "left": "../pics/mips/multi.png",
-          "right": "../pics/mips/division.png",
+          "left": "../pics/mips/multi.PNG",
+          "right": "../pics/mips/division.PNG",
           "leftAlt": "pic of multiplication example in calculator",
           "rightAlt": "pic of division example in calculator"
         },
@@ -301,8 +301,8 @@
           "id": "conv-example",
           "type": "doubleImg",
           "caption": "This is the conversion menu, and an example of a binary-to-decimal conversion. This component of the calculator made up the meat of the project, and I was satisfied with my solution because the conversions handle negative numbers as well, which was not a requirement. I also attempted to make the menu as clear as possible, as the choice to use a more graphical style in the console was purely functional.",
-          "left": "../pics/mips/conversions.png",
-          "right": "../pics/mips/bindec.png",
+          "left": "../pics/mips/conversions.PNG",
+          "right": "../pics/mips/bindec.PNG",
           "leftAlt": "pic of conversion menu in calculator",
           "rightAlt": "pic of binary-decimal conversion example in calculator"
         }

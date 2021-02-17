@@ -88,6 +88,7 @@ a.project-link:hover
   grid-column: 2 / 4;
   width: 95%;
   justify-self: end;
+  margin-bottom: 1vw;
 }
 
 .gridCaption2
@@ -232,4 +233,44 @@ h2.subtitle
   border-radius: 20px;
   max-width: 55vw;
   margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .dual-container {
+    width: 90%;
+  }
+
+  .horizontal-container {
+    display: block;
+  }
+
+  .left-right {
+    font-size: 1.5em;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .center {
+    font-size: 1.5em;
+  }
+
+  .overlap {
+    display: block;
+    font-size: 1.5em;
+  }
+
+  .arrows {
+    display: none;
+  }
+
+  .dual-image, img.double, img.gridImg {
+    max-width: 80vw;
+    max-height: none;
+  }
+
+  .gridImage1, .gridImage2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 }
