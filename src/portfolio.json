@@ -146,8 +146,8 @@
         {
           "id": "gov-overview",
           "type": "overlap",
-          "caption1": "This app takes note of the user's location, then displays a list of the government officials who represent them, using Google's Civic Information API. In this image, the location is Chicago, and the list is ordered by the scope of the position with highest first. The user can also input any location of their choosing via zipcode or city name, and you can see the representatives for that area.",
-          "caption2": "Here is an example of the detail provided when the user clicks on a representative. In this case, it is senator Dick Durbin, and the app displays his photo along with a corresponding party image, and beneath the photo is his contact information. Social media links are only displayed if they exist in the API.",
+          "caption1": "This app takes note of the user's location, then displays a list of the government officials who represent them, using Google's Civic Information API. In this image, the location is Chicago, and the list is ordered by the scope of the position with highest first. The user can also input any location of their choosing via zipcode or city name, allowing them to see the representatives for that area.",
+          "caption2": "Here is an example of the detail provided when the user clicks on a representative. In this case, it is Senator Dick Durbin, and the app displays his photo along with a corresponding party image with the contact information below. Social media links are only displayed if they exist in the API.",
           "image1": "../pics/apps/gov01.PNG",
           "image2": "../pics/apps/gov02.PNG",
           "alt1": "list of government officials in app once location entered",
@@ -168,12 +168,12 @@
         {
           "id": "news-overview",
           "type": "overlap",
-          "caption1": "The News Gateway app uses NewsAPI to display snippets about articles from many different sources, along with the links to those articles. It can sort by genre of publisher and makes use of services and receivers.",
+          "caption1": "The News Gateway app uses NewsAPI to display snippets about articles from various sources, along with the links to those articles. It can sort by genre of publisher and makes use of services and receivers.",
           "caption2": "On the right, the genre selection is shown which then shortens the drawer list to relevant sources of news. In this case, the selection has already been made for the Entertainment category.",
           "image1": "../pics/apps/news01.PNG",
           "image2": "../pics/apps/news02.PNG",
-          "alt1": "list of government officials in app once location entered",
-          "alt2": "detail view of dick durbin in app"
+          "alt1": "news app homepage",
+          "alt2": "news app with entertainment selected and genre menu open"
         },
         {
           "id": "news-final",
@@ -195,7 +195,7 @@
         {
           "id": "intro",
           "type": "left",
-          "caption": "This prototype bike lock was designed and built for an interprofessional project course, with the ultimate goal being a way to improve the bicycle facilities on campus. The lock used RFID scanning so students would be able to use their IIT ID cards to lock and unlock them, removing the need for them to carry a bike lock to campus. We also designed it to be as strong or stronger than a lock that could be carried with you, to ensure safety was not compromised.",
+          "caption": "This prototype bike lock was designed and built for an interprofessional project course, with the ultimate goal being a way to improve the bicycle facilities on campus. The lock used RFID scanning so students would be able to use their IIT ID cards to lock and unlock them, removing the need for them to carry a bike lock to campus. We also designed it to be as strong or stronger than a lock that could be carried with you in order to ensure safety was not compromised.",
           "image": "../pics/ipro/prototype-bike.jpg",
           "alt": "pic of foam bike with prototype lock"
         },
@@ -207,14 +207,14 @@
         {
           "id": "3d",
           "type": "right",
-          "caption": "Our initial design was a simple post with a metal bar that would enclose the bike, shown in this simple mockup. However, we decided against this and moved to a heavy chain, due to size variations in bicycles and the space required for a hinged metal bar opening. Also in this image the front wheel is not secured, something we addressed in later designs.",
+          "caption": "Our initial design was a simple post with a metal bar that would enclose the bike, shown in this mockup. However, we decided against this and moved to a heavy chain, due to size variations in bicycles and the space required for a hinged metal bar opening. Also in this image the front wheel is not secured, something we addressed in later designs.",
           "image": "../pics/ipro/model.png",
           "alt": "3d mockup of early design with hinged arm"
         },
         {
           "id": "protoype-cad",
           "type": "left",
-          "caption": "This is a simple CAD representation of the prototype that was to be laser cut from medium MDF. The additional extensions at the bottom were for adding wheel locking capability. Ideally, we wanted to be able to lock both wheels with one chain, but these bike locks would also mean people could secure their front wheel with their own cable lock, still removing the need to bring a heavy U-lock.",
+          "caption": "This is a CAD representation of the prototype that was to be laser cut from medium MDF. The additional extensions at the bottom were for adding wheel locking capability. Ideally, we wanted to be able to lock both wheels with one chain, but these bike locks would also mean people could secure their front wheel with their own cable lock, removing the need to bring a heavy U-lock.",
           "image": "../pics/ipro/prototype-model.JPG",
           "alt": "cad of prototype"
         },
@@ -233,7 +233,7 @@
         {
           "id": "interior",
           "type": "doubleImg",
-          "caption": "Above are images of the prototype with the arduino and RFID scanner installed. This setup takes the signal from the scanner and controls a servo motor in the lower section, which operates the locking mechanism. This can be seen below in some videos of the mechanism.",
+          "caption": "Above are images of the prototype with the Arduino and RFID scanner installed. This setup takes the signal from the scanner and controls a servo motor in the lower section, which operates the locking mechanism. This can be seen below in some videos of the mechanism.",
           "left": "../pics/ipro/interior.JPG",
           "right": "../pics/ipro/scanner.JPG",
           "leftAlt": "interior of prototype",
@@ -242,7 +242,7 @@
         {
           "id": "mechanism",
           "type": "doubleVid",
-          "caption": "These videos demonstrate the mechanism functioning when the RFID card is scanned. Definitely very simple, but something like this is all that would be needed to secure the end of a chain, and could be made to be very strong. This central position was also chosen based on a scaled bike, but could be relocated for locking wheels. Ultimately, a semester was too short to see this project grow any more, which was very unfortunate because I was excited that there was a possibility this could have actively benefitted the campus and student transportation.",
+          "caption": "These videos demonstrate the mechanism functioning when the RFID card is scanned. Something like this is all that would be needed to secure the end of a chain, and could be made to be very strong. This central position was also chosen based on a scaled bike, but could be relocated for locking wheels. Ultimately, a semester was too short to see this project grow any more, which was unfortunate because I was excited that there was a possibility this could have actively benefitted the campus and student transportation.",
           "left": "../pics/ipro/mechanism-int.mp4",
           "right": "../pics/ipro/mechanism-ext.mp4",
           "controls": false,
@@ -265,7 +265,7 @@
         {
           "id": "intro",
           "type": "left",
-          "caption": "This project was a calculator built in the assembly language MIPS using QtSPIM. It allowed for addition, subtraction, multiplication, division, and conversions between decimal, hex, and binary numbers. I personally enjoyed this project and had some fun doing the simple ASCII-art design for the interface, which I felt improved the user experience by far over a console line.",
+          "caption": "This project was a calculator built in the assembly language MIPS using QtSPIM. It allowed for addition, subtraction, multiplication, division, and conversions between decimal, hex, and binary numbers. I personally enjoyed this project and had some fun doing the ASCII-art design for the interface, which I felt improved the user experience beyond a console line.",
           "image": "../pics/mips/home.PNG",
           "alt": "pic of conversions menu for calculator"
         },
