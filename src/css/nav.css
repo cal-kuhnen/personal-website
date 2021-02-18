@@ -22,6 +22,7 @@ nav.nav-scroll
 .nav-scroll .selected
 {
 	color: #fff!important;
+	top: 0px;
 }
 
 .nav-scroll .navButton
@@ -54,6 +55,7 @@ nav.nav-scroll
 	.nav-scroll:hover .selected
 	{
 		color: #fcbd50!important;
+		top: 0px;
 	}
 
 	.nav-scroll:hover .navButton
@@ -88,6 +90,14 @@ nav.nav-scroll
 	display: flex;
 	align-items: center;
   transition: background-color 0.1s, color 0.1s, box-shadow 0.1s;
+	box-shadow: #222 1px 1px 0,
+                #222 -2px 2px 0,
+                #222 -3px 3px 0,
+                #222 -4px 4px 0,
+                #222 -5px 5px 0,
+                #222 -6px 6px 0,
+                #222 -7px 7px 0,
+                #222 -8px 8px 0;
 }
 
 #title:hover
@@ -101,23 +111,40 @@ nav.nav-scroll
 {
 	height: 100%;
 	position: relative;
-	margin-left: 1%;
-	padding-left: 1%;
-	padding-right: 1%;
-	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
 	font-size: 4vw;
 	display: flex;
 	align-items: center;
 	border-radius: 2vw;
-	transition: background-color 0.1s, color 0.1s, box-shadow 0.1s linear, width 0.2s;
+	transition: background-color 0.1s, color 0.1s, box-shadow 0.1s linear;
   background-color: #fcbd50;
+	box-shadow: #d6a042 -1px 1px 0,
+                #d6a042 -2px 2px 0,
+                #d6a042 -3px 3px 0,
+                #d6a042 -4px 4px 0,
+                #d6a042 -5px 5px 0,
+                #d6a042 -6px 6px 0,
+                #d6a042 -7px 7px 0,
+                #d6a042 -8px 8px 0;
 }
 
-.navButton:hover
+.selected:hover
 {
-	background-color: #fff;
-  color: #fcbd50;
 	box-shadow: inset 0px 0px 0px 4px #fcbd50;
+}
+
+.navButton:hover:not(.selected)
+{
+	background-color: #ffd666;
+	box-shadow: #fcbd50 -1px 1px 0,
+                #fcbd50 -2px 2px 0,
+                #fcbd50 -3px 3px 0,
+                #fcbd50 -4px 4px 0,
+                #fcbd50 -5px 5px 0,
+                #fcbd50 -6px 6px 0,
+                #fcbd50 -7px 7px 0,
+                #fcbd50 -8px 8px 0;
 }
 
 .selected
@@ -125,6 +152,9 @@ nav.nav-scroll
   background-color: #fff;
   color: #fcbd50!important;
 	box-shadow: inset 0px 0px 0px 4px #fcbd50;
+	top: 8px;
+	margin-left: -8px;
+	margin-right: 8px;
 }
 
 .home-select
@@ -150,9 +180,13 @@ a:visited
 	text-decoration: none;
 }
 
-.navButton:active
+.navButton:active:not(.selected)
 {
 	background-color: #fcbd50;
+	top: 8px;
+	margin-left: -8px;
+	margin-right: 8px;
+	box-shadow: inset 0px 0px 0px 4px #fcbd50;
 }
 
 #title:active
