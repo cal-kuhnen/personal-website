@@ -131,5 +131,6 @@ h1
     height: 80vw;
     width: 80vw;
     font-size: 2.5em;
+    box-shadow: none;
   }
 }
