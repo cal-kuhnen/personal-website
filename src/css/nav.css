@@ -71,48 +71,76 @@ nav.nav-scroll
 
 .nav-scroll #title
 {
-	color: #000;
+	color: #181818;
 }
 
 #title
 {
 	position: relative;
 	font-size: 5vw;
-	float: left;
 	padding-left: 1%;
 	padding-right: 1%;
+	margin-left: 8px;
+	margin-right: -8px;
 	font-weight: bold;
 	font-family: "Albertus", sans-serif;
 	color: #FFF;
 	overflow-wrap: break-word;
-	background-color: black;
+	background-color: #181818;
 	border-radius: 2vw;
 	display: flex;
 	align-items: center;
-  transition: background-color 0.1s, color 0.1s, box-shadow 0.1s;
-	box-shadow: #222 1px 1px 0,
-                #222 -2px 2px 0,
-                #222 -3px 3px 0,
-                #222 -4px 4px 0,
-                #222 -5px 5px 0,
-                #222 -6px 6px 0,
-                #222 -7px 7px 0,
-                #222 -8px 8px 0;
+  transition: background-color 0.1s, color 0.1s;
+	box-shadow: #000 -1px 1px 0,
+                #000 -2px 2px 0,
+                #000 -3px 3px 0,
+                #000 -4px 4px 0,
+                #000 -5px 5px 0,
+                #000 -6px 6px 0,
+                #000 -7px 7px 0,
+                #000 -8px 8px 0;
 }
 
-#title:hover
+#title:hover:not(.home-select)
 {
 	background-color: #fff;
 	color: #000;
-	box-shadow:inset 0px 0px 0px 4px #000;
+	box-shadow:inset 0px 0px 0px 4px #000,
+								#000 -1px 1px 0,
+                #000 -2px 2px 0,
+                #000 -3px 3px 0,
+                #000 -4px 4px 0,
+                #000 -5px 5px 0,
+                #000 -6px 6px 0,
+                #000 -7px 7px 0,
+                #000 -8px 8px 0;
+}
+
+.home-select
+{
+  background-color: #fff!important;
+  color: #000!important;
+  box-shadow: inset 0px 0px 0px 4px #000!important;
+	top: 8px;
+	margin-left: 0px!important;
+	margin-right: 0px!important;
+}
+
+#title:active:not(.home-select)
+{
+  background-color: #000;
+	top: 8px;
+	margin-left: 0px;
+	margin-right: 0px;
+	box-shadow: inset 0px 0px 0px 4px #000;
 }
 
 .navButton
 {
 	height: 100%;
 	position: relative;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 1%;
+	padding-right: 1%;
 	font-size: 4vw;
 	display: flex;
 	align-items: center;
@@ -157,11 +185,13 @@ nav.nav-scroll
 	margin-right: 8px;
 }
 
-.home-select
+.navButton:active:not(.selected)
 {
-  background-color: #fff!important;
-  color: #000!important;
-  box-shadow: inset 0px 0px 0px 4px #000;
+	background-color: #fcbd50;
+	top: 8px;
+	margin-left: -8px;
+	margin-right: 8px;
+	box-shadow: inset 0px 0px 0px 4px #fcbd50;
 }
 
 a.navButton
@@ -178,20 +208,6 @@ a:link
 a:visited
 {
 	text-decoration: none;
-}
-
-.navButton:active:not(.selected)
-{
-	background-color: #fcbd50;
-	top: 8px;
-	margin-left: -8px;
-	margin-right: 8px;
-	box-shadow: inset 0px 0px 0px 4px #fcbd50;
-}
-
-#title:active
-{
-  background-color: #000;
 }
 
 @media only screen and (max-width: 600px) {
