@@ -273,4 +273,12 @@ h2.subtitle
     justify-content: center;
     margin-bottom: 20px;
   }
+
+  video {
+    width: 80vw;
+  }
+
+  video.double {
+    max-width: 80vw;
+  }
 }
