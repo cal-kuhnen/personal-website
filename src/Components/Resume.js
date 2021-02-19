@@ -3,10 +3,9 @@ import '../css/resume.css';
 
 const Resume = () => {
   return (
-    <div className="content">
+    <div className="container">
   		<section id="resume">
         <div className='res-container'>
-    			<h3 className="centered">calvinkuhnen@gmail.com</h3>
     			<section>
     				<h3>Education</h3>
             <div className="split">

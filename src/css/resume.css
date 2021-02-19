@@ -1,14 +1,4 @@
 /* --- Resume --- */
-.content
-{
-	top: 8vw;
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-	font-family: "HK", sans-serif;
-	padding-bottom: 40px;
-}
-
 #resume
 {
 	position: relative;
@@ -19,7 +9,7 @@
 	border: solid 4px black;
 	border-radius: 60px;
 	background-color: #fff;
-	margin-left: 12.5%;
+	font-family: "HK", sans-serif;
 }
 
 .res-container
@@ -65,7 +55,6 @@ li
 @media only screen and (max-width: 600px) {
 	#resume {
 		width: 90%;
-		margin-left: 5%;
 	}
 
 	.split {
