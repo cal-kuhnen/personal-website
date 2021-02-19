@@ -83,8 +83,8 @@ const DualColumn = (item) => {
             {project.caption1}
           </div>
           <div className='arrows'>
-            <img className='lArrow' src='../pics/arrow-left.png'></img>
-            <img className='rArrow' src='../pics/arrow-right.png'></img>
+            <img className='lArrow' src='../pics/arrow-left.png' alt='arrow directing caption to image'></img>
+            <img className='rArrow' src='../pics/arrow-right.png' alt='arrow directing caption to image'></img>
           </div>
           <div className='gridImage2'>
             <img className='gridImg' src={project.image2} alt={project.alt2}></img>

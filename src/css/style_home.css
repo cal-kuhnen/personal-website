@@ -75,7 +75,7 @@
 html {
 	overflow-y: scroll;
 	height: 100%;
-	background-color: #fff9e3;
+	background-color: #e6e6e6;
 	font-feature-settings: "salt";
 	line-height: normal;
 }
@@ -213,11 +213,11 @@ a.contact-link:hover
 
 	#about {
 		width: 100%;
+		margin-bottom: 20px;
 	}
 
 	#me {
 		width: 100%;
-		top: 20px;
 	}
 
 	#homeImage {

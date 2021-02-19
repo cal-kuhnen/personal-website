@@ -14,7 +14,7 @@ const Home = () => {
               <div><a className="contact-link" href="https://www.linkedin.com/in/calvin-kuhnen-32b8b31a2" rel="noopener noreferrer" target="_blank">LinkedIn</a></div>
             </div>
             <div id="me">
-        			<img id="homeImage" src="./pics/profile.jpg"></img>
+        			<img id="homeImage" src="./pics/profile.jpg" alt="picture of me, calvin"></img>
             </div>
           </div>
     		</section>
