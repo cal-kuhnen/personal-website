@@ -5,7 +5,6 @@
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	text-align: center;
 	font-family: "HK", sans-serif;
 	padding-bottom: 40px;
 }
@@ -17,11 +16,10 @@
 	padding-bottom: 40px;
 	padding-top: 20px;
 	height: auto;
-	display: inline-block;
-	text-align: left;
 	border: solid 4px black;
 	border-radius: 60px;
 	background-color: #fff;
+	margin-left: 12.5%;
 }
 
 .res-container
@@ -33,17 +31,6 @@
 .info
 {
 	margin-left: 40px;
-	position: relative;
-}
-
-.org
-{
-	display: inline-block;
-}
-
-.job
-{
-	margin-left: 20px;
 }
 
 .centered
@@ -54,11 +41,64 @@
 .right-align
 {
 	float: right;
-	position: relative;
 }
 
-.field-time
+.split
 {
 	display: flex;
 	justify-content: space-between;
+}
+
+/* --- Lists --- */
+ul
+{
+	font-size: 1.4em;
+	margin-left: 60px;
+	margin-bottom: 10px;
+}
+
+li
+{
+	list-style: disc;
+}
+
+@media only screen and (max-width: 600px) {
+	#resume {
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.split {
+		display: block;
+		margin-left: 10px;
+	}
+
+	.right-align {
+		float: none;
+	}
+
+	.info {
+		margin-left: 0px;
+		position: static;
+	}
+
+	h4 {
+		margin-left: 0px;
+	}
+
+	ul {
+		margin-left: 30px;
+	}
+
+	.interests {
+		margin-left: 10px;
+	}
+
+	.list {
+		margin-left: 20px;
+	}
+
+	.centered {
+		font-size: 1.5em;
+	}
 }

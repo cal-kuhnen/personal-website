@@ -97,7 +97,7 @@ a.project
   text-align: center;
   width: 270px;
   transition: opacity 0.2s;
-  text-shadow: 2px 2px #000;
+  text-shadow: -2px 2px #000;
 }
 
 img.button

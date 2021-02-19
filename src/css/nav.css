@@ -90,7 +90,7 @@ nav.nav-scroll
 	border-radius: 2vw;
 	display: flex;
 	align-items: center;
-  transition: background-color 0.1s, color 0.1s;
+  transition: background-color 0.2s, color 0.1s, box-shadow 0.2s;
 	box-shadow: #000 -1px 1px 0,
                 #000 -2px 2px 0,
                 #000 -3px 3px 0,
@@ -103,17 +103,16 @@ nav.nav-scroll
 
 #title:hover:not(.home-select)
 {
-	background-color: #fff;
-	color: #000;
-	box-shadow:inset 0px 0px 0px 4px #000,
-								#000 -1px 1px 0,
-                #000 -2px 2px 0,
-                #000 -3px 3px 0,
-                #000 -4px 4px 0,
-                #000 -5px 5px 0,
-                #000 -6px 6px 0,
-                #000 -7px 7px 0,
-                #000 -8px 8px 0;
+	background-color: #444;
+	color: #fff;
+	box-shadow: #666 -1px 1px 0,
+                #666 -2px 2px 0,
+                #666 -3px 3px 0,
+                #666 -4px 4px 0,
+                #666 -5px 5px 0,
+                #666 -6px 6px 0,
+                #666 -7px 7px 0,
+                #666 -8px 8px 0;
 }
 
 .home-select

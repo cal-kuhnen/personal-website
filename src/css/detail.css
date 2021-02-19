@@ -109,14 +109,14 @@ a.project-link:hover
 
 .lArrow
 {
-  max-width: 30%;
+  max-width: 20%;
   margin-left: 10%;
   margin-top: 20px;
 }
 
 .rArrow
 {
-  max-width: 30%;
+  max-width: 20%;
   align-self: end;
   justify-self: end;
   margin-right: 10%;

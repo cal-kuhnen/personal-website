@@ -175,19 +175,6 @@ h4
 	margin-bottom: 10px;
 }
 
-/* --- Lists --- */
-ul
-{
-	font-size: 1.4em;
-	margin-left: 60px;
-	margin-bottom: 10px;
-}
-
-li
-{
-	list-style: disc;
-}
-
 .center
 {
 	text-align: center;
