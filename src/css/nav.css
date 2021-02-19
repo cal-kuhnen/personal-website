@@ -1,4 +1,9 @@
 /* --- Nav --- */
+:root {
+  --button: #fcbd50;
+  --button-shadow: #d6a042;
+}
+
 nav
 {
 	position: fixed;
@@ -27,8 +32,8 @@ nav.nav-scroll
 
 .nav-scroll .navButton
 {
-	color: #fcbd50;
-	box-shadow: 0px 0px 10px #000, inset 0px 0px 0px 4px #fcbd50;
+	color: var(--button);
+	box-shadow: 0px 0px 10px #000, inset 0px 0px 0px 4px var(--button);
 }
 
 .nav-scroll #title
@@ -54,7 +59,7 @@ nav.nav-scroll
 
 	.nav-scroll:hover .selected
 	{
-		color: #fcbd50!important;
+		color: var(--button)!important;
 		top: 0px;
 	}
 
@@ -65,8 +70,8 @@ nav.nav-scroll
 
 	.nav-scroll:hover .navButton:hover
 	{
-		color: #fcbd50;
-		box-shadow: 0px 0px 15px #000, inset 0px 0px 0px 4px #fcbd50
+		color: var(--button);
+		box-shadow: 0px 0px 15px #000, inset 0px 0px 0px 4px var(--button)
 	}
 
 .nav-scroll #title
@@ -145,40 +150,40 @@ nav.nav-scroll
 	align-items: center;
 	border-radius: 2vw;
 	transition: background-color 0.2s, color 0.1s, box-shadow 0.2s;
-  background-color: #fcbd50;
-	box-shadow: #d6a042 -1px 1px 0,
-                #d6a042 -2px 2px 0,
-                #d6a042 -3px 3px 0,
-                #d6a042 -4px 4px 0,
-                #d6a042 -5px 5px 0,
-                #d6a042 -6px 6px 0,
-                #d6a042 -7px 7px 0,
-                #d6a042 -8px 8px 0;
+  background-color: var(--button);
+	box-shadow: var(--button-shadow) -1px 1px 0,
+                var(--button-shadow) -2px 2px 0,
+                var(--button-shadow) -3px 3px 0,
+                var(--button-shadow) -4px 4px 0,
+                var(--button-shadow) -5px 5px 0,
+                var(--button-shadow) -6px 6px 0,
+                var(--button-shadow) -7px 7px 0,
+                var(--button-shadow) -8px 8px 0;
 }
 
 .selected:hover
 {
-	box-shadow: inset 0px 0px 0px 4px #fcbd50;
+	box-shadow: inset 0px 0px 0px 4px var(--button);
 }
 
 .navButton:hover:not(.selected)
 {
 	background-color: #ffd666;
-	box-shadow: #fcbd50 -1px 1px 0,
-                #fcbd50 -2px 2px 0,
-                #fcbd50 -3px 3px 0,
-                #fcbd50 -4px 4px 0,
-                #fcbd50 -5px 5px 0,
-                #fcbd50 -6px 6px 0,
-                #fcbd50 -7px 7px 0,
-                #fcbd50 -8px 8px 0;
+	box-shadow: var(--button) -1px 1px 0,
+                var(--button) -2px 2px 0,
+                var(--button) -3px 3px 0,
+                var(--button) -4px 4px 0,
+                var(--button) -5px 5px 0,
+                var(--button) -6px 6px 0,
+                var(--button) -7px 7px 0,
+                var(--button) -8px 8px 0;
 }
 
 .selected
 {
   background-color: #fff;
-  color: #fcbd50!important;
-	box-shadow: inset 0px 0px 0px 4px #fcbd50;
+  color: var(--button)!important;
+	box-shadow: inset 0px 0px 0px 4px var(--button);
 	top: 8px;
 	margin-left: -8px;
 	margin-right: 8px;
@@ -186,11 +191,11 @@ nav.nav-scroll
 
 .navButton:active:not(.selected)
 {
-	background-color: #fcbd50;
+	background-color: var(--button);
 	top: 8px;
 	margin-left: -8px;
 	margin-right: 8px;
-	box-shadow: inset 0px 0px 0px 4px #fcbd50;
+	box-shadow: inset 0px 0px 0px 4px var(--button);
 }
 
 a.navButton
@@ -232,7 +237,7 @@ a:visited
 
 	.selected, .selected:hover {
 		top: -4px;
-		box-shadow: 0px 0px 15px #000, inset 0px 0px 0px 4px #fcbd50;
+		box-shadow: 0px 0px 15px #000, inset 0px 0px 0px 4px var(--button);
 		z-index: 2;
 	}
 
@@ -266,7 +271,7 @@ a:visited
 	}
 
 	.nav-scroll .selected {
-		color: #fcbd50!important;
+		color: var(--button)!important;
 	}
 
 	.nav-scroll #title, .nav-scroll .navButton {
