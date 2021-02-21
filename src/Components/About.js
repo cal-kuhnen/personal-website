@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => {
+const About = () => {
   return (
     	<div className="container">
     		<section id="home">
@@ -14,7 +14,7 @@ const Home = () => {
               <div><a className="contact-link" href="https://www.linkedin.com/in/calvin-kuhnen-32b8b31a2" rel="noopener noreferrer" target="_blank">LinkedIn</a></div>
             </div>
             <div id="me">
-        			<img id="homeImage" src="./pics/profile.jpg" alt="picture of me, calvin"></img>
+        			<img id="homeImage" src="./pics/profile.jpg" alt="me, calvin"></img>
             </div>
           </div>
     		</section>
@@ -22,4 +22,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default About

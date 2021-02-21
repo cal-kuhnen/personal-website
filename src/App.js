@@ -4,7 +4,7 @@ import './css/reset.css';
 import './css/style_home.css';
 import './css/nav.css';
 import Nav from './Components/Nav';
-import Home from './Components/Home';
+import About from './Components/About';
 import Resume from './Components/Resume';
 import Projects from './Components/Projects';
 import ScrollToTop from './Components/ScrollToTop';
@@ -24,13 +24,13 @@ function App() {
       </div>
       <Switch>
         <Route path='/projects'>
-          <Projects />
+          <About />
         </Route>
         <Route path='/resume'>
           <Resume />
         </Route>
         <Route exact path='/'>
-          <Home />
+          <Projects />
         </Route>
       </Switch>
     </Router>

@@ -10,7 +10,7 @@ nav
 	position: fixed;
 	width: 75%;
 	height: 5.4vw;
-	font-family: "Albertus", sans-serif;
+	font-family: 'HK', sans-serif;
 	color: black;
 	z-index: 2;
 	display: flex;
@@ -91,7 +91,6 @@ nav.nav-scroll
 	margin-left: 8px;
 	margin-right: -8px;
 	font-weight: bold;
-	font-family: "Albertus", sans-serif;
 	color: #FFF;
 	overflow-wrap: break-word;
 	background-color: #181818;
