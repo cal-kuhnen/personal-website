@@ -37,7 +37,7 @@
         {
           "id": "new-slideshow",
           "type": "video",
-          "caption": "Here are the same pages, with the redesign (this can also be seen by visiting the website). Ultimately, I found the previous design too dark and uninviting, and wanted something a little more interesting and user friendly. We added a live chat for listeners, which has turned out to be an excellent addition, and the stream player is much more functional now - it notifies the user when the stream is live, seen below. The site will continue to be updated throughout the year as we return to more of our programming.",
+          "caption": "Here are the same pages, with the redesign (this can also be seen by visiting the website). Ultimately, I found the previous design too dark and uninviting, and wanted something a little more interesting and user friendly. We added a live chat for listeners, which has turned out to be an excellent addition, and the stream player is much more functional now. The site will continue to be updated throughout the year as we return to more of our programming.",
           "video": "../pics/sock/newSlideshow.mp4",
           "controls": false,
           "autoplay": true,

@@ -4,17 +4,17 @@
 	position: relative;
 	width: 75%;
 	padding-bottom: 40px;
-	padding-top: 20px;
+	padding-top: 40px;
 	height: auto;
 	border: solid 4px black;
 	border-radius: 60px;
 	background-color: #fff;
-	font-family: serif, sans-serif;
+	font-family: "HK", sans-serif;
 }
 
 .res-container
 {
-	width: 96%;
+	width: 90%;
 	margin: auto;
 }
 

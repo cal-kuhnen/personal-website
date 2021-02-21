@@ -27,13 +27,12 @@
   width: 40%;
   min-width: 350px;
   border-radius: 20px;
-  border: solid 4px black;
   background-color: #bbb;
   transition: box-shadow 0.1s linear, font-size 0.1s, border 0.1s, margin 0.1s;
   display: flex;
   align-items: center;
   color: #000;
-  font-size: 3em;
+  font-size: 5em;
   justify-content: center;
   font-family: 'HK';
   font-weight: bold;
@@ -41,7 +40,7 @@
   overflow: hidden;
   margin-left: 2vw;
   margin-right: 2vw;
-  /*box-shadow:
+  box-shadow:
                 #000 -1px 1px 0,
                 #000 -2px 2px 0,
                 #000 -3px 3px 0,
@@ -53,7 +52,7 @@
                 #000 -9px 9px 0,
                 #000 -10px 10px 0,
                 #000 -11px 11px 0,
-                #000 -12px 12px 0;*/
+                #000 -12px 12px 0;
 }
 
   .project:hover
@@ -98,18 +97,18 @@ a.project
   height: auto;
   word-wrap: normal;
   text-align: center;
-  width: 270px;
   transition: opacity 0.2s;
+  width: 350px;
 }
 
 img.button
 {
-  filter: blur(10px) brightness(50%);
+  filter: blur(10px) brightness(70%);
   flex-shrink: 0;
   min-width: 104%;
   min-height: 104%;
   transition: filter 0.2s;
-  max-width: 50%;
+  max-width: 70%;
 }
 
 h1

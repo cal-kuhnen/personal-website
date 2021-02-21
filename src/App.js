@@ -7,6 +7,7 @@ import Nav from './Components/Nav';
 import About from './Components/About';
 import Resume from './Components/Resume';
 import Projects from './Components/Projects';
+import Detail from './Components/Detail';
 import ScrollToTop from './Components/ScrollToTop';
 import {
   BrowserRouter as Router,
@@ -23,11 +24,14 @@ function App() {
         <Nav />
       </div>
       <Switch>
-        <Route path='/projects'>
+        <Route path='/about'>
           <About />
         </Route>
         <Route path='/resume'>
           <Resume />
+        </Route>
+        <Route path={`/:project`}>
+          <Detail />
         </Route>
         <Route exact path='/'>
           <Projects />
