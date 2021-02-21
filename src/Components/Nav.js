@@ -25,8 +25,10 @@ const Nav = () => {
   return (
       <nav>
         <NavLink id='title' to='/' className='homeLink' activeClassName='home-select' exact={true}>Calvin Kuhnen</NavLink>
-        <NavLink className='navButton' activeClassName='selected' to="/resume">Resume</NavLink>
-        <NavLink className='navButton' activeClassName='selected' to="/about">About</NavLink>
+        <div className='buttons'>
+          <NavLink className='navButton' activeClassName='selected' to="/resume">Resume</NavLink>
+          <NavLink className='navButton' activeClassName='selected' to="/about">About</NavLink>
+        </div>
       </nav>
   )
 }

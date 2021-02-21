@@ -144,8 +144,6 @@ a.project-link:hover
 
 .dual-image
 {
-  border: solid 4px #000;
-  border-radius: 20px;
   max-width: 28vw;
   max-height: 34vw;
 }
@@ -153,8 +151,6 @@ a.project-link:hover
 /* --- Two Images Horizontally --- */
 img.double
 {
-  border: solid 4px #000;
-  border-radius: 20px;
   max-width: 30vw;
   max-height: 36vw;
 }
@@ -162,22 +158,16 @@ img.double
 img.gridImg
 {
   max-width: 28vw;
-  border: solid 4px #000;
-  border-radius: 20px;
 }
 
 video
 {
   margin: auto;
   width: 55vw;
-  border: solid 4px #000;
-  border-radius: 20px;
 }
 
 video.double
 {
-  border: solid 4px #000;
-  border-radius: 20px;
   max-width: 24vw;
 }
 
@@ -229,8 +219,6 @@ h2.subtitle
 
 .single-image
 {
-  border: solid 4px black;
-  border-radius: 20px;
   max-width: 55vw;
   margin: auto;
 }

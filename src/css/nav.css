@@ -9,19 +9,18 @@ nav
 {
 	position: fixed;
 	width: 75%;
-	height: 5.4vw;
 	font-family: 'HK', sans-serif;
 	color: black;
 	z-index: 2;
-	display: flex;
+	display: inline-flex;
 	justify-content: space-between;
-	top: 10px;
+	top: 1vw;
   margin-left: 12.5%;
 }
 
 nav.nav-scroll
 {
-	top: -2.7vw;
+	top: -3.4vw;
 	transition: top 0.2s;
 }
 
@@ -96,16 +95,15 @@ nav.nav-scroll
 #title
 {
 	position: relative;
-	font-size: 5vw;
-	padding-left: 1%;
-	padding-right: 1%;
+	font-size: 3.4vw;
+	padding: 0.7vw 2vw 0.7vw 2vw;
 	margin-left: 8px;
 	margin-right: -8px;
 	font-weight: bold;
 	color: #FFF;
 	overflow-wrap: break-word;
 	background-color: #181818;
-	border-radius: 2vw;
+	border-radius: 2.2vw;
 	display: flex;
 	align-items: center;
   transition: background-color 0.2s, color 0.1s, box-shadow 0.2s;
@@ -152,16 +150,24 @@ nav.nav-scroll
 	box-shadow: inset 0px 0px 0px 4px #000;
 }
 
+.buttons
+{
+	display: flex;
+	justify-content: space-between;
+	font-size: 3vw;
+}
+
 .navButton
 {
 	height: 100%;
 	position: relative;
-	padding-left: 1%;
-	padding-right: 1%;
-	font-size: 4vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	margin-left: 1vw;
+	box-sizing: border-box;
 	display: flex;
 	align-items: center;
-	border-radius: 2vw;
+	border-radius: 2.2vw;
 	transition: background-color 0.2s, color 0.1s, box-shadow 0.2s;
   background-color: var(--button);
 	box-shadow: var(--shadow) -1px 1px 0,
@@ -198,7 +204,7 @@ nav.nav-scroll
   color: var(--button)!important;
 	box-shadow: inset 0px 0px 0px 4px var(--button);
 	top: 8px;
-	margin-left: -8px;
+	margin-left: calc(1vw - 8px);
 	margin-right: 8px;
 }
 
@@ -206,7 +212,7 @@ nav.nav-scroll
 {
 	background-color: var(--button);
 	top: 8px;
-	margin-left: -8px;
+	margin-left: calc(1vw - 8px);
 	margin-right: 8px;
 	box-shadow: inset 0px 0px 0px 4px var(--button);
 }
