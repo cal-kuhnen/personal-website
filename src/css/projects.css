@@ -124,12 +124,15 @@ h1
 
   .squares {
     width: 90%;
+    padding-top: 5vw;
   }
   .project {
     border-radius: 60px;
+    min-width: 0;
     height: 80vw;
     width: 80vw;
     font-size: 2.5em;
     box-shadow: none;
+    margin-bottom: 5vw;
   }
 }

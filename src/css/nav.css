@@ -247,7 +247,6 @@ a:visited
 		margin: 0px;
 		font-size: 7vw;
 		height: auto;
-		width: 33%;
 		border-radius: 0vw 0vw 5vw 5vw;
 		z-index: 1;
 		justify-content: center;
@@ -275,7 +274,6 @@ a:visited
 		box-shadow: inset 0px 0px 0px 4px #000;
 		margin-left: 0px;
 		margin-right: 0px;
-		width: 34%;
 		top: -4px;
 		line-height: 1.3;
 	}
