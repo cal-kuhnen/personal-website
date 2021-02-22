@@ -1,3 +1,7 @@
+:root {
+  --backing: #ddd;
+}
+
 /* --- Dual-Column Stylings --- */
 .dual-container
 {
@@ -15,13 +19,19 @@
 
 .horizontal-container
 {
-  width: 90%;
+  width: 86%;
   height: auto;
   display: flex;
   margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
   align-items: flex-start;
+  font-size: 1.5em;
+}
+
+.center
+{
+  justify-content: center;
 }
 
 .justify-between
@@ -36,9 +46,11 @@
 
 .offset-container
 {
-  width: 100%;
+  width: 86%;
   height: auto;
   margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a.project-link
@@ -60,7 +72,7 @@ a.project-link:hover
 /* --- Overlap Element --- */
 .overlap
 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   width: 86%;
   margin: auto;
   display: grid;
@@ -125,11 +137,13 @@ a.project-link:hover
 /* --- Horizontal Image + Caption --- */
 .left-right
 {
-  font-size: 1.8em;
   width: auto;
   display: flex;
-  margin-left: 2%;
-  margin-right: 2%;
+}
+
+.backing
+{
+  background-color: var(--backing);
 }
 
 .left
@@ -149,10 +163,28 @@ a.project-link:hover
 }
 
 /* --- Two Images Horizontally --- */
+.column
+{
+  display: block;
+  width: 48%;
+}
+
+.caption
+{
+  margin-top: 30px;
+}
+
 img.double
 {
   max-width: 30vw;
   max-height: 36vw;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.shadow
+{
+  box-shadow: 0px 0px 5px #000;
 }
 
 img.gridImg
@@ -163,7 +195,7 @@ img.gridImg
 video
 {
   margin: auto;
-  width: 90%;
+  width: 100%;
 }
 
 video.double
@@ -174,6 +206,9 @@ video.double
 h1.top
 {
   margin-bottom: 40px;
+  text-align: left;
+  width: 86%;
+  margin-left: 7%;
 }
 
 h2.subtitle
@@ -203,10 +238,10 @@ h2.subtitle
   margin-bottom: 40px;
 }
 
-.center
+.center-caption
 {
   font-size: 1.8em;
-  width: 86%;
+  width: 100%;
   margin: auto;
   margin-bottom: 20px;
   text-align: left;
@@ -238,7 +273,7 @@ h2.subtitle
     margin-bottom: 20px;
   }
 
-  .center {
+  .center-caption {
     font-size: 1.5em;
   }
 

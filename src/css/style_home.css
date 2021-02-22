@@ -110,8 +110,6 @@ p
 #homeImage
 {
 	max-height: 28vw;
-	border: solid 4px black;
-  border-radius: 20px;
 }
 
 #home
@@ -211,9 +209,11 @@ a.contact-link:hover
 
 	#me {
 		width: 100%;
+		height: auto;
 	}
 
 	#homeImage {
-		max-height: 100vw;
+		max-width: 100%;
+		max-height: none;
 	}
 }

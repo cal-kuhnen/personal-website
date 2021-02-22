@@ -2,6 +2,11 @@ import React from 'react';
 import '../css/resume.css';
 
 const Resume = () => {
+
+  document.documentElement.style.setProperty('--button', '#8cb5de');
+  document.documentElement.style.setProperty('--shadow', '#7697b8');
+  document.documentElement.style.setProperty('--button-hover', '#9dc6ef');
+
   return (
     <div className="container">
   		<section id="resume">

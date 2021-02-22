@@ -26,7 +26,13 @@ const Detail = () => {
 // Function to render page in 2-column style
 const DualColumn = (item) => {
 
+  document.documentElement.style.setProperty('--backing', item.proj.colors.backing);
+  document.documentElement.style.setProperty('--button', item.proj.colors.button);
+  document.documentElement.style.setProperty('--shadow', item.proj.colors.shadow);
+  document.documentElement.style.setProperty('--button-hover', item.proj.colors.hover);
+
   let dualStyle = item.proj.detail.map((project) => {
+
     if (project.type === 'left') {
       return (
         <div key={project.id} className='horizontal-container justify-between'>
@@ -58,17 +64,22 @@ const DualColumn = (item) => {
     }
     else if (project.type === 'doubleImg') {
       return (
-        <div key={project.id} className='offset-container'>
-          <div className='horizontal-container justify-around'>
-            <div className='left-right'>
-              <img className='double' src={project.left} alt={project.leftAlt}></img>
+        <div key={project.id} className='horizontal-container justify-between'>
+          <div className='column'>
+            <div className='left-right backing center'>
+              <img className={project.class} src={project.left} alt={project.leftAlt}></img>
             </div>
-            <div className='left-right'>
-              <img className='double' src={project.right} alt={project.rightAlt}></img>
+            <div className='caption'>
+              {project.caption1}
             </div>
           </div>
-          <div className='center'>
-            {project.caption}
+          <div className='column'>
+            <div className='left-right backing center'>
+              <img className={project.class} src={project.right} alt={project.rightAlt}></img>
+            </div>
+            <div className='caption'>
+              {project.caption2}
+            </div>
           </div>
         </div>
       )
@@ -103,7 +114,7 @@ const DualColumn = (item) => {
               <img className='single-image' src={project.image} alt={project.alt}></img>
             </div>
           </div>
-          <div className='center'>
+          <div className='center-caption'>
             {project.caption}
           </div>
         </div>
@@ -117,7 +128,7 @@ const DualColumn = (item) => {
               <video src={project.video} alt={project.alt} controls={project.controls} autoPlay={project.autoplay} loop={project.loop} muted={project.muted}></video>
             </div>
           </div>
-          <div className='center'>
+          <div className='center-caption'>
             {project.caption}
           </div>
         </div>
@@ -134,7 +145,7 @@ const DualColumn = (item) => {
               <video className='double' src={project.right} alt={project.rightAlt} controls={project.controls} autoPlay={project.autoplay} loop={project.loop} muted={project.muted}></video>
             </div>
           </div>
-          <div className='center'>
+          <div className='center-caption'>
             {project.caption}
           </div>
         </div>

@@ -6,6 +6,9 @@
       "alt": "screenshot of SOCK website",
       "style": "dual",
       "link": "https://sock.rocks/",
+      "colors": {
+        "backing": "#eee"
+      },
       "detail": [
         {
           "id": "intro",
@@ -63,6 +66,9 @@
       "portPic": "../pics/apps/apps.png",
       "alt": "screenshot of government info app",
       "style": "dual",
+      "colors": {
+        "backing": "#eee"
+      },
       "detail": [
         {
           "id": "intro",
@@ -124,6 +130,9 @@
       "portPic": "./pics/ipro/prototype-bike.jpg",
       "alt": "pic of foam bike with prototype lock",
       "style": "dual",
+      "colors": {
+        "backing": "#eee"
+      },
       "detail": [
         {
           "id": "intro",
@@ -166,6 +175,7 @@
         {
           "id": "interior",
           "type": "doubleImg",
+          "class": "double",
           "caption": "Above are images of the prototype with the Arduino and RFID scanner installed. This setup takes the signal from the scanner and controls a servo motor in the lower section, which operates the locking mechanism. This can be seen below in some videos of the mechanism.",
           "left": "../pics/ipro/interior.JPG",
           "right": "../pics/ipro/scanner.JPG",
@@ -194,6 +204,12 @@
       "portPic": "./pics/cinepod/snow.jpg",
       "alt": "builders of pod celebrating its use outside",
       "style": "dual",
+      "colors": {
+        "backing": "#f5ecba",
+        "button": "#edcf24",
+        "shadow": "#d6bc27",
+        "hover": "#fedf35"
+      },
       "detail": [
         {
           "id": "intro",
@@ -210,6 +226,7 @@
         {
           "id": "cad",
           "type": "doubleImg",
+          "class": "double",
           "caption": "On the left is a screenshot of the 2x4 frame in CAD, used as an initial mockup. This design was chosen for simplicity and cost, as previous designs for a disassemblable pod were far outside the budget I set myself.",
           "left": "../pics/cinepod/cad-frame.PNG",
           "right": "../pics/cinepod/img01.PNG",
@@ -246,7 +263,9 @@
         {
           "id": "details",
           "type": "doubleImg",
-          "caption": "Above are some close-ups of the door and window. The door is held shut via magnet cabinet latches, and the window is simply bolted to the wall. All the windows were then sealed with silicone for better wind protection, which made a noticeable difference. At the moment, the pod is able to reach an internal temperature of about 60 degrees fahrenheit while the exterior temperature is 30, which makes for a very comfortable viewing experience. Of course it doesn't help that it takes two people to move... but I think it was well worth it. If you're thinking of building one for yourself, it did cost about $250, which is definitely more than I wanted to spend.",
+          "class": "double shadow",
+          "caption1": "Above are some close-ups of the door and window. The door is held shut via magnet cabinet latches, and the window is simply bolted to the wall. At the moment, the pod is able to reach an internal temperature of about 60 degrees fahrenheit while the exterior temperature is 30, which makes for a very comfortable viewing experience. Of course it doesn't help that it takes two people to move... but I think it was well worth it. If you're thinking of building one for yourself, it did cost about $250, which is definitely more than I wanted to spend.",
+          "caption2": "All the windows were then sealed with silicone for better wind protection, which made a noticeable difference.",
           "left": "../pics/cinepod/door-detail.JPG",
           "right": "../pics/cinepod/window-detail.JPG",
           "leftAlt": "close-up of pod door",
@@ -261,6 +280,9 @@
       "portPic": "../pics/mips/mips-button.png",
       "alt": "screenshot of MIPS calculator running",
       "style": "dual",
+      "colors": {
+        "backing": "#eee"
+      },
       "detail": [
         {
           "id": "intro",
@@ -277,6 +299,7 @@
         {
           "id": "add-sub",
           "type": "doubleImg",
+          "class": "double",
           "caption": "Above are examples for addition and subtraction, with a bit of flair in the menu design.",
           "left": "../pics/mips/addition.PNG",
           "right": "../pics/mips/subtraction.PNG",
@@ -286,6 +309,7 @@
         {
           "id": "mult-div",
           "type": "doubleImg",
+          "class": "double",
           "caption": "Here are multiplication and division. The division function is limited to whole numbers.",
           "left": "../pics/mips/multi.PNG",
           "right": "../pics/mips/division.PNG",
@@ -300,6 +324,7 @@
         {
           "id": "conv-example",
           "type": "doubleImg",
+          "class": "double",
           "caption": "This is the conversion menu, and an example of a binary-to-decimal conversion. This component of the calculator made up the meat of the project, and I was satisfied with my solution because the conversions handle negative numbers as well, which was not a requirement. I also attempted to make the menu as clear as possible, as the choice to use a more graphical style in the console was purely functional.",
           "left": "../pics/mips/conversions.PNG",
           "right": "../pics/mips/bindec.PNG",
@@ -315,6 +340,9 @@
       "portPic": "./pics/digital/digital01.png",
       "alt": "screencap of 3d music video",
       "style": "dual",
+      "colors": {
+        "backing": "#eee"
+      },
       "detail": [
         {
           "id": "intro",
