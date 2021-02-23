@@ -89,7 +89,7 @@ nav.nav-scroll
 
 .nav-scroll #title
 {
-	color: #181818;
+	color: #222;
 }
 
 #title
@@ -102,7 +102,7 @@ nav.nav-scroll
 	font-weight: bold;
 	color: #FFF;
 	overflow-wrap: break-word;
-	background-color: #181818;
+	background-color: #222;
 	border-radius: 2.2vw;
 	display: flex;
 	align-items: center;

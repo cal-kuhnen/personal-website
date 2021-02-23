@@ -3,9 +3,9 @@ import '../css/resume.css';
 
 const Resume = () => {
 
-  document.documentElement.style.setProperty('--button', '#8cb5de');
-  document.documentElement.style.setProperty('--shadow', '#7697b8');
-  document.documentElement.style.setProperty('--button-hover', '#9dc6ef');
+  document.documentElement.style.setProperty('--button', '#db9316');
+  document.documentElement.style.setProperty('--shadow', '#b87d18');
+  document.documentElement.style.setProperty('--button-hover', '#eca427');
 
   return (
     <div className="container">

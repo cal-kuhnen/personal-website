@@ -7,7 +7,10 @@
       "style": "dual",
       "link": "https://sock.rocks/",
       "colors": {
-        "backing": "#eee"
+        "backing": "#f5ecba",
+        "button": "#f71616",
+        "shadow": "#d91e1e",
+        "hover": "#ff0000"
       },
       "detail": [
         {
@@ -67,7 +70,10 @@
       "alt": "screenshot of government info app",
       "style": "dual",
       "colors": {
-        "backing": "#eee"
+        "backing": "#f5ecba",
+        "button": "#9327db",
+        "shadow": "#7f2ab8",
+        "hover": "#a438ec"
       },
       "detail": [
         {
@@ -131,7 +137,10 @@
       "alt": "pic of foam bike with prototype lock",
       "style": "dual",
       "colors": {
-        "backing": "#eee"
+        "backing": "#f5ecba",
+        "button": "#75db53",
+        "shadow": "#5aa840",
+        "hover": "#86ec64"
       },
       "detail": [
         {
@@ -206,7 +215,7 @@
       "style": "dual",
       "colors": {
         "backing": "#f5ecba",
-        "button": "#edcf24",
+        "button": "#e8ca1d",
         "shadow": "#d6bc27",
         "hover": "#fedf35"
       },
@@ -226,8 +235,9 @@
         {
           "id": "cad",
           "type": "doubleImg",
-          "class": "double",
-          "caption": "On the left is a screenshot of the 2x4 frame in CAD, used as an initial mockup. This design was chosen for simplicity and cost, as previous designs for a disassemblable pod were far outside the budget I set myself.",
+          "class": "double background",
+          "caption1": "Above is a screenshot of the 2x4 frame in CAD, used as an initial mockup. This design was chosen for simplicity and cost, as previous designs for a disassemblable pod were far outside the budget I set myself.",
+          "caption2": "The model with walls applied. Being able to model the pod and predict build costs was very important in making the build process as simple as possible.",
           "left": "../pics/cinepod/cad-frame.PNG",
           "right": "../pics/cinepod/img01.PNG",
           "leftAlt": "cad model of pod frame",
@@ -263,7 +273,7 @@
         {
           "id": "details",
           "type": "doubleImg",
-          "class": "double shadow",
+          "class": "double",
           "caption1": "Above are some close-ups of the door and window. The door is held shut via magnet cabinet latches, and the window is simply bolted to the wall. At the moment, the pod is able to reach an internal temperature of about 60 degrees fahrenheit while the exterior temperature is 30, which makes for a very comfortable viewing experience. Of course it doesn't help that it takes two people to move... but I think it was well worth it. If you're thinking of building one for yourself, it did cost about $250, which is definitely more than I wanted to spend.",
           "caption2": "All the windows were then sealed with silicone for better wind protection, which made a noticeable difference.",
           "left": "../pics/cinepod/door-detail.JPG",
@@ -281,7 +291,10 @@
       "alt": "screenshot of MIPS calculator running",
       "style": "dual",
       "colors": {
-        "backing": "#eee"
+        "backing": "#b5bdf5",
+        "button": "#4053de",
+        "shadow": "#3544b0",
+        "hover": "#5164ef"
       },
       "detail": [
         {
@@ -341,7 +354,10 @@
       "alt": "screencap of 3d music video",
       "style": "dual",
       "colors": {
-        "backing": "#eee"
+        "backing": "#b5bdf5",
+        "button": "#fc036f",
+        "shadow": "#c41661",
+        "hover": "#ff147f"
       },
       "detail": [
         {

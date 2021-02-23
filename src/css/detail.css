@@ -176,15 +176,12 @@ a.project-link:hover
 
 img.double
 {
-  max-width: 30vw;
-  max-height: 36vw;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  max-width: 100%;
 }
 
-.shadow
+.background
 {
-  box-shadow: 0px 0px 5px #000;
+  transform: scale(0.9);
 }
 
 img.gridImg

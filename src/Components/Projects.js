@@ -11,9 +11,9 @@ import Detail from './Detail';
 // Creates the project buttons based on portfolio file
 const Projects = () => {
 
-  document.documentElement.style.setProperty('--button', '#8cb5de');
-  document.documentElement.style.setProperty('--shadow', '#7697b8');
-  document.documentElement.style.setProperty('--button-hover', '#9dc6ef');
+  document.documentElement.style.setProperty('--button', '#db9316');
+  document.documentElement.style.setProperty('--shadow', '#b87d18');
+  document.documentElement.style.setProperty('--button-hover', '#eca427');
 
   let { path, url } = useRouteMatch();
   let projectButtons = portfolio.map((project) => {

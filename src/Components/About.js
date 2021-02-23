@@ -1,6 +1,11 @@
 import React from 'react';
 
 const About = () => {
+
+  document.documentElement.style.setProperty('--button', '#db9316');
+  document.documentElement.style.setProperty('--shadow', '#b87d18');
+  document.documentElement.style.setProperty('--button-hover', '#eca427');
+  
   return (
     	<div className="container">
     		<section id="home">
