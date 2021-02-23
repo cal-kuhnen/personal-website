@@ -113,11 +113,12 @@
         },
         {
           "id": "news-overview",
-          "type": "overlap",
+          "type": "doubleImg",
+          "class": "double bg-portrait",
           "caption1": "The News Gateway app uses NewsAPI to display snippets about articles from various sources, along with the links to those articles. It can sort by genre of publisher and makes use of services and receivers.",
-          "caption2": "On the right, the genre selection is shown which then shortens the drawer list to relevant sources of news. In this case, the selection has already been made for the Entertainment category.",
-          "image1": "../pics/apps/news01.PNG",
-          "image2": "../pics/apps/news02.PNG",
+          "caption2": "Here the genre selection is shown, which shortens the drawer list to relevant sources of news. In this case, the selection has already been made for the Entertainment category.",
+          "left": "../pics/apps/news01.PNG",
+          "right": "../pics/apps/news02.PNG",
           "alt1": "news app homepage",
           "alt2": "news app with entertainment selected and genre menu open"
         },
@@ -313,7 +314,7 @@
         {
           "id": "add-sub",
           "type": "doubleImg",
-          "class": "double",
+          "class": "double bg",
           "caption": "Above are examples for addition and subtraction, with a bit of flair in the menu design.",
           "left": "../pics/mips/addition.PNG",
           "right": "../pics/mips/subtraction.PNG",
