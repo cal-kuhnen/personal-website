@@ -70,7 +70,7 @@
       "alt": "screenshot of government info app",
       "style": "dual",
       "colors": {
-        "backing": "#f5ecba",
+        "backing": "#d2aeeb",
         "button": "#9327db",
         "shadow": "#7f2ab8",
         "hover": "#a438ec"
@@ -90,11 +90,12 @@
         },
         {
           "id": "gov-overview",
-          "type": "overlap",
+          "type": "doubleImg",
+          "class": "double bg-portrait",
           "caption1": "This app takes note of the user's location, then displays a list of the government officials who represent them, using Google's Civic Information API. In this image, the location is Chicago, and the list is ordered by the scope of the position with highest first. The user can also input any location of their choosing via zipcode or city name, allowing them to see the representatives for that area.",
           "caption2": "Here is an example of the detail provided when the user clicks on a representative. In this case, it is Senator Dick Durbin, and the app displays his photo along with a corresponding party image with the contact information below. Social media links are only displayed if they exist in the API.",
-          "image1": "../pics/apps/gov01.PNG",
-          "image2": "../pics/apps/gov02.PNG",
+          "left": "../pics/apps/gov01.PNG",
+          "right": "../pics/apps/gov02.PNG",
           "alt1": "list of government officials in app once location entered",
           "alt2": "detail view of dick durbin in app"
         },
@@ -235,7 +236,7 @@
         {
           "id": "cad",
           "type": "doubleImg",
-          "class": "double background",
+          "class": "double bg",
           "caption1": "Above is a screenshot of the 2x4 frame in CAD, used as an initial mockup. This design was chosen for simplicity and cost, as previous designs for a disassemblable pod were far outside the budget I set myself.",
           "caption2": "The model with walls applied. Being able to model the pod and predict build costs was very important in making the build process as simple as possible.",
           "left": "../pics/cinepod/cad-frame.PNG",

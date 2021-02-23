@@ -174,14 +174,21 @@ a.project-link:hover
   margin-top: 30px;
 }
 
-img.double
-{
-  max-width: 100%;
-}
-
-.background
+.bg
 {
   transform: scale(0.9);
+}
+
+.bg-portrait
+{
+  width: 50%!important;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+img.double
+{
+  width: 100%;
 }
 
 img.gridImg
