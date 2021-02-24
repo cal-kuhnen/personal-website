@@ -91,9 +91,14 @@ body
 p
 {
 	font-family: "HK", sans-serif;
-	font-size: 1.4em;
 	margin-bottom: 10px;
 }
+
+.contact
+{
+	margin-bottom: 10px;
+}
+
 .wrapper
 {
 	height:auto;
@@ -128,51 +133,6 @@ p
 	width: 50%;
 }
 
-#download
-{
-	position: absolute;
-	top: 1em;
-	margin-left: 1em;
-	padding: 0.5em 0.5em 0.5em 0.5em;
-	font-size: 1.5em;
-	float: left;
-	border: 2px solid black;
-	background-color: white;
-	z-index: 0;
-	border-radius: 10px;
-}
-
-#download:hover
-{
-	background-color: #cf1364;
-	color: white;
-}
-
-/* --- Headers --- */
-h2
-{
-	font-size: 2.4em;
-	font-weight: bold;
-	margin-top: 10px;
-	font-family: "HK";
-}
-
-h3
-{
-	font-size: 2em;
-	font-weight: bold;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-h4
-{
-	font-size: 1.6em;
-	margin-left: 20px;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
 .center
 {
 	text-align: center;
@@ -182,7 +142,7 @@ h4
 
 a.contact-link
 {
-	font-size: 1.6em;
+	font-size: 1.2em;
 	color: #000;
 }
 

@@ -3,9 +3,9 @@ import '../css/resume.css';
 
 const Resume = () => {
 
-  document.documentElement.style.setProperty('--button', '#db9316');
-  document.documentElement.style.setProperty('--shadow', '#b87d18');
-  document.documentElement.style.setProperty('--button-hover', '#eca427');
+  document.documentElement.style.setProperty('--button', '#289dfc');
+  document.documentElement.style.setProperty('--shadow', '#2a86d1');
+  document.documentElement.style.setProperty('--button-hover', '#39aefd');
 
   return (
     <div className="container">
@@ -13,34 +13,40 @@ const Resume = () => {
         <div className='res-container'>
     			<section>
     				<h3>Education</h3>
-            <div className="split">
-    					<h4 className="org">Illinois Institute of Technology</h4>
-    					<h4 className="right-align">Chicago, Illinois</h4>
+            <div className="org-info">
+              <div className="left-col">
+      					<h4 className="org">Illinois Institute of Technology</h4>
+                <p className="info">Bachelor of Science in Computer Science</p>
+              </div>
+              <div className="right-col">
+      					<p className="date-loc">Chicago, Illinois</p>
+                <p className="date-loc">August 2018 to December 2020</p>
+              </div>
             </div>
-            <div className="split">
-    					<p className="info">Bachelor of Science in Computer Science</p>
-              <p className="right-align">August 2018 to December 2020</p>
-            </div>
-    					<ul>
-    						<li>Relevant Courses: Calculus | Discrete Structures | Systems Programming |
+    				<ul>
+    					<li>Relevant Courses: Calculus | Discrete Structures | Systems Programming |
   Database Organization | Intro to Algorithms | Operating Systems | Software Engineering | Intro to Artificial Intelligence | Mobile App Design | Intro to Information Security</li>
-    						<li>GPA: 3.7/4.0</li>
-    					</ul>
-            <div className="split">
-              <h4 className="org">Oakton Community College</h4>
-    					<h4 className="right-align">Des Plaines, Illinois</h4>
+    					<li>GPA: 3.7/4.0</li>
+    				</ul>
+            <div className="org-info">
+              <div className="left-col">
+                <h4 className="org">Oakton Community College</h4>
+      					<p className="info">Computer Science</p>
+              </div>
+              <div className="right-col">
+                <p className="date-loc">Des Plaines, Illinois</p>
+                <p className="date-loc">June 2017 to July 2018</p>
+              </div>
             </div>
-            <div className="split">
-    					<p className="info">Computer Science</p>
-              <p className="right-align">June 2017 to July 2018</p>
-            </div>
-            <div className="split">
-    					<h4 className="org">The Cooper Union</h4>
-              <h4 className="right-align">New York, New York</h4>
-            </div>
-            <div className="split">
-              <p className="info">Mechanical Engineering</p>
-              <p className="right-align">August 2015 to December 2016</p>
+            <div className="org-info">
+              <div className="left-col">
+      					<h4 className="org">The Cooper Union</h4>
+                <p className="info">Mechanical Engineering</p>
+              </div>
+              <div className="right-col">
+                <p className="date-loc">New York, New York</p>
+                <p className="date-loc">August 2015 to December 2016</p>
+              </div>
             </div>
     			</section>
 

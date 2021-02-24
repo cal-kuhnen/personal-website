@@ -139,7 +139,7 @@
       "alt": "pic of foam bike with prototype lock",
       "style": "dual",
       "colors": {
-        "backing": "#f5ecba",
+        "backing": "#cdedca",
         "button": "#75db53",
         "shadow": "#5aa840",
         "hover": "#86ec64"
@@ -159,17 +159,13 @@
         },
         {
           "id": "3d",
-          "type": "right",
-          "caption": "Our initial design was a simple post with a metal bar that would enclose the bike, shown in this mockup. However, we decided against this and moved to a heavy chain, due to size variations in bicycles and the space required for a hinged metal bar opening. Also in this image the front wheel is not secured, something we addressed in later designs.",
-          "image": "../pics/ipro/model.png",
+          "type": "doubleImg",
+          "class": "double bg",
+          "caption1": "Our initial design was a simple post with a metal bar that would enclose the bike, shown in this mockup. However, we decided against this and moved to a heavy chain, due to size variations in bicycles and the space required for a hinged metal bar opening. Also in this image the front wheel is not secured, something we addressed in later designs.",
+          "caption2": "This is a CAD representation of the prototype that was to be laser cut from medium MDF. The additional extensions at the bottom were for adding wheel locking capability. Ideally, we wanted to be able to lock both wheels with one chain, but these bike locks would also mean people could secure their front wheel with their own cable lock, removing the need to bring a heavy U-lock.",
+          "left": "../pics/ipro/model.png",
+          "right": "../pics/ipro/lock-cad.PNG",
           "alt": "3d mockup of early design with hinged arm"
-        },
-        {
-          "id": "protoype-cad",
-          "type": "left",
-          "caption": "This is a CAD representation of the prototype that was to be laser cut from medium MDF. The additional extensions at the bottom were for adding wheel locking capability. Ideally, we wanted to be able to lock both wheels with one chain, but these bike locks would also mean people could secure their front wheel with their own cable lock, removing the need to bring a heavy U-lock.",
-          "image": "../pics/ipro/prototype-model.JPG",
-          "alt": "cad of prototype"
         },
         {
           "id": "me",
@@ -187,7 +183,8 @@
           "id": "interior",
           "type": "doubleImg",
           "class": "double",
-          "caption": "Above are images of the prototype with the Arduino and RFID scanner installed. This setup takes the signal from the scanner and controls a servo motor in the lower section, which operates the locking mechanism. This can be seen below in some videos of the mechanism.",
+          "caption1": "Above is the interior of the prototype with the Arduino and RFID scanner installed. This setup takes the signal from the scanner and controls a servo motor in the lower section, which operates the locking mechanism.",
+          "caption2": "The RFID scanner can be seen here, installed on the top of the lock.",
           "left": "../pics/ipro/interior.JPG",
           "right": "../pics/ipro/scanner.JPG",
           "leftAlt": "interior of prototype",
