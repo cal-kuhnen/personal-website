@@ -106,8 +106,8 @@ const DualColumn = (item) => {
       return (
         <div key={project.id} className='offset-container'>
           <div className='vertical-container'>
-            <div className='left-right'>
-              <img className='single-image' src={project.image} alt={project.alt}></img>
+            <div className='left-right backing'>
+              <img className='single-image shadow' src={project.image} alt={project.alt}></img>
             </div>
           </div>
           <div className='center-caption'>

@@ -78,9 +78,9 @@
       "detail": [
         {
           "id": "intro",
-          "type": "left",
+          "type": "singleImg",
           "caption": "I built these two apps for a Mobile App Design course, and I was pleased with how they turned out. More importantly, it gave me a solid understanding of building an app in the Android architecture, as well as shoring up my knowledge of Java. Both apps used a variety of data structures and methods for running API calls to display data to the user.",
-          "image": "../pics/apps/apps.png",
+          "image": "../pics/apps/apps-home.PNG",
           "alt": "The two apps side-by-side"
         },
         {
@@ -227,7 +227,7 @@
       "detail": [
         {
           "id": "intro",
-          "type": "left",
+          "type": "singleImg",
           "caption": "The CinePod began as an idea from a discussion with my friends about watching movies in the winter. I'm lucky enough to have an old projector and garage that we were able to watch movies on outside the past summer, while staying distanced and masked for safety. We wanted to continue watching into the winter, and thus the idea of some sort of pod was conceived. This project is the result of actually following through on building a wooden pod.",
           "image": "../pics/cinepod/pod-done.JPG",
           "alt": "guy sitting in pod frame"
@@ -255,17 +255,18 @@
         },
         {
           "id": "frame",
-          "type": "overlap",
+          "type": "doubleImg",
+          "class": "double",
           "caption1": "Building the pod base, making use of some scrap wood that was laying around for a central beam. Here some of the internal supports are being glued in place. These supports were primarily to keep me from breaking through the thin plywood floor during a viewing.",
           "caption2": "The floor was then cut to fit the 2x4 posts before the rest of the frame was assembled. The joints of the frame were kept as simple as possible, using corner butt joints and #10 wood screws to connect them. Also pictured here is my friend who assisted me during the build (great guy).",
-          "image1": "../pics/cinepod/pod-base.JPG",
-          "image2": "../pics/cinepod/pod-frame.JPG",
+          "left": "../pics/cinepod/pod-base.JPG",
+          "right": "../pics/cinepod/cut.JPG",
           "alt1": "pod base being assembled",
           "alt2": "pod frame completed in real life"
         },
         {
           "id": "wall",
-          "type": "right",
+          "type": "singleImg",
           "caption": "First side wall attached. These were cut from 1/4'' OSB, and were important not only for warmth but also adding structural integrity. They definitely do not provide good insulation, but that's where the space heater comes in.",
           "image": "../pics/cinepod/pod-wall.JPG",
           "alt": "pod frame completed in real life"

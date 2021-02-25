@@ -19,7 +19,7 @@
 
 .horizontal-container
 {
-  width: 86%;
+  width: 90%;
   height: auto;
   display: flex;
   margin-bottom: 60px;
@@ -46,7 +46,7 @@
 
 .offset-container
 {
-  width: 86%;
+  width: 90%;
   height: auto;
   margin-bottom: 60px;
   margin-left: auto;
@@ -213,12 +213,12 @@ h1.top
   margin-bottom: 40px;
   text-align: left;
   width: 86%;
-  margin-left: 7%;
+  margin-left: 5%;
 }
 
 h2.subtitle
 {
-  margin-left: 7%;
+  margin-left: 5%;
   margin-bottom: 20px;
 }
 
@@ -259,8 +259,14 @@ h2.subtitle
 
 .single-image
 {
-  max-width: 55vw;
-  margin: auto;
+  max-width: 100%;
+  max-height: 40vw;
+  margin: 50px auto 50px auto;
+}
+
+.shadow
+{
+  box-shadow: 0px 0px 5px #000;
 }
 
 @media only screen and (max-width: 600px) {
