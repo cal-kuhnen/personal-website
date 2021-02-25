@@ -12,7 +12,7 @@ const About = () => {
           <div className="horizontal-container">
             <div id="about">
         			<h3>About Me</h3>
-        			<p>Hi! I'm a recent graduate of Illinois Institute of Technology, with a major in computer science. I like developing platforms for media and have a growing interest in automation and AI, both of which I hope to expand on in my future.</p>
+        			<p className="about">Hi! I'm a recent graduate of Illinois Institute of Technology, with a major in computer science. I like developing platforms for media and have a growing interest in automation and AI, both of which I hope to expand on in my future.</p>
               <h3>Contact Info</h3>
               <div className="contact"><a className="contact-link" href="mailto:calvinkuhnen@gmail.com" rel="noopener noreferrer" target="_blank">calvinkuhnen@gmail.com</a></div>
               <div className="contact"><a className="contact-link" href="https://github.com/cal-kuhnen" rel="noopener noreferrer" target="_blank">GitHub</a></div>

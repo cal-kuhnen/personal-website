@@ -16,7 +16,7 @@ const Resume = () => {
             <div className="org-info">
               <div className="left-col">
       					<h4 className="org">Illinois Institute of Technology</h4>
-                <p className="info">Bachelor of Science in Computer Science</p>
+                <p className="indent">Bachelor of Science in Computer Science</p>
               </div>
               <div className="right-col">
       					<p className="date-loc">Chicago, Illinois</p>
@@ -31,7 +31,7 @@ const Resume = () => {
             <div className="org-info">
               <div className="left-col">
                 <h4 className="org">Oakton Community College</h4>
-      					<p className="info">Computer Science</p>
+      					<p className="indent">Computer Science</p>
               </div>
               <div className="right-col">
                 <p className="date-loc">Des Plaines, Illinois</p>
@@ -41,7 +41,7 @@ const Resume = () => {
             <div className="org-info">
               <div className="left-col">
       					<h4 className="org">The Cooper Union</h4>
-                <p className="info">Mechanical Engineering</p>
+                <p className="indent">Mechanical Engineering</p>
               </div>
               <div className="right-col">
                 <p className="date-loc">New York, New York</p>
@@ -52,13 +52,15 @@ const Resume = () => {
 
     			<section id="experience">
     				<h3>Experience</h3>
-    					<div className="split">
-                <h4 className="org">EMP Data Center Corporation</h4>
-    					  <h4 className="right-align">Mount Prospect, Illinois</h4>
-              </div>
-              <div className="split">
-    						<p className="info">Data Center Operations Associate</p>
-                <p className="right-align">Feb 2017 to Jul 2018</p>
+              <div className="org-info">
+      					<div className="left-col">
+                  <h4 className="org">EMP Data Center Corporation</h4>
+      					  <p className="indent">Data Center Operations Associate</p>
+                </div>
+                <div className="right-col">
+                  <p>Mount Prospect, Illinois</p>
+                  <p>Feb 2017 to Jul 2018</p>
+                </div>
               </div>
     						<ul>
     							<li>Managed maintenance and upkeep of client server systems</li>
@@ -66,13 +68,15 @@ const Resume = () => {
     							<li>Maintained weekly reports for security, maintenance, and other systems</li>
     							<li>As the senior Operations Associate, trained new hires and performed extra duties in the Network Operations Center</li>
     						</ul>
-              <div className="split">
-      					<h4 className="org">Cooper Union FSAE Team</h4>
-                <h4 className="right-align">New York, New York</h4>
-              </div>
-              <div className="split">
-                <p className="info">Lead Steering System Designer</p>
-                <p className="right-align">August 2015 to December 2016</p>
+              <div className="org-info">
+                <div className="left-col">
+        					<h4 className="org">Cooper Union FSAE Team</h4>
+                  <p className="indent">Lead Steering System Designer</p>
+                </div>
+                <div className="right-col">
+                  <p>New York, New York</p>
+                  <p>August 2015 to December 2016</p>
+                </div>
               </div>
     						<ul>
     							<li>Led a team of 4 in designing steering geometry for a student-built race car</li>
@@ -84,7 +88,7 @@ const Resume = () => {
     			<section id="skills">
     				<h3>Skills & Interests</h3>
     					<h4 className="interests">Programming Languages:</h4>
-    						<p className="list">Python, Java, C, C++, SQL, R, Javascript</p>
+    						<p className="list">Python, Javascript, Java, C, C++, SQL, R</p>
     					<h4 className="interests">Other Skills:</h4>
     						<p className="list">Git, React, Postgresql, HTML, CSS, Microsoft Word, Microsoft Excel, Mathematica, Adobe Photoshop, Autodesk Fusion 360</p>
     					<h4 className="interests">Interests:</h4>

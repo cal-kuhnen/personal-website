@@ -88,10 +88,9 @@ body
 	height: 100%;
 }
 
-p
+p.about
 {
-	font-family: "HK", sans-serif;
-	margin-bottom: 10px;
+	font-size: 1.2em;
 }
 
 .contact
