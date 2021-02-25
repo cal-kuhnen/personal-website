@@ -65,7 +65,7 @@
 
     {
       "id": "apps",
-      "title": "Apps",
+      "title": "Android Apps",
       "portPic": "../pics/apps/apps.png",
       "alt": "screenshot of government info app",
       "style": "dual",
@@ -101,10 +101,13 @@
         },
         {
           "id": "gov-final",
-          "type": "right",
+          "type": "video",
           "caption": "This is the contact information that is associated with the senator selected. Also, tapping on the image will bring up a larger photo without the additional information underneath.",
-          "image": "../pics/apps/gov03.PNG",
-          "alt": "selected offical scrolled to show contact information"
+          "video": "../pics/apps/gov-vid.mp4",
+          "controls": false,
+          "autoplay": true,
+          "loop": true,
+          "alt": "app in use, showing multiple officials from two locations"
         },
         {
           "id": "newsgateway",
@@ -124,10 +127,13 @@
         },
         {
           "id": "news-final",
-          "type": "right",
+          "type": "video",
           "caption": "This is an image of the app once a source has been selected. It proceeds to show 10 articles with a ViewPager, allowing the user to swipe between the fragments that show each article with its title and summary. Clicking on any of the content displayed will then link the user to the original article in the phone's browser.",
-          "image": "../pics/apps/news03.PNG",
-          "alt": "selected offical scrolled to show contact information"
+          "video": "../pics/apps/news-vid.mp4",
+          "controls": false,
+          "autoplay": true,
+          "loop": true,
+          "alt": "news app in use, genre set to tech and articles shown"
         }
       ]
     },
