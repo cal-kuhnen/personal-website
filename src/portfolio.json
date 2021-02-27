@@ -79,6 +79,7 @@
         {
           "id": "intro",
           "type": "singleImg",
+          "class": "single-image",
           "caption": "I built these two apps for a Mobile App Design course, and I was pleased with how they turned out. More importantly, it gave me a solid understanding of building an app in the Android architecture, as well as shoring up my knowledge of Java. Both apps used a variety of data structures and methods for running API calls to display data to the user.",
           "image": "../pics/apps/apps-home.PNG",
           "alt": "The two apps side-by-side"
@@ -153,7 +154,8 @@
       "detail": [
         {
           "id": "intro",
-          "type": "left",
+          "type": "singleImg",
+          "class": "single-image shadow",
           "caption": "This prototype bike lock was designed and built for an interprofessional project course, with the ultimate goal being a way to improve the bicycle facilities on campus. The lock used RFID scanning so students would be able to use their IIT ID cards to lock and unlock them, removing the need for them to carry a bike lock to campus. We also designed it to be as strong or stronger than a lock that could be carried with you in order to ensure safety was not compromised.",
           "image": "../pics/ipro/prototype-bike.jpg",
           "alt": "pic of foam bike with prototype lock"
@@ -175,7 +177,8 @@
         },
         {
           "id": "me",
-          "type": "right",
+          "type": "singleImg",
+          "class": "single-image shadow",
           "caption": "My involvement was primarily focused on the scanning functionality, security, and usability of the bike rack. I felt that I was able to bring a useful amount of knowledge to the team since I was the only one who actually commuted by bike, and thus I was able to streamline some of the design and build processes, like moving to the chain instead of a metal bar. In this photo, I'm on the left working on the Arduino code that handled the scanning system for the rack.",
           "image": "../pics/ipro/me-working.jpg",
           "alt": "me working on arduino at table"
@@ -215,7 +218,7 @@
     {
       "id": "cinepod",
       "title": "CinePod",
-      "portPic": "./pics/cinepod/snow.jpg",
+      "portPic": "./pics/cinepod/pod-button.jpg",
       "alt": "builders of pod celebrating its use outside",
       "style": "dual",
       "colors": {
@@ -228,8 +231,9 @@
         {
           "id": "intro",
           "type": "singleImg",
+          "class": "single-image",
           "caption": "The CinePod began as an idea from a discussion with my friends about watching movies in the winter. I'm lucky enough to have an old projector and garage that we were able to watch movies on outside the past summer, while staying distanced and masked for safety. We wanted to continue watching into the winter, and thus the idea of some sort of pod was conceived. This project is the result of actually following through on building a wooden pod.",
-          "image": "../pics/cinepod/pod-done.JPG",
+          "image": "../pics/cinepod/pod.JPG",
           "alt": "guy sitting in pod frame"
         },
         {
@@ -267,6 +271,7 @@
         {
           "id": "wall",
           "type": "singleImg",
+          "class": "single-image shadow",
           "caption": "First side wall attached. These were cut from 1/4'' OSB, and were important not only for warmth but also adding structural integrity. They definitely do not provide good insulation, but that's where the space heater comes in.",
           "image": "../pics/cinepod/pod-wall.JPG",
           "alt": "pod frame completed in real life"
