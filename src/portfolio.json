@@ -103,7 +103,7 @@
         {
           "id": "gov-final",
           "type": "video",
-          "caption": "This is the contact information that is associated with the senator selected. Also, tapping on the image will bring up a larger photo without the additional information underneath.",
+          "caption": "Using the app. The initial location is mine, in Chicago, and the search function is then used to switch to Austin, Texas. Also shown is the different colorations for Democratic, Republican, and nonpartisan officials.",
           "video": "../pics/apps/gov-vid.mp4",
           "controls": false,
           "autoplay": true,
@@ -129,7 +129,7 @@
         {
           "id": "news-final",
           "type": "video",
-          "caption": "This is an image of the app once a source has been selected. It proceeds to show 10 articles with a ViewPager, allowing the user to swipe between the fragments that show each article with its title and summary. Clicking on any of the content displayed will then link the user to the original article in the phone's browser.",
+          "caption": "Example of using the app. Genre selection and article viewpages are shown, along with the ability to click on any of the article content to open a link to the original source.",
           "video": "../pics/apps/news-vid.mp4",
           "controls": false,
           "autoplay": true,
@@ -246,7 +246,7 @@
           "type": "doubleImg",
           "class": "double bg",
           "caption1": "Above is a screenshot of the 2x4 frame in CAD, used as an initial mockup. This design was chosen for simplicity and cost, as previous designs for a disassemblable pod were far outside the budget I set myself.",
-          "caption2": "The model with walls applied. Being able to model the pod and predict build costs was very important in making the build process as simple as possible.",
+          "caption2": "The model with walls applied. Being able to model the pod and predict costs was citical to making the build process as simple as possible.",
           "left": "../pics/cinepod/cad-frame.PNG",
           "right": "../pics/cinepod/img01.PNG",
           "leftAlt": "cad model of pod frame",
@@ -277,18 +277,34 @@
           "alt": "pod frame completed in real life"
         },
         {
-          "id": "finished",
+          "id": "access",
           "type": "title",
-          "title": "End Result"
+          "title": "Access"
         },
         {
           "id": "details",
           "type": "doubleImg",
           "class": "double",
-          "caption1": "Above are some close-ups of the door and window. The door is held shut via magnet cabinet latches, and the window is simply bolted to the wall. At the moment, the pod is able to reach an internal temperature of about 60 degrees fahrenheit while the exterior temperature is 30, which makes for a very comfortable viewing experience. Of course it doesn't help that it takes two people to move... but I think it was well worth it. If you're thinking of building one for yourself, it did cost about $250, which is definitely more than I wanted to spend.",
-          "caption2": "All the windows were then sealed with silicone for better wind protection, which made a noticeable difference.",
+          "caption1": "The door closed. The door is held shut via magnet cabinet latches, which provide a pretty satisfying closing action. At the moment, the pod is able to reach an internal temperature of about 60 degrees fahrenheit while the exterior temperature is 30, which makes for a very comfortable viewing experience. Of course it doesn't help that it takes two people to move... but I think it was well worth it. If you're thinking of building one for yourself, it did cost about $250, which is definitely more than I wanted to spend.",
+          "caption2": "The interior has been carpeted, which makes it both more cozy and less noisy. I planned on installing foam insulation and interior plywood walls, but the cost didn't make sense considering how warm it already is.",
           "left": "../pics/cinepod/door-detail.JPG",
-          "right": "../pics/cinepod/window-detail.JPG",
+          "right": "../pics/cinepod/interior.JPG",
+          "leftAlt": "close-up of pod door",
+          "rightAlt": "close-up of left side window"
+        },
+        {
+          "id": "final",
+          "type": "title",
+          "title": "Final Result"
+        },
+        {
+          "id": "finished",
+          "type": "doubleImg",
+          "class": "double",
+          "caption1": "The finished pod, from the front. I'm pretty happy with how it turned out, as ridiculous of a thing it may be. I've been able to use it six times so far, and it works perfectly in terms of keeping me warm. The mask stapled to the side is a hole meant to allow me to speak to my friends (mildy successful).",
+          "caption2": "At the moment, the pod is able to reach an internal temperature of about 60 degrees fahrenheit while the exterior temperature is 25, which makes for a very comfortable viewing experience. Of course it doesn't help that it takes two people to move... but I think it was well worth it. If you're thinking of building one for yourself, it did cost about $250, which is definitely more than I wanted to spend.",
+          "left": "../pics/cinepod/pod-front.JPG",
+          "right": "../pics/cinepod/temp.JPG",
           "leftAlt": "close-up of pod door",
           "rightAlt": "close-up of left side window"
         }
