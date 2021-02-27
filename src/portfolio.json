@@ -285,7 +285,7 @@
           "id": "details",
           "type": "doubleImg",
           "class": "double",
-          "caption1": "The door closed. The door is held shut via magnet cabinet latches, which provide a pretty satisfying closing action. At the moment, the pod is able to reach an internal temperature of about 60 degrees fahrenheit while the exterior temperature is 30, which makes for a very comfortable viewing experience. Of course it doesn't help that it takes two people to move... but I think it was well worth it. If you're thinking of building one for yourself, it did cost about $250, which is definitely more than I wanted to spend.",
+          "caption1": "The door closed. The door is held shut via magnet cabinet latches, which provide a pretty satisfying closing action. Also seen above are the handles on the bottom which make the pod a bit easier to move.",
           "caption2": "The interior has been carpeted, which makes it both more cozy and less noisy. I planned on installing foam insulation and interior plywood walls, but the cost didn't make sense considering how warm it already is.",
           "left": "../pics/cinepod/door-detail.JPG",
           "right": "../pics/cinepod/interior.JPG",
@@ -326,7 +326,8 @@
       "detail": [
         {
           "id": "intro",
-          "type": "left",
+          "type": "singleImg",
+          "class": "single-image shadow",
           "caption": "This project was a calculator built in the assembly language MIPS using QtSPIM. It allowed for addition, subtraction, multiplication, division, and conversions between decimal, hex, and binary numbers. I personally enjoyed this project and had some fun doing the ASCII-art design for the interface, which I felt improved the user experience beyond a console line.",
           "image": "../pics/mips/home.PNG",
           "alt": "pic of conversions menu for calculator"
@@ -339,7 +340,7 @@
         {
           "id": "add-sub",
           "type": "doubleImg",
-          "class": "double bg",
+          "class": "double bg shadow",
           "caption": "Above are examples for addition and subtraction, with a bit of flair in the menu design.",
           "left": "../pics/mips/addition.PNG",
           "right": "../pics/mips/subtraction.PNG",
