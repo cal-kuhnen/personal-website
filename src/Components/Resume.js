@@ -58,8 +58,8 @@ const Resume = () => {
       					  <p className="indent">Data Center Operations Associate</p>
                 </div>
                 <div className="right-col">
-                  <p>Mount Prospect, Illinois</p>
-                  <p>Feb 2017 to Jul 2018</p>
+                  <p className="date-loc">Mount Prospect, Illinois</p>
+                  <p className="date-loc">Feb 2017 to Jul 2018</p>
                 </div>
               </div>
     						<ul>

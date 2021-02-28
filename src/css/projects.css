@@ -132,4 +132,8 @@ h1
     box-shadow: none;
     margin-bottom: 5vw;
   }
+
+  .title {
+    width: 60%;
+  }
 }

@@ -116,37 +116,27 @@ li
 
 @media only screen and (max-width: 600px) {
 	#resume {
-		width: 90%;
+		font-size: 0.8em;
 	}
 
-	.split {
+	.org-info {
 		display: block;
-		margin-left: 10px;
 	}
 
-	.right-align {
-		float: none;
+	.left-col, .right-col {
+		width: 100%;
 	}
 
-	.info {
+	.indent {
+		margin-top: 10px;
+	}
+
+	.date-loc {
+		margin-top: 10px;
+	}
+
+	h4, ul, .org-info, .indent, .interests, .list {
 		margin-left: 0px;
-		position: static;
-	}
-
-	h4 {
-		margin-left: 0px;
-	}
-
-	ul {
-		margin-left: 30px;
-	}
-
-	.interests {
-		margin-left: 10px;
-	}
-
-	.list {
-		margin-left: 20px;
 	}
 
 	.centered {
