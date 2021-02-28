@@ -350,7 +350,7 @@
         {
           "id": "mult-div",
           "type": "doubleImg",
-          "class": "double",
+          "class": "double bg shadow",
           "caption": "Here are multiplication and division. The division function is limited to whole numbers.",
           "left": "../pics/mips/multi.PNG",
           "right": "../pics/mips/division.PNG",
@@ -365,12 +365,18 @@
         {
           "id": "conv-example",
           "type": "doubleImg",
-          "class": "double",
-          "caption": "This is the conversion menu, and an example of a binary-to-decimal conversion. This component of the calculator made up the meat of the project, and I was satisfied with my solution because the conversions handle negative numbers as well, which was not a requirement. I also attempted to make the menu as clear as possible, as the choice to use a more graphical style in the console was purely functional.",
+          "class": "double bg shadow",
+          "caption1": "Above is the conversion menu. This component of the calculator made up the meat of the project, and I was satisfied with my solution because the conversions handle negative numbers as well, which was not a requirement. I also attempted to make the menu as clear as possible, hence the choice to use a more graphical style in the console.",
+          "caption2": "Here is an example of a decimal to binary conversion, for the number -56. The result is a 2-bit signed binary number with 32 bits.",
           "left": "../pics/mips/conversions.PNG",
           "right": "../pics/mips/bindec.PNG",
           "leftAlt": "pic of conversion menu in calculator",
           "rightAlt": "pic of binary-decimal conversion example in calculator"
+        },
+        {
+          "id": "conversion-code",
+          "type": "code",
+          "codeSnippet": "DtoH:\n  li $v0, 4 \n  la $a0, str_DtoH\n  syscall      # print message asking for decimal input \n\n  li $v0, 5\n  syscall      # read input (integer)\n\n  move $s0, $v0\n  li $t3, 8    # counter for the 8 bytes\n\nloop:\n  beq $t3, $0, exit  # check counter to determine if all 8 bytes have been printed\n  rol $s0, $s0, 4    # rotate left by 4 bits so you start with the most significant bits and work your way down\n  and $s1, $s0, 15  # mask with 1111 to get one hex value\n  ble $s1, 9, number  # branch to change the value into a value for a number in ascii\n  addi $s1, $s1, 55  # add 55 to get ascii value to print A, B, C, D, E, or F\n  j print\n\nnumber:\n  addi $s1, $s1, 48  # add 48 for ascii value for 0-9\n\nprint:\n  li $v0, 11\n  move $a0, $s1\n  syscall      # print character\n\n  addi $t3, $t3, -1  # decrement counter\n  j loop\n\nexit:\n  li $v0, 10\n  syscall\n"
         }
       ]
     },

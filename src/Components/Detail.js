@@ -1,4 +1,5 @@
 import React from 'react';
+import SyntaxHighlighter from 'react-syntax-highlighter';
 import { useParams } from "react-router-dom";
 import portfolio from '../portfolio.json';
 import '../css/detail.css';
@@ -84,21 +85,12 @@ const DualColumn = (item) => {
         </div>
       )
     }
-    else if (project.type === 'overlap') {
+    else if (project.type === 'code') {
       return (
-        <div key={project.id} className='overlap'>
-          <div className='gridImage1'>
-            <img className='gridImg' src={project.image1} alt={project.alt1}></img>
-          </div>
-          <div className='gridCaption1'>
-            {project.caption1}
-          </div>
-          <div className='gridImage2'>
-            <img className='gridImg' src={project.image2} alt={project.alt2}></img>
-          </div>
-          <div className='gridCaption2'>
-            {project.caption2}
-          </div>
+        <div key={project.id} className='code'>
+          <SyntaxHighlighter language="assembly">
+            {project.codeSnippet}
+          </SyntaxHighlighter>
         </div>
       )
     }

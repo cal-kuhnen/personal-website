@@ -78,6 +78,8 @@ html {
 	background-color: #e6e6e6;
 	font-feature-settings: "salt";
 	line-height: normal;
+	white-space: pre-line;
+	vertical-align: bottom;
 }
 
 body
