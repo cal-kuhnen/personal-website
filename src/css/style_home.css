@@ -118,7 +118,7 @@ p.about
 
 #home
 {
-	width: 75%;
+	width: 1400px;
 	height: auto;
 	border: solid 4px black;
   border-radius: 60px;
@@ -154,6 +154,12 @@ a.contact-link:hover
 {
 	color: #000;
 	text-decoration: underline;
+}
+
+@media only screen and (max-width: 1555px) {
+  #home {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 600px) {

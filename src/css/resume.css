@@ -2,7 +2,7 @@
 #resume
 {
 	position: relative;
-	width: 75%;
+	width: 1400px;
 	padding-bottom: 40px;
 	padding-top: 50px;
 	height: auto;
@@ -106,6 +106,12 @@ li
 {
 	list-style: none;
 	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1555px) {
+  #resume {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
