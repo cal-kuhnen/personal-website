@@ -278,6 +278,17 @@ h2.subtitle
   margin-bottom: 20px;
 }
 
+a.hyper
+{
+  color: #000;
+  text-decoration: underline;
+}
+
+a.hyper:hover
+{
+  color: var(--shadow);
+}
+
 @media only screen and (max-width: 1555px) {
   .dual-container {
     width: 90%;

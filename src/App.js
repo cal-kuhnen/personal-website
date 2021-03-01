@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './css/reset.css';
 import './css/style_home.css';
 import './css/nav.css';
@@ -12,8 +11,7 @@ import ScrollToTop from './Components/ScrollToTop';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link,
+  Route
 } from "react-router-dom";
 
 function App() {

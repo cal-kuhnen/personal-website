@@ -37,11 +37,15 @@ const DualColumn = (item) => {
     if (project.type === 'left') {
       return (
         <div key={project.id} className='horizontal-container justify-between'>
-          <div className='left left-right'>
-            {project.caption}
+          <div className='column'>
+            <div className='left-right'>
+              <div dangerouslySetInnerHTML={ {__html: project.caption} } />
+            </div>
           </div>
-          <div className='right left-right'>
-            <img className='dual-image' src={project.image} alt={project.alt}></img>
+          <div className='column'>
+            <div className='left-right'>
+              <img className='dual-image' src={project.image} alt={project.alt}></img>
+            </div>
           </div>
         </div>
       )

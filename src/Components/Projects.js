@@ -1,12 +1,10 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Link,
-  useRouteMatch
+  Link
 } from "react-router-dom";
 import portfolio from '../portfolio.json';
 import '../css/projects.css';
-import Detail from './Detail';
 
 // Creates the project buttons based on portfolio file
 const Projects = () => {
@@ -15,7 +13,6 @@ const Projects = () => {
   document.documentElement.style.setProperty('--shadow', '#2a86d1');
   document.documentElement.style.setProperty('--button-hover', '#39aefd');
 
-  let { path, url } = useRouteMatch();
   let projectButtons = portfolio.map((project) => {
     return (
       <Link key={project.id} className='project' to={`/${project.id}`}>

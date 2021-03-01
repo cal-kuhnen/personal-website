@@ -5,7 +5,6 @@
       "portPic": "./pics/sock/sock-logov2-01.png",
       "alt": "screenshot of SOCK website",
       "style": "dual",
-      "link": "https://sock.rocks/",
       "colors": {
         "backing": "#f5ecba",
         "button": "#f71616",
@@ -16,7 +15,7 @@
         {
           "id": "intro",
           "type": "left",
-          "caption": "SOCK Radio is a quarantine project started by myself and a close friend. After launching the website, we grew to have weekly shows from six different people throughout the summer of 2020. The channel has recently returned, and has been a great source of learning for me in terms of website design, React, and other web-dev areas (click the title above to check it out!).",
+          "caption": "<a class='hyper' href='https://sock.rocks' rel='noopener noreferrer' target='_blank'>SOCK Radio</a> is a quarantine project started by myself and a close friend. After launching the website, we grew to have weekly shows from six different people throughout the summer of 2020. The channel has recently returned, and has been a great source of learning for me in terms of website design, React, and other web-dev areas (click the title above to check it out!).",
           "image": "../pics/sock/sockLogo01.png",
           "alt": "SOCK radio logo"
         },
