@@ -3,7 +3,7 @@
       "id": "sock-radio",
       "title": "SOCK Radio",
       "portPic": "./pics/sock/sock-logov2-01.png",
-      "alt": "screenshot of SOCK website",
+      "alt": "secondary sock radio logo (cloud with yellow, red, and blue quarter-circles emitting beneath)",
       "style": "dual",
       "colors": {
         "backing": "#f5ecba",
@@ -32,7 +32,7 @@
           "controls": false,
           "autoplay": true,
           "loop": true,
-          "alt": "screenshot of SOCK radio home"
+          "alt": "slideshow of original website pages"
         },
         {
           "id": "redesign",
@@ -47,7 +47,7 @@
           "controls": false,
           "autoplay": true,
           "loop": true,
-          "alt": "video showing 3 main pages of sock radio redesign"
+          "alt": "slideshow of 3 main pages of sock radio redesign"
         },
         {
           "id": "live-functionality",
@@ -57,7 +57,7 @@
           "controls": false,
           "autoplay": true,
           "loop": true,
-          "alt": "video of stream button going live"
+          "alt": "stream button going live"
         }
       ]
     },
@@ -66,7 +66,7 @@
       "id": "apps",
       "title": "Android Apps",
       "portPic": "../pics/apps/apps.png",
-      "alt": "screenshot of government info app",
+      "alt": "both apps next to each other",
       "style": "dual",
       "colors": {
         "backing": "#d2aeeb",
@@ -172,7 +172,8 @@
           "caption2": "This is a CAD representation of the prototype that was to be laser cut from medium MDF. The additional extensions at the bottom were for adding wheel locking capability. Ideally, we wanted to be able to lock both wheels with one chain, but these bike locks would also mean people could secure their front wheel with their own cable lock, removing the need to bring a heavy U-lock.",
           "left": "../pics/ipro/model.png",
           "right": "../pics/ipro/lock-cad.PNG",
-          "alt": "3d mockup of early design with hinged arm"
+          "leftAlt": "3d mockup of early design with hinged arm",
+          "rightAlt": "CAD model of prototype body"
         },
         {
           "id": "me",
@@ -196,7 +197,7 @@
           "left": "../pics/ipro/interior.JPG",
           "right": "../pics/ipro/scanner.JPG",
           "leftAlt": "interior of prototype",
-          "rightAlt": "closeup of prototype interior"
+          "rightAlt": "RFID scanner on top of prototype"
         },
         {
           "id": "mechanism",
@@ -209,8 +210,8 @@
           "autoplay": true,
           "loop": true,
           "muted": true,
-          "leftAlt": "video of internal mechanism",
-          "rightAlt": "video of mechanism as seen through lock hole"
+          "leftAlt": "internal mechanism activating",
+          "rightAlt": "mechanism as seen through lock hole"
         }
       ]
     },
@@ -219,7 +220,7 @@
       "id": "cinepod",
       "title": "CinePod",
       "portPic": "./pics/cinepod/pod-button.jpg",
-      "alt": "builders of pod celebrating its use outside",
+      "alt": "finished pod",
       "style": "dual",
       "colors": {
         "backing": "#f5ecba",
@@ -234,7 +235,7 @@
           "class": "single-image",
           "caption": "The CinePod began as an idea from a discussion with my friends about watching movies in the winter. I'm lucky enough to have an old projector and garage that we were able to watch movies on outside the past summer, while staying distanced and masked for safety. We wanted to continue watching into the winter, and thus the idea of some sort of pod was conceived. This project is the result of actually following through on building a wooden pod.",
           "image": "../pics/cinepod/pod.JPG",
-          "alt": "guy sitting in pod frame"
+          "alt": "3/4 view of finished pod"
         },
         {
           "id": "design",
@@ -274,7 +275,7 @@
           "class": "single-image shadow",
           "caption": "First side wall attached. These were cut from 1/4'' OSB, and were important not only for warmth but also adding structural integrity. They definitely do not provide good insulation, but that's where the space heater comes in.",
           "image": "../pics/cinepod/pod-wall.JPG",
-          "alt": "pod frame completed in real life"
+          "alt": "first wall attached to frame"
         },
         {
           "id": "access",
@@ -290,7 +291,7 @@
           "left": "../pics/cinepod/door-detail.JPG",
           "right": "../pics/cinepod/interior.JPG",
           "leftAlt": "close-up of pod door",
-          "rightAlt": "close-up of left side window"
+          "rightAlt": "interior of pod with carpet"
         },
         {
           "id": "final",
@@ -301,12 +302,20 @@
           "id": "finished",
           "type": "doubleImg",
           "class": "double",
-          "caption1": "The finished pod, from the front. I'm pretty happy with how it turned out, as ridiculous of a thing it may be. I've been able to use it six times so far, and it works perfectly in terms of keeping me warm. The mask stapled to the side is a hole meant to allow me to speak to my friends (mildy successful).",
-          "caption2": "At the moment, the pod is able to reach an internal temperature of about 60 degrees fahrenheit while the exterior temperature is 25, which makes for a very comfortable viewing experience. I will admit that the fact it takes two people to move is perhaps not the most portable of solutions, but my friends had tent-like pods they purchased and were not nearly as warm or spacious. The total cost ended up being about $250, which is a bit more than I wanted to spend.",
+          "caption1": "The finished pod, from the front. The mask stapled to the side is a hole meant to allow me to speak to my friends (mildy successful).",
+          "caption2": "At the moment, the pod is able to reach an internal temperature of about 60 degrees fahrenheit while the exterior temperature is 25, which makes for a very comfortable viewing experience.",
           "left": "../pics/cinepod/pod-front.JPG",
           "right": "../pics/cinepod/temp.JPG",
-          "leftAlt": "close-up of pod door",
-          "rightAlt": "close-up of left side window"
+          "leftAlt": "front of pod",
+          "rightAlt": "showing 62 degree interior temp with 25 degree exterior"
+        },
+        {
+          "id": "usage",
+          "type": "singleImg",
+          "class": "single-image shadow",
+          "caption": "The pod in use! I'm pretty happy with how it turned out, as ridiculous of a thing it may be. I've been able to use it six times so far, and it works perfectly in terms of keeping me warm. I will admit that the fact it takes two people to move is perhaps not the most portable of solutions, but my friends had tent-like pods they purchased and were not nearly as warm or spacious. The total cost ended up being about $250, which was a bit more than I wanted to spend.",
+          "image": "../pics/cinepod/snow.JPG",
+          "alt": "pod outside"
         }
       ]
     },
@@ -314,8 +323,8 @@
     {
       "id": "calculator",
       "title": "MIPS Calculator",
-      "portPic": "../pics/mips/mips-button.png",
-      "alt": "screenshot of MIPS calculator running",
+      "portPic": "../pics/mips/neg-conv.png",
+      "alt": "MIPS calculator performing decimal to binary conversion",
       "style": "dual",
       "colors": {
         "backing": "#b5bdf5",
@@ -330,7 +339,7 @@
           "class": "single-image shadow",
           "caption": "This project was a calculator built in the assembly language MIPS using QtSPIM. It allowed for addition, subtraction, multiplication, division, and conversions between decimal, hex, and binary numbers. I personally enjoyed this project and had some fun doing the ASCII-art design for the interface, which I felt improved the user experience beyond a console line. My calculator also performed more error checking than was necessary, which allowed it to handle negative numbers (not a requirement).",
           "image": "../pics/mips/home.PNG",
-          "alt": "pic of conversions menu for calculator"
+          "alt": "home menu for calculator"
         },
         {
           "id": "simple",
@@ -344,8 +353,8 @@
           "caption": "Above are examples for addition and subtraction, with a bit of flair in the menu design.",
           "left": "../pics/mips/addition.PNG",
           "right": "../pics/mips/subtraction.PNG",
-          "leftAlt": "pic of addition example in calculator",
-          "rightAlt": "pic of subtraction example in calculator"
+          "leftAlt": "addition example in calculator",
+          "rightAlt": "subtraction example in calculator"
         },
         {
           "id": "mult-div",
@@ -355,8 +364,8 @@
           "caption2": "The most important issue to deal with here was checking that data entered was valid. This was done by dCheck, a function shown below that translated ASCII input into integers, ensuring that the symbols entered were valid.",
           "left": "../pics/mips/multi.PNG",
           "right": "../pics/mips/division.PNG",
-          "leftAlt": "pic of multiplication example in calculator",
-          "rightAlt": "pic of division example in calculator"
+          "leftAlt": "multiplication example in calculator",
+          "rightAlt": "division example in calculator"
         },
         {
           "id": "input",
@@ -382,8 +391,8 @@
           "caption2": "Here is an example of a decimal to binary conversion, for the number -56. The result is a 2-bit signed binary number with 32 bits.",
           "left": "../pics/mips/conversions.PNG",
           "right": "../pics/mips/decbin-neg.PNG",
-          "leftAlt": "pic of conversion menu in calculator",
-          "rightAlt": "pic of binary-decimal conversion example in calculator"
+          "leftAlt": "conversion menu in calculator",
+          "rightAlt": "decimal to binary conversion example in calculator"
         },
         {
           "id": "conversion-code",
