@@ -131,17 +131,22 @@ const DualColumn = (item) => {
     }
     else if (project.type === 'doubleVid') {
       return (
-        <div key={project.id} className='offset-container'>
-          <div className='horizontal-container justify-around'>
+        <div key={project.id} className='horizontal-container justify-between'>
+          <div className='column'>
             <div className='left-right'>
               <video className='double' src={project.left} alt={project.leftAlt} controls={project.controls} autoPlay={project.autoplay} loop={project.loop} muted={project.muted}></video>
             </div>
+            <div className='caption'>
+              {project.caption1}
+            </div>
+          </div>
+          <div className='column'>
             <div className='left-right'>
               <video className='double' src={project.right} alt={project.rightAlt} controls={project.controls} autoPlay={project.autoplay} loop={project.loop} muted={project.muted}></video>
             </div>
-          </div>
-          <div className='center-caption'>
-            {project.caption}
+            <div className='caption'>
+              {project.caption2}
+            </div>
           </div>
         </div>
       )
