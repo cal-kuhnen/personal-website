@@ -15,7 +15,7 @@
         {
           "id": "intro",
           "type": "left",
-          "caption": "<a class='hyper' href='https://sock.rocks' rel='noopener noreferrer' target='_blank'>SOCK Radio</a> is a quarantine project started by myself and a close friend. After launching the website, we grew to have weekly shows from six different people throughout the summer of 2020. The channel has recently returned, and has been a great source of learning for me in terms of website design, React, and other web-dev areas (click the title above to check it out!).",
+          "caption": "<a class='hyper' href='https://sock.rocks' rel='noopener noreferrer' target='_blank'>SOCK Radio</a> is a quarantine project started by myself and a close friend. After launching the website, we grew to have weekly shows from six different people throughout the summer of 2020. The channel has recently returned, and has been a great source of learning for me in terms of website design, React, and other web-dev areas.",
           "image": "../pics/sock/sockLogo01.png",
           "alt": "SOCK radio logo"
         },
@@ -80,7 +80,7 @@
           "type": "singleImg",
           "class": "single-image",
           "caption": "I built these two apps for a Mobile App Design course, and was pleased with how they turned out. More importantly, it gave me a solid understanding of building an app in the Android architecture, as well as shoring up my knowledge of Java. Both apps used a variety of data structures and methods for running API calls to display data to the user.",
-          "image": "../pics/apps/apps-home.PNG",
+          "image": "../pics/apps/apps-home.png",
           "alt": "The two apps side-by-side"
         },
         {
@@ -219,7 +219,7 @@
     {
       "id": "cinepod",
       "title": "CinePod",
-      "portPic": "./pics/cinepod/pod-button.jpg",
+      "portPic": "./pics/cinepod/pod-button.JPG",
       "alt": "finished pod",
       "style": "dual",
       "colors": {
@@ -314,7 +314,7 @@
           "type": "singleImg",
           "class": "single-image shadow",
           "caption": "The pod in use! I'm pretty happy with how it turned out, as ridiculous of a thing it may be. I've been able to use it six times so far, and it works perfectly in terms of keeping me warm. I will admit that the fact it takes two people to move is perhaps not the most portable of solutions, but my friends had tent-like pods they purchased and were not nearly as warm or spacious. The total cost ended up being about $250, which was a bit more than I wanted to spend.",
-          "image": "../pics/cinepod/snow.JPG",
+          "image": "../pics/cinepod/snow.jpg",
           "alt": "pod outside"
         }
       ]
@@ -323,7 +323,7 @@
     {
       "id": "calculator",
       "title": "MIPS Calculator",
-      "portPic": "../pics/mips/neg-conv.png",
+      "portPic": "../pics/mips/neg-conv.PNG",
       "alt": "MIPS calculator performing decimal to binary conversion",
       "style": "dual",
       "colors": {

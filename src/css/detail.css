@@ -272,7 +272,6 @@ h2.subtitle
 
 .code
 {
-  width: 100%;
   white-space: pre-line;
   vertical-align: bottom;
   margin-bottom: 20px;
@@ -301,8 +300,11 @@ a.hyper:hover
     display: block;
   }
 
+  h1.top {
+    text-align: center;
+  }
+
   .left-right {
-    font-size: 1.5em;
     justify-content: center;
     margin-bottom: 20px;
     width: 100%;

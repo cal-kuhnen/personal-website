@@ -44,7 +44,7 @@ const DualColumn = (item) => {
           </div>
           <div className='column'>
             <div className='left-right'>
-              <img className='dual-image' src={project.image} alt={project.alt}></img>
+              <img className='double' src={project.image} alt={project.alt}></img>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@ const DualColumn = (item) => {
     else if (project.type === 'code') {
       return (
         <div key={project.id} className='offset-container'>
-          <SyntaxHighlighter language="assembly" class="code">
+          <SyntaxHighlighter language="assembly" className="code">
             {project.codeSnippet}
           </SyntaxHighlighter>
           <div className='center-caption'>
