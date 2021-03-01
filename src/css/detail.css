@@ -272,9 +272,10 @@ h2.subtitle
 
 .code
 {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  white-space: pre-line;
+  vertical-align: bottom;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 1555px) {

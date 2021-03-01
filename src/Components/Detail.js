@@ -87,10 +87,13 @@ const DualColumn = (item) => {
     }
     else if (project.type === 'code') {
       return (
-        <div key={project.id} className='code'>
-          <SyntaxHighlighter language="assembly">
+        <div key={project.id} className='offset-container'>
+          <SyntaxHighlighter language="assembly" class="code">
             {project.codeSnippet}
           </SyntaxHighlighter>
+          <div className='center-caption'>
+            {project.caption}
+          </div>
         </div>
       )
     }

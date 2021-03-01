@@ -351,11 +351,23 @@
           "id": "mult-div",
           "type": "doubleImg",
           "class": "double bg shadow",
-          "caption": "Here are multiplication and division. The division function is limited to whole numbers.",
+          "caption1": "Above are examples of addition, subtraction, multiplication, and division. Each function is fairly simple, and I added some styling to the selections in terms of the boxes around the words.",
+          "caption2": "The most important issue to deal with here was checking that data entered was valid. This was done by dCheck, a function shown below that translated ASCII input into integers, ensuring that the symbols entered were valid.",
           "left": "../pics/mips/multi.PNG",
           "right": "../pics/mips/division.PNG",
           "leftAlt": "pic of multiplication example in calculator",
           "rightAlt": "pic of division example in calculator"
+        },
+        {
+          "id": "input",
+          "type": "title",
+          "title": "Input Checking"
+        },
+        {
+          "id": "dCheck-code",
+          "type": "code",
+          "codeSnippet": "dCheck:\n    move $t9, $ra                 # place initial calling address into $t9 for return\n    jal strLen\n    li $t1, 1                     # initialize multiplier\n    li $t4, 10                    # initialize multiplicand\n    li $t5, 0                     # clear return register\n  loop1:\n    addi $a0, $a0, -1             # move back from new line character that was found by strLen    \n    lb $t2, 0($a0)                # load ascii value into $t2\n    beq $t0, 0, return            # end of string found, return to caller\n    beq $t2, 45, negative         # check if character is '-' and jump to negative to check if it is in first position\n    blt $t2, 48, error            # check if non-int\n    bgt $t2, 57, error            # check if value is non-int symbol\n    addi $t3, $t2, -48            # change ascii value to actual value\n    mul $t3, $t3, $t1             # multiply by 10^n where n is decimal position\n    add $t5, $t5, $t3\n    mul $t1, $t1, $t4             # multiply conversion factor by 10\n    addi $t0, $t0, -1             # decrement string length by 1\n    j loop1\n  negative:\n    bne $t0, 1, error\n    li $t1, -1\n    mul $t5, $t5, $t1\n  return:\n    jr $t9                        # return to caller, int value in $t5\n\nstrLen:\n    li $t0, 0                     # set counter to 0\n  loop:\n    lb $t1, 0($a0)                # load character into $t1    \n    beq $t1, 10, fin              # check for newline character\n    addi $a0, $a0, 1              # increment position in string\n    addi $t0, $t0, 1              # increment counter\n    j loop\n  fin:\n    jr $ra                        # return to caller, length in $t0\nerror:\n    beq $t7, 1, errorc            # if flag is set, jump to errorc so conversion menu is printed again\n    li $v0, 4\n    la $a0, str_error\n    syscall\n\n    j start\n\nerrorc:\n    li $t7, 0                     # clear flag\n    li $v0, 4\n    la $a0, str_error\n    syscall                       # print error string\n\n    j conversions\n",
+          "caption": "This is input checking function dCheck, which ensures that decimal input is valid for use in the calculator's functions. This was critical in allowing my calculator to work with negative numbers, since I check the first symbol for '-'. Input checking for hex characters was done separately, inside one of the hexadecimal conversion sections."
         },
         {
           "id": "conversions",
@@ -369,14 +381,15 @@
           "caption1": "Above is the conversion menu. This component of the calculator made up the meat of the project, and I was satisfied with my solution because the conversions handle negative numbers as well, which was not a requirement. I also attempted to make the menu as clear as possible, hence the choice to use a more graphical style in the console.",
           "caption2": "Here is an example of a decimal to binary conversion, for the number -56. The result is a 2-bit signed binary number with 32 bits.",
           "left": "../pics/mips/conversions.PNG",
-          "right": "../pics/mips/bindec.PNG",
+          "right": "../pics/mips/decbin-neg.PNG",
           "leftAlt": "pic of conversion menu in calculator",
           "rightAlt": "pic of binary-decimal conversion example in calculator"
         },
         {
           "id": "conversion-code",
           "type": "code",
-          "codeSnippet": "DtoH:\n  li $v0, 4 \n  la $a0, str_DtoH\n  syscall      # print message asking for decimal input \n\n  li $v0, 5\n  syscall      # read input (integer)\n\n  move $s0, $v0\n  li $t3, 8    # counter for the 8 bytes\n\nloop:\n  beq $t3, $0, exit  # check counter to determine if all 8 bytes have been printed\n  rol $s0, $s0, 4    # rotate left by 4 bits so you start with the most significant bits and work your way down\n  and $s1, $s0, 15  # mask with 1111 to get one hex value\n  ble $s1, 9, number  # branch to change the value into a value for a number in ascii\n  addi $s1, $s1, 55  # add 55 to get ascii value to print A, B, C, D, E, or F\n  j print\n\nnumber:\n  addi $s1, $s1, 48  # add 48 for ascii value for 0-9\n\nprint:\n  li $v0, 11\n  move $a0, $s1\n  syscall      # print character\n\n  addi $t3, $t3, -1  # decrement counter\n  j loop\n\nexit:\n  li $v0, 10\n  syscall\n"
+          "codeSnippet": "DtoB:\n    li$t7, 1              # set flag for dCheck to run errorc instead of error\n    li $v0, 4\n    la $a0, str_DtoB      # print string asking user for input\n    syscall\n\n    li $v0, 8\n    li $a1, 32\n    la $a0, decimal\n    syscall\n\n    jal dCheck\n    addu $s0, $t5, $0     # store input in s0\n    li $t1, 1             # mask\n    li $t3, 31            # counter\n    li $v0, 4\n    la $a0, str_ans\n    syscall               # print answer string\n\n  loop2:\n    slti $t2, $t3, 0\n    bne $t2, $0, end      # check counter\n    srlv $s1, $s0, $t3    # shift $s0 to get bit you want then and with $t1\n    and $s1, $s1, $t1     # and with mask\n    add $a0, $s1, $0      # put s1 in a0 for printing\n    addi $t3, $t3, -1     # increment counter\n    li $v0, 1             # print integer\n    syscall\n\n    j loop2\n  end:\n    j conversions",
+          "caption": "Here is a snippet of the assembly code for the decimal to binary conversions, used for the above example. It uses bitwise operations on the input, which is checked for validity by the function dCheck. In case of an error here, dCheck is told to throw an error that reprints the conversions menu rather than the main menu."
         }
       ]
     },
