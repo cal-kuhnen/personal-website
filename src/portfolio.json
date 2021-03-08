@@ -247,7 +247,7 @@
           "type": "doubleImg",
           "class": "double bg",
           "caption1": "Above is a screenshot of the 2x4 frame in CAD, used as an initial mockup. This design was chosen for simplicity and cost, as previous designs for a disassemblable pod were far outside the budget I set myself.",
-          "caption2": "The model with walls applied. Being able to model the pod and predict costs was citical to making the build process as simple as possible.",
+          "caption2": "The model with walls applied. Being able to model the pod and predict costs was critical to making the build process as simple as possible.",
           "left": "../pics/cinepod/cad-frame.PNG",
           "right": "../pics/cinepod/img01.PNG",
           "leftAlt": "cad model of pod frame",
