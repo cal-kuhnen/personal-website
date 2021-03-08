@@ -34,12 +34,12 @@ nav.nav-scroll
 .nav-scroll .navButton
 {
 	color: var(--button);
-	box-shadow: 0px 0px 10px #000, inset 0px 0px 0px 4px var(--button);
+	box-shadow: inset 0px 0px 0px 4px var(--button);
 }
 
 .nav-scroll #title
 {
-	box-shadow: 0px 0px 10px #000;
+	box-shadow: none;
 }
 
 .nav-scroll .home-select

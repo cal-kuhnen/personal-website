@@ -12,6 +12,16 @@
 	font-family: "HK", sans-serif;
 }
 
+.chunk
+{
+	margin-bottom: 80px;
+}
+
+.piece
+{
+	margin-bottom: 60px;
+}
+
 .res-container
 {
 	width: 90%;
@@ -99,7 +109,6 @@ ul
 {
 	font-size: 1.8em;
 	margin-left: 40px;
-	margin-bottom: 30px;
 }
 
 li
