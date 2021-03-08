@@ -50,7 +50,6 @@ const Elements = (item) => {
             </div>
           </div>
         )
-        break;
 
       /* Renders a subtitle left aligned on the page.
       ** -- title --
@@ -59,7 +58,6 @@ const Elements = (item) => {
         return (
           <h2 key={project.id} className='subtitle'>{project.title}</h2>
         )
-        break;
 
       /* Renders an image in left column, caption in the right.
       ** ++++++ ++++++
@@ -77,7 +75,6 @@ const Elements = (item) => {
             </div>
           </div>
         )
-        break;
 
       /* Renders an image in both columns, with associated captions beneath
       ** each one.
@@ -107,7 +104,6 @@ const Elements = (item) => {
             </div>
           </div>
         )
-        break;
 
       /* Renders a code block with a full width caption beneath.
       ** +++++++++++++
@@ -126,7 +122,6 @@ const Elements = (item) => {
             </div>
           </div>
         )
-        break;
 
       /* Renders a full width image, with a full width caption beneath.
       ** +++++++++++++
@@ -147,7 +142,6 @@ const Elements = (item) => {
             </div>
           </div>
         )
-        break;
 
       /* Renders a full width video, with a full width caption beneath.
       ** +++++++++++++
@@ -168,7 +162,6 @@ const Elements = (item) => {
             </div>
           </div>
         )
-        break;
 
       /* Renders a video in both columns, with two associated captions beneath.
       ** ++++++ ++++++
@@ -197,7 +190,6 @@ const Elements = (item) => {
             </div>
           </div>
         )
-        break;
 
       default:
         return (
