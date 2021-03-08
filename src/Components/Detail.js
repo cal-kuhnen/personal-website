@@ -29,6 +29,12 @@ const Elements = (item) => {
   let dualStyle = item.proj.detail.map((project) => {
 
     switch (project.type) {
+
+      /* Renders a caption in left column, image in the right.
+      ** ++++++ ++++++
+      ** +text+ +img +
+      ** ++++++ ++++++
+      */
       case 'left':
         return (
           <div key={project.id} className='horizontal-container justify-between'>
@@ -46,12 +52,20 @@ const Elements = (item) => {
         )
         break;
 
+      /* Renders a subtitle left aligned on the page.
+      ** -- title --
+      */
       case 'title':
         return (
           <h2 key={project.id} className='subtitle'>{project.title}</h2>
         )
         break;
 
+      /* Renders an image in left column, caption in the right.
+      ** ++++++ ++++++
+      ** +img + +text +
+      ** ++++++ ++++++
+      */
       case 'right':
         return (
           <div key={project.id} className='horizontal-container justify-between'>
@@ -65,6 +79,13 @@ const Elements = (item) => {
         )
         break;
 
+      /* Renders an image in both columns, with associated captions beneath
+      ** each one.
+      ** ++++++ ++++++
+      ** +img + +img +
+      ** ++++++ ++++++
+      ** capt.  capt.
+      */
       case 'doubleImg':
         return (
           <div key={project.id} className='horizontal-container justify-between'>
@@ -88,6 +109,12 @@ const Elements = (item) => {
         )
         break;
 
+      /* Renders a code block with a full width caption beneath.
+      ** +++++++++++++
+      ** + if(x==y)  +
+      ** +++++++++++++
+      ** -- caption --
+      */
       case 'code':
         return (
           <div key={project.id} className='offset-container'>
@@ -101,6 +128,12 @@ const Elements = (item) => {
         )
         break;
 
+      /* Renders a full width image, with a full width caption beneath.
+      ** +++++++++++++
+      ** +    img    +
+      ** +++++++++++++
+      ** -- caption --
+      */
       case 'singleImg':
         return (
           <div key={project.id} className='offset-container'>
@@ -116,6 +149,12 @@ const Elements = (item) => {
         )
         break;
 
+      /* Renders a full width video, with a full width caption beneath.
+      ** +++++++++++++
+      ** +   video   +
+      ** +++++++++++++
+      ** -- caption --
+      */
       case 'video':
         return (
           <div key={project.id} className='offset-container'>
@@ -131,6 +170,12 @@ const Elements = (item) => {
         )
         break;
 
+      /* Renders a video in both columns, with two associated captions beneath.
+      ** ++++++ ++++++
+      ** +vid + +vid +
+      ** ++++++ ++++++
+      ** capt.  capt.
+      */
       case 'doubleVid':
         return (
           <div key={project.id} className='horizontal-container justify-between'>
