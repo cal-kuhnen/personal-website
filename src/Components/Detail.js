@@ -105,6 +105,33 @@ const Elements = (item) => {
           </div>
         )
 
+        /* Renders an image in both columns, with a single caption beneath
+        ** ++++++ ++++++
+        ** +img + +img +
+        ** ++++++ ++++++
+        ** -- caption --
+        */
+        case 'doubleImgOneCap':
+          return (
+            <>
+              <div key={project.id} className='horizontal-container justify-between'>
+                <div className='column'>
+                  <div className='left-right backing center'>
+                    <img className={project.class} src={project.left} alt={project.leftAlt}></img>
+                  </div>
+                </div>
+                <div className='column'>
+                  <div className='left-right backing center'>
+                    <img className={project.class} src={project.right} alt={project.rightAlt}></img>
+                  </div>
+                </div>
+              </div>
+              <div className='width90 center-caption'>
+                {project.caption}
+              </div>
+            </>
+          )
+
       /* Renders a code block with a full width caption beneath.
       ** +++++++++++++
       ** + if(x==y)  +

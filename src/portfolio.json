@@ -1,5 +1,44 @@
 [
     {
+      "id": "insta-tracker",
+      "title": "Instagram Gallery Display",
+      "portPic": "./pics/insta/full-display.jpg",
+      "alt": "instagram tracker triple screen setup in operation",
+      "style": "dual",
+      "colors": {
+        "backing": "#b5bdf5",
+        "button": "#fa8907",
+        "shadow": "#e07805",
+        "hover": "#fb9a18"
+      },
+      "detail": [
+        {
+          "id": "intro",
+          "type": "singleImg",
+          "class": "single-image",
+          "caption": "This app was created to show live updates of an instagram account for an artist's gallery display. To accomplish this, I used a MERN tech stack, while also using the opportunity to familiarize myself with Typescript both on the frontend within React and on the backend.",
+          "image": "../pics/insta/full-display.jpg",
+          "alt": "instagram tracker triple screen setup in operation"
+        },
+        {
+          "id": "main-page",
+          "type": "singleImg",
+          "class": "single-image",
+          "caption": "The central display was used for showing a QR code linking to the account, a list of comments posted by the artist on other posts, and follower and following statistics. This was the primary focus early on in the project, and data was gathered using Puppeteer, a tool to automate a headless instance of Chromium. To access comments, the artist used a page on my app to post them - he simply pasted a link to a post and entered the comment, and my app would again use Puppeteer to automate the posting of the comment.",
+          "image": "../pics/insta/full-display.jpg",
+          "alt": "instagram tracker triple screen setup in operation"
+        },
+        {
+          "id": "posts-likes",
+          "type": "doubleImgOneCap",
+          "class": "double bg-portrait",
+          "caption": "To the left and right were posts and saved posts (displayed as likes) from the account. Originally, we were hoping to simply use the instagram pages on Chrome, auto-refreshing every 20 seconds or so, but due to the artist changing the username frequently as part of his performance, those links would break as soon as a username change occurred. Therefore, the pages were scraped for image links with Puppeteer and then the images were displayed by my app in the same 3-column grid, which ultimately improved the aesthetics of the triple screen display.",
+          "image": "../pics/insta/full-display.jpg",
+          "alt": "instagram tracker triple screen setup in operation"
+        }
+      ]
+    },
+    {
       "id": "sock-radio",
       "title": "SOCK Radio",
       "portPic": "./pics/sock/sock-logov2-01.png",

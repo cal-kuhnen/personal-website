@@ -44,6 +44,11 @@
   justify-content: space-around;
 }
 
+.width90
+{
+  width: 90%;
+}
+
 .offset-container
 {
   width: 90%;
@@ -246,7 +251,6 @@ h2.subtitle
 .center-caption
 {
   font-size: 1.5em;
-  width: 100%;
   margin: auto;
   margin-bottom: 20px;
   text-align: left;
