@@ -16,7 +16,7 @@
           "id": "intro",
           "type": "singleImg",
           "class": "single-image",
-          "caption": "This app was created to show live updates of an instagram account for an artist's gallery display. I used the MERN (MongoDB-Express-React-NodeJS) tech stack for the build, while also using the opportunity to familiarize myself with Typescript both on the frontend within React and on the backend. Live updates were facilitated through the use of the Socket.io module, which uses WebSocket connections to pass data between a server and client.",
+          "caption": "This app was created to show live updates of an instagram account for an artist's gallery display. I used the MERN (MongoDB-Express-React-NodeJS) tech stack for the build, while also using the opportunity to familiarize myself with Typescript both on the frontend within React and on the backend. Live updates were facilitated through the use of the Socket.io module, which uses WebSocket connections to pass data between a server and client. During the running of the artist's show, they were constantly posting, following, liking, and commenting, and my app allowed for an ever-changing view into that activity.",
           "image": "../pics/insta/full-display.jpg",
           "alt": "instagram tracker triple screen setup in operation"
         },
@@ -24,7 +24,7 @@
           "id": "main-page",
           "type": "singleImg",
           "class": "single-image bg shadow",
-          "caption": "The central display was used for showing a QR code linking to the account, a list of comments posted by the artist on other posts, and follower and following statistics. This was the primary focus early on in the project, and data was gathered using Puppeteer, a tool to automate a headless instance of Chromium. To access comments, the artist used a page on my app to post them - he simply pasted a link to a post and entered the comment, and my app would again use Puppeteer to automate the posting of the comment.",
+          "caption": "The central display was used for showing a QR code linking to the account, a list of comments posted by the artist on other posts, and follower and following statistics. This was the primary focus early on in the project, and data was gathered using Puppeteer, a tool to automate a headless instance of Chromium. To access comments, the artist used a page on my app to post them - he simply pasted a link to a post and entered the comment, and my app would again use Puppeteer to automate the posting of the comment on the given post. For better engagement in the gallery, notification sounds were played whenever followers were gained or lost, a new comment was posted, and when the username changed.",
           "image": "../pics/insta/main_page_better.PNG",
           "alt": "instagram tracker triple screen setup in operation"
         },
@@ -32,7 +32,7 @@
           "id": "posts-likes",
           "type": "doubleImgOneCap",
           "class": "double bg shadow",
-          "caption": "To the left and right were posts and saved posts (displayed as likes) from the account. Originally, we were hoping to simply use the instagram pages on Chrome, auto-refreshing every 20 seconds or so, but due to the artist changing the username frequently as part of his performance, those links would break as soon as a username change occurred. Therefore, the pages were scraped for image links with Puppeteer and then the images were displayed by my app in the same 3-column grid, which ultimately improved the aesthetics of the triple screen display.",
+          "caption": "Above are the displays for posts and saved posts (shown as likes) from the account. Originally, we were hoping to simply use the instagram pages on Chrome, auto-refreshing every 20 seconds or so, but due to the artist changing the username frequently as part of his performance, those links would break as soon as a username change occurred. Therefore, the 18 most recent images were gathered with Puppeteer and then displayed by my app in the same 3-column grid, which ultimately improved the aesthetics of the triple screen display. It also meant that the app only needed to gather images when the post number changed.",
           "left": "../pics/insta/profile_displaysize.PNG",
           "right": "../pics/insta/saved_moreposts.PNG",
           "alt": "instagram tracker triple screen setup in operation"
