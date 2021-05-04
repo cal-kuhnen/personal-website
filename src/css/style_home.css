@@ -42,10 +42,10 @@
 
 /* ---Highlighting --- */
 ::selection {
-  background: #ffccdd;
+  background: #ffffaa;
 }
 ::-moz-selection {
-  background: #ffccdd;
+  background: #ffffaa;
 }
 
 /* --- Scrollbar ---

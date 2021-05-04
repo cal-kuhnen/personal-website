@@ -6,7 +6,7 @@
       "alt": "instagram tracker triple screen setup in operation",
       "style": "dual",
       "colors": {
-        "backing": "#b5bdf5",
+        "backing": "#fa890760",
         "button": "#fa8907",
         "shadow": "#e07805",
         "hover": "#fb9a18"
@@ -16,24 +16,25 @@
           "id": "intro",
           "type": "singleImg",
           "class": "single-image",
-          "caption": "This app was created to show live updates of an instagram account for an artist's gallery display. To accomplish this, I used a MERN tech stack, while also using the opportunity to familiarize myself with Typescript both on the frontend within React and on the backend.",
+          "caption": "This app was created to show live updates of an instagram account for an artist's gallery display. I used the MERN (MongoDB-Express-React-NodeJS) tech stack for the build, while also using the opportunity to familiarize myself with Typescript both on the frontend within React and on the backend. Live updates were facilitated through the use of the Socket.io module, which uses WebSocket connections to pass data between a server and client.",
           "image": "../pics/insta/full-display.jpg",
           "alt": "instagram tracker triple screen setup in operation"
         },
         {
           "id": "main-page",
           "type": "singleImg",
-          "class": "single-image",
+          "class": "single-image bg shadow",
           "caption": "The central display was used for showing a QR code linking to the account, a list of comments posted by the artist on other posts, and follower and following statistics. This was the primary focus early on in the project, and data was gathered using Puppeteer, a tool to automate a headless instance of Chromium. To access comments, the artist used a page on my app to post them - he simply pasted a link to a post and entered the comment, and my app would again use Puppeteer to automate the posting of the comment.",
-          "image": "../pics/insta/full-display.jpg",
+          "image": "../pics/insta/main_page_better.PNG",
           "alt": "instagram tracker triple screen setup in operation"
         },
         {
           "id": "posts-likes",
           "type": "doubleImgOneCap",
-          "class": "double bg-portrait",
+          "class": "double bg shadow",
           "caption": "To the left and right were posts and saved posts (displayed as likes) from the account. Originally, we were hoping to simply use the instagram pages on Chrome, auto-refreshing every 20 seconds or so, but due to the artist changing the username frequently as part of his performance, those links would break as soon as a username change occurred. Therefore, the pages were scraped for image links with Puppeteer and then the images were displayed by my app in the same 3-column grid, which ultimately improved the aesthetics of the triple screen display.",
-          "image": "../pics/insta/full-display.jpg",
+          "left": "../pics/insta/profile_displaysize.PNG",
+          "right": "../pics/insta/saved_moreposts.PNG",
           "alt": "instagram tracker triple screen setup in operation"
         }
       ]
@@ -130,7 +131,7 @@
         {
           "id": "gov-overview",
           "type": "doubleImg",
-          "class": "double bg-portrait",
+          "class": "double bg-portrait borders",
           "caption1": "This app takes note of the user's location, then displays a list of the government officials who represent them using Google's Civic Information API. In this image, the location is Chicago, and the list is ordered by the scope of the position with highest first. The user can also input any location of their choosing via zipcode or city name, allowing them to see the representatives for that area.",
           "caption2": "Here is an example of the detail provided when the user clicks on a representative. In this case, it is Senator Dick Durbin, and the app displays his photo along with a corresponding party image with the contact information below. Social media links are only displayed if they exist in the API.",
           "left": "../pics/apps/gov01.PNG",
@@ -156,7 +157,7 @@
         {
           "id": "news-overview",
           "type": "doubleImg",
-          "class": "double bg-portrait",
+          "class": "double bg-portrait borders",
           "caption1": "The News Gateway app uses NewsAPI to display snippets about articles from various sources, along with the links to those articles. It can then sort by genre of publisher. The app accesses the API data in a separate thread, then uses a service to collect the articles from the requested source.",
           "caption2": "Here the genre selection is shown, which shortens the drawer list to relevant sources of news. In this case, the selection has already been made for the Entertainment category. This is also done in a separate thread, which re-downloads the source list from the API for that genre only.",
           "left": "../pics/apps/news01.PNG",
@@ -311,7 +312,7 @@
         {
           "id": "wall",
           "type": "singleImg",
-          "class": "single-image shadow",
+          "class": "single-image bg shadow",
           "caption": "First side wall attached. These were cut from 1/4'' OSB, and were important not only for warmth but also adding structural integrity. They definitely do not provide good insulation, but that's where the space heater comes in.",
           "image": "../pics/cinepod/pod-wall.JPG",
           "alt": "first wall attached to frame"
@@ -351,7 +352,7 @@
         {
           "id": "usage",
           "type": "singleImg",
-          "class": "single-image shadow",
+          "class": "single-image bg shadow",
           "caption": "The pod in use! I'm pretty happy with how it turned out, as ridiculous of a thing it may be. I've been able to use it six times so far, and it works perfectly in terms of keeping me warm. I will admit that the fact it takes two people to move is perhaps not the most portable of solutions, but my friends had tent-like pods they purchased and were not nearly as warm or spacious. The total cost ended up being about $250, which was a bit more than I wanted to spend.",
           "image": "../pics/cinepod/snow.jpg",
           "alt": "pod outside"
