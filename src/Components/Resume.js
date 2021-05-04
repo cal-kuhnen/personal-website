@@ -100,7 +100,7 @@ const Resume = () => {
     					<h4 className="interests">Programming Languages:</h4>
     						<p className="list">Python, Javascript, Java, C, C++, SQL, R</p>
     					<h4 className="interests">Other Skills:</h4>
-    						<p className="list">Git, React, Postgresql, HTML, CSS, Microsoft Word, Microsoft Excel, Mathematica, Adobe Photoshop, Autodesk Fusion 360</p>
+    						<p className="list">Git, React, NodeJS, Postgresql, MongoDB, HTML, CSS, Microsoft Word, Microsoft Excel, Mathematica, Adobe Photoshop, Autodesk Fusion 360</p>
     					<h4 className="interests">Interests:</h4>
     						<p className="list">Cycling, Automotive Design, Graphic Design, Music Production, Soccer</p>
     			</section>
