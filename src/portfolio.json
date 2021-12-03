@@ -2,6 +2,7 @@
     {
       "id": "insta-tracker",
       "title": "Instagram Gallery Display",
+      "year": "2021",
       "portPic": "./pics/insta/full-display.jpg",
       "alt": "instagram tracker triple screen setup in operation",
       "style": "dual",
@@ -42,6 +43,7 @@
     {
       "id": "sock-radio",
       "title": "SOCK Radio",
+      "year": "2021",
       "portPic": "./pics/sock/sock-logov2-01.png",
       "alt": "secondary sock radio logo (cloud with yellow, red, and blue quarter-circles emitting beneath)",
       "style": "dual",
@@ -105,6 +107,7 @@
     {
       "id": "apps",
       "title": "Android Apps",
+      "year": "2020",
       "portPic": "../pics/apps/apps.png",
       "alt": "both apps next to each other",
       "style": "dual",
@@ -181,6 +184,7 @@
     {
       "id": "ipro",
       "title": "Campus Bike Lock",
+      "year": "2020",
       "portPic": "./pics/ipro/prototype-bike.jpg",
       "alt": "pic of foam bike with prototype lock",
       "style": "dual",
@@ -259,6 +263,7 @@
     {
       "id": "cinepod",
       "title": "CinePod",
+      "year": "2020",
       "portPic": "./pics/cinepod/pod-button.JPG",
       "alt": "finished pod",
       "style": "dual",
@@ -363,6 +368,7 @@
     {
       "id": "calculator",
       "title": "MIPS Calculator",
+      "year": "2018",
       "portPic": "../pics/mips/neg-conv.PNG",
       "alt": "MIPS calculator performing decimal to binary conversion",
       "style": "dual",
@@ -446,6 +452,7 @@
     {
       "id": "digital",
       "title": "Digital Imaging",
+      "year": "2014",
       "portPic": "./pics/digital/digital01.png",
       "alt": "screencap of 3d music video",
       "style": "dual",

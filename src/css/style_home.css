@@ -28,7 +28,8 @@
 {
 	font-family: "HK";
 	src: url("../fonts/HKGrotesk-Regular.otf");
-
+	font-style: normal;
+  font-weight: normal;
 }
 
 @font-face
@@ -36,6 +37,13 @@
 	font-family: "HK";
 	src: url("../fonts/HKGrotesk-Bold.otf");
 	font-weight: bold;
+}
+
+@font-face
+{
+	font-family: "HK";
+	src: url("../fonts/HKGrotesk-Italic.otf");
+	font-style: italic;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');

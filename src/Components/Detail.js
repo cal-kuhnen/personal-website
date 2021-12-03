@@ -26,7 +26,7 @@ const Elements = (item) => {
   document.documentElement.style.setProperty('--shadow', item.proj.colors.shadow);
   document.documentElement.style.setProperty('--button-hover', item.proj.colors.hover);
 
-  let dualStyle = item.proj.detail.map((project) => {
+  let content = item.proj.detail.map((project) => {
 
     switch (project.type) {
 
@@ -230,8 +230,11 @@ const Elements = (item) => {
 
   return (
     <div className='dual-container'>
-      <h1 className='top'>{item.proj.title}</h1>
-      {dualStyle}
+      <div className='heading'>
+        <h1>{item.proj.title}</h1>
+        <h1 className='italics'>{item.proj.year}</h1>
+      </div>
+      {content}
     </div>
   )
 }
